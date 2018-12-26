@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9f56ce26-7942-4300-be10-00f249394c3e" name="Default Changelist" comment="" />
+    <list default="true" id="9f56ce26-7942-4300-be10-00f249394c3e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/com/libalgojv/sortalgorithms/tests/BottomUpMergeSortTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/libalgojv/sortalgorithms/tests/HeapSortTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/libalgojv/sortalgorithms/tests/InsertionSortTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/libalgojv/sortalgorithms/tests/MergeSortTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/libalgojv/sortalgorithms/tests/RadixSortTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/libalgojv/sortalgorithms/tests/ShellSortTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/libalgojv/META-INF/libalgojv.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/libalgojv/common/interfaces/Sortable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/libalgojv/common/interfaces/Sortable.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -12,278 +22,94 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/libalgojv/stacks/arraystack/ArrayStack.java">
+        <entry file="file://$PROJECT_DIR$/src/com/libalgojv/sortalgorithms/MergeSort.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="2" selection-start-line="2" selection-end-line="5" selection-end-column="61" />
+            <state relative-caret-position="272">
+              <caret line="22" column="50" selection-start-line="22" selection-start-column="50" selection-end-line="22" selection-end-column="50" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/libalgojv/sortalgorithms/RadixSort.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="22" column="50" selection-start-line="22" selection-start-column="50" selection-end-line="22" selection-end-column="50" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/libalgojv/sortalgorithms/ShellSort.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="22" column="50" selection-start-line="22" selection-start-column="50" selection-end-line="22" selection-end-column="50" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/libalgojv/sortalgorithms/HeapSort.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="22" column="50" selection-start-line="22" selection-start-column="50" selection-end-line="22" selection-end-column="50" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/libalgojv/sortalgorithms/tests/BottomUpMergeSortTests.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="391">
+              <caret line="23" column="22" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="22" />
               <folding>
-                <element signature="n#!!doc;n#array#0;n#ArrayStack#0" />
-                <element signature="n#!!doc;n#ArrayStack#0;n#ArrayStack#0" />
-                <element signature="method#pop#0;class#ArrayStack#0" />
-                <element signature="e#946#995#1" />
-                <element signature="method#push#0;class#ArrayStack#0" />
-                <element signature="e#1111#1160#1" />
-                <element signature="method#toString#0;class#ArrayStack#0" />
-                <element signature="e#1614#1713#0" />
-                <element signature="n#!!doc;n#resize#0;n#ArrayStack#0" />
-                <element signature="method#resize#0;class#ArrayStack#0" />
-                <element signature="n#!!doc;n#iterator#0;n#ArrayStack#0" />
-                <element signature="method#iterator#0;class#ArrayStack#0" />
-                <element signature="class#2087:2479" />
-                <element signature="method#next#0;class#2087:2479" />
-                <element signature="e#2339#2403#1" />
-                <element signature="method#forEach#0;class#ArrayStack#0" />
-                <element signature="e#2585#2630#1" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/libalgojv/lists/singlelinkedlist/SingleLinkedList.java">
+        <entry file="file://$PROJECT_DIR$/src/com/libalgojv/sortalgorithms/tests/HeapSortTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-367">
-              <caret line="67" column="16" lean-forward="true" selection-start-line="67" selection-start-column="16" selection-end-line="67" selection-end-column="16" />
-              <folding>
-                <element signature="e#0#14458#0" expanded="true" />
-                <element signature="imports" expanded="true" />
-                <element signature="e#618#642#0" />
-                <element signature="e#764#786#0" />
-                <element signature="e#996#1016#0" />
-                <element signature="e#996#1777#0" />
-                <element signature="e#1274#1400#0" />
-                <element signature="e#1410#1438#0" />
-                <element signature="e#1800#2208#0" />
-                <element signature="e#2067#2115#1" />
-                <element signature="e#2160#2202#1" />
-                <element signature="e#2214#2779#0" />
-                <element signature="e#2398#2458#1" />
-                <element signature="e#2497#2545#1" />
-                <element signature="e#2600#2659#1" />
-                <element signature="e#2714#2773#1" />
-                <element signature="e#2901#3254#0" />
-                <element signature="e#2995#3031#1" />
-                <element signature="e#3082#3135#1" />
-                <element signature="e#3180#3227#1" />
-                <element signature="e#3260#3781#0" />
-                <element signature="e#3338#3374#1" />
-                <element signature="e#3410#3530#1" />
-                <element signature="e#3585#3642#1" />
-                <element signature="e#3697#3754#1" />
-                <element signature="e#3787#4143#0" />
-                <element signature="e#3862#3898#1" />
-                <element signature="e#3953#4007#1" />
-                <element signature="e#4062#4116#1" />
-                <element signature="e#4300#4704#0" />
-                <element signature="e#4364#4397#1" />
-                <element signature="e#4435#4468#1" />
-                <element signature="e#4523#4570#1" />
-                <element signature="e#4625#4680#1" />
-                <element signature="e#4710#4979#0" />
-                <element signature="e#4831#4930#0" />
-                <element signature="e#4985#5960#0" />
-                <element signature="e#5054#5090#1" />
-                <element signature="e#5261#5774#1" />
-                <element signature="e#5301#5350#1" />
-                <element signature="e#5456#5494#1" />
-                <element signature="e#5532#5764#1" />
-                <element signature="e#5550#5602#0" />
-                <element signature="e#5882#5918#1" />
-                <element signature="e#5966#6242#0" />
-                <element signature="e#6020#6051#1" />
-                <element signature="e#6152#6204#1" />
-                <element signature="e#6248#6697#0" />
-                <element signature="e#6315#6346#1" />
-                <element signature="e#6507#6654#1" />
-                <element signature="e#6550#6603#1" />
-                <element signature="e#6703#7342#0" />
-                <element signature="e#6758#6795#1" />
-                <element signature="e#6833#6870#1" />
-                <element signature="e#7012#7336#1" />
-                <element signature="e#7074#7119#1" />
-                <element signature="e#7173#7217#1" />
-                <element signature="e#7223#7326#1" />
-                <element signature="e#7366#7391#0" />
-                <element signature="e#7366#7530#0" />
-                <element signature="e#7536#7907#0" />
-                <element signature="e#7629#7689#1" />
-                <element signature="e#7744#7795#1" />
-                <element signature="e#7850#7901#1" />
-                <element signature="e#7913#8180#0" />
-                <element signature="e#8088#8140#1" />
-                <element signature="e#8315#8632#0" />
-                <element signature="e#8501#8550#1" />
-                <element signature="e#8556#8626#1" />
-                <element signature="e#8638#9115#0" />
-                <element signature="e#8825#9065#1" />
-                <element signature="e#8881#9014#1" />
-                <element signature="e#9121#9264#0" />
-                <element signature="e#9270#9678#0" />
-                <element signature="e#9491#9588#1" />
-                <element signature="e#9594#9672#1" />
-                <element signature="e#9684#9824#0" />
-                <element signature="e#9830#10110#0" />
-                <element signature="e#9916#9972#1" />
-                <element signature="e#10027#10083#1" />
-                <element signature="e#10116#10579#0" />
-                <element signature="e#10194#10303#1" />
-                <element signature="e#10414#10466#1" />
-                <element signature="e#10585#10824#0" />
-                <element signature="e#10663#10772#1" />
-                <element signature="e#10830#11154#0" />
-                <element signature="e#10960#11090#1" />
-                <element signature="e#11160#11619#0" />
-                <element signature="e#11347#11399#1" />
-                <element signature="e#11439#11592#1" />
-                <element signature="e#11731#12208#0" />
-                <element signature="e#11920#12181#1" />
-                <element signature="e#11964#12115#1" />
-                <element signature="e#12214#12530#0" />
-                <element signature="e#12326#12478#1" />
-                <element signature="e#12369#12427#1" />
-                <element signature="e#12636#13001#0" />
-                <element signature="e#12758#12808#1" />
-                <element signature="e#12910#12974#1" />
-                <element signature="e#13007#13280#0" />
-                <element signature="e#13196#13253#1" />
-                <element signature="e#13286#13531#0" />
-                <element signature="e#13407#13479#1" />
-                <element signature="e#13554#13572#0" />
-                <element signature="e#13554#14280#0" />
-                <element signature="class#13646:14273" />
-                <element signature="initializer##0;class#13646:14273" />
-                <element signature="method#next#0;class#13646:14273" />
-                <element signature="e#14082#14197#1" />
-                <element signature="e#14286#14438#0" />
-                <element signature="e#14387#14432#1" />
-              </folding>
+            <state relative-caret-position="289">
+              <caret line="22" column="9" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/libalgojv/lists/singlelinkedlist/tests/SingleLinkedListTests.java">
+        <entry file="file://$PROJECT_DIR$/src/com/libalgojv/sortalgorithms/tests/InsertionSortTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="224">
-              <caret line="107" column="26" selection-start-line="107" selection-start-column="26" selection-end-line="107" selection-end-column="26" />
-              <folding>
-                <element signature="e#0#13483#0" expanded="true" />
-                <element signature="imports" expanded="true" />
-                <element signature="e#820#821#0" expanded="true" />
-                <element signature="e#890#891#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="272">
+              <caret line="21" selection-start-line="21" selection-end-line="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/libalgojv/sortalgorithms/tests/MergeSortTests.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="21" selection-start-line="21" selection-end-line="21" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/libalgojv/common/interfaces/Sortable.java">
+        <entry file="file://$PROJECT_DIR$/src/com/libalgojv/sortalgorithms/tests/RadixSortTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
-              <folding>
-                <element signature="e#0#263#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="340">
+              <caret line="25" selection-start-line="25" selection-end-line="25" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/libalgojv/common/interfaces/Queue.java">
+        <entry file="file://$PROJECT_DIR$/src/com/libalgojv/sortalgorithms/tests/ShellSortTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="10" column="37" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/libalgojv/common/interfaces/Bag.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="4" lean-forward="true" selection-end-line="6" selection-end-column="3" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/libalgojv/common/interfaces/Stack.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="2" lean-forward="true" selection-end-line="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/libalgojv/queues/arrayqueue/ArrayQueue.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-58">
-              <caret line="34" column="9" selection-start-line="34" selection-start-column="9" selection-end-line="34" selection-end-column="9" />
-              <folding>
-                <element signature="n#!!doc;n#array#0;n#ArrayQueue#0" />
-                <element signature="n#!!doc;n#ArrayQueue#0;n#ArrayQueue#0" />
-                <element signature="method#enqueue#0;class#ArrayQueue#0" />
-                <element signature="e#848#897#1" />
-                <element signature="e#1009#1057#1" />
-                <element signature="method#dequeue#0;class#ArrayQueue#0" />
-                <element signature="e#1152#1188#1" />
-                <element signature="e#1360#1409#1" />
-                <element signature="method#toString#0;class#ArrayQueue#0" />
-                <element signature="e#1853#1952#0" />
-                <element signature="n#!!doc;n#resize#0;n#ArrayQueue#0" />
-                <element signature="method#resize#0;class#ArrayQueue#0" />
-                <element signature="n#!!doc;n#iterator#0;n#ArrayQueue#0" />
-                <element signature="method#iterator#0;class#ArrayQueue#0" />
-                <element signature="class#2326:2718" />
-                <element signature="method#next#0;class#2326:2718" />
-                <element signature="e#2578#2642#1" />
-                <element signature="method#forEach#0;class#ArrayQueue#0" />
-                <element signature="e#2824#2869#1" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/libalgojv/queues/arrayqueue/tests/ArrayQueueTests.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2483">
-              <caret line="163" column="9" selection-start-line="163" selection-start-column="9" selection-end-line="163" selection-end-column="9" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/libalgojv/queues/linkedlistqueue/LinkedListQueue.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="9">
-              <caret line="50" column="13" selection-start-line="50" selection-start-column="7" selection-end-line="50" selection-end-column="13" />
-              <folding>
-                <element signature="n#!!doc;n#first#0;n#LinkedListQueue#0" />
-                <element signature="n#!!doc;n#LinkedListNode#0;n#LinkedListQueue#0" />
-                <element signature="class#LinkedListNode#0;class#LinkedListQueue#0" />
-                <element signature="n#!!doc;n#getItem#0;n#LinkedListNode#0;n#LinkedListQueue#0" />
-                <element signature="method#enqueue#0;class#LinkedListQueue#0" />
-                <element signature="method#dequeue#0;class#LinkedListQueue#0" />
-                <element signature="e#1440#1476#1" />
-                <element signature="e#1514#1636#1" />
-                <element signature="e#1776#1860#1" />
-                <element signature="method#toString#0;class#LinkedListQueue#0" />
-                <element signature="e#2325#2424#0" />
-                <element signature="n#!!doc;n#iterator#0;n#LinkedListQueue#0" />
-                <element signature="method#iterator#0;class#LinkedListQueue#0" />
-                <element signature="class#2584:3226" />
-                <element signature="initializer##0;class#2584:3226" />
-                <element signature="e#2758#2877#1" />
-                <element signature="method#next#0;class#2584:3226" />
-                <element signature="e#3091#3150#1" />
-                <element signature="method#forEach#0;class#LinkedListQueue#0" />
-                <element signature="e#3331#3375#1" />
-              </folding>
+            <state relative-caret-position="340">
+              <caret line="25" column="32" selection-start-line="25" selection-start-column="32" selection-end-line="25" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -294,6 +120,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Arquillian JUnit Test Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -303,25 +130,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/AlgorithmType.java" />
-        <option value="$PROJECT_DIR$/src/HashTable.java" />
-        <option value="$PROJECT_DIR$/src/Bag.java" />
-        <option value="$PROJECT_DIR$/src/BagKV.java" />
-        <option value="$PROJECT_DIR$/src/BinarySearchTree.java" />
-        <option value="$PROJECT_DIR$/src/PriorityQueue.java" />
-        <option value="$PROJECT_DIR$/src/Queue.java" />
-        <option value="$PROJECT_DIR$/src/Stack.java" />
-        <option value="$PROJECT_DIR$/src/com/libalgoj/common/HashTable.java" />
-        <option value="$PROJECT_DIR$/src/com/libalgojv/common/InsertPosition.java" />
-        <option value="$PROJECT_DIR$/src/com/libalgojv/common/AlgorithmType.java" />
-        <option value="$PROJECT_DIR$/src/com/libalgojv/common/RemovePosition.java" />
-        <option value="$PROJECT_DIR$/src/com/libalgojv/common/enums/InsertPosition.java" />
-        <option value="$PROJECT_DIR$/src/com/libalgojv/common/enums/RemovePosition.java" />
-        <option value="$PROJECT_DIR$/src/List.java" />
-        <option value="$PROJECT_DIR$/src/com/libalgojv/common/Bag.java" />
-        <option value="$PROJECT_DIR$/src/com/libalgojv/common/BagKeyValue.java" />
-        <option value="$PROJECT_DIR$/src/com/libalgojv/common/BinarySearchTree.java" />
-        <option value="$PROJECT_DIR$/src/com/libalgojv/common/HashTable.java" />
         <option value="$PROJECT_DIR$/src/com/libalgojv/common/iterfaces/Bag.java" />
         <option value="$PROJECT_DIR$/src/com/libalgojv/common/List.java" />
         <option value="$PROJECT_DIR$/src/com/libalgojv/common/PriorityQueue.java" />
@@ -349,7 +157,30 @@
         <option value="$PROJECT_DIR$/src/com/libalgojv/lists/singlelinkedlist/SingleLinkedList.java" />
         <option value="$PROJECT_DIR$/src/com/libalgojv/common/interfaces/Sort.java" />
         <option value="$PROJECT_DIR$/src/com/libalgojv/common/interfaces/sortable/Sortable.java" />
+        <option value="$PROJECT_DIR$/src/com/libalgojv/sorts/tests/SortCheckerTests.java" />
+        <option value="$PROJECT_DIR$/src/com/libalgoj/sortalgorithms/tests/SortCheckerTests.java" />
+        <option value="$PROJECT_DIR$/src/com/libalgojv/sorts/tests/SortChecker.java" />
+        <option value="$PROJECT_DIR$/src/com/libalgojv/sorts/BottomUpMergeSort.java" />
+        <option value="$PROJECT_DIR$/src/com/libalgojv/sorts/HeapSort.java" />
+        <option value="$PROJECT_DIR$/src/com/libalgojv/sorts/InsertionSort.java" />
+        <option value="$PROJECT_DIR$/src/com/libalgojv/sorts/MergeSort.java" />
+        <option value="$PROJECT_DIR$/src/com/libalgojv/sorts/RadixSort.java" />
+        <option value="$PROJECT_DIR$/src/com/libalgojv/sorts/ShellSort.java" />
+        <option value="$PROJECT_DIR$/src/com/libalgojv/sortalgorithms/tests/SortChecker.java" />
         <option value="$PROJECT_DIR$/src/com/libalgojv/common/interfaces/Sortable.java" />
+        <option value="$PROJECT_DIR$/src/com/libalgojv/sortalgorithms/tests/SortCheckerTests.java" />
+        <option value="$PROJECT_DIR$/src/com/libalgojv/sortalgorithms/BottomUpMergeSort.java" />
+        <option value="$PROJECT_DIR$/src/com/libalgojv/sortalgorithms/HeapSort.java" />
+        <option value="$PROJECT_DIR$/src/com/libalgojv/sortalgorithms/InsertionSort.java" />
+        <option value="$PROJECT_DIR$/src/com/libalgojv/sortalgorithms/MergeSort.java" />
+        <option value="$PROJECT_DIR$/src/com/libalgojv/sortalgorithms/RadixSort.java" />
+        <option value="$PROJECT_DIR$/src/com/libalgojv/sortalgorithms/ShellSort.java" />
+        <option value="$PROJECT_DIR$/src/com/libalgojv/sortalgorithms/tests/BottomUpMergeSortTests.java" />
+        <option value="$PROJECT_DIR$/src/com/libalgojv/sortalgorithms/tests/HeapSortTests.java" />
+        <option value="$PROJECT_DIR$/src/com/libalgojv/sortalgorithms/tests/InsertionSortTests.java" />
+        <option value="$PROJECT_DIR$/src/com/libalgojv/sortalgorithms/tests/MergeSortTests.java" />
+        <option value="$PROJECT_DIR$/src/com/libalgojv/sortalgorithms/tests/RadixSortTests.java" />
+        <option value="$PROJECT_DIR$/src/com/libalgojv/sortalgorithms/tests/ShellSortTests.java" />
       </list>
     </option>
   </component>
@@ -365,7 +196,9 @@
     <option name="width" value="1436" />
     <option name="height" value="805" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -395,15 +228,15 @@
               <item name="libalgojv" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="libalgojv" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="sortalgorithms" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="libalgojv" type="b2602c69:ProjectViewProjectNode" />
               <item name="libalgojv" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="libalgojv" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-              <item name="interfaces" type="462c0819:PsiDirectoryNode" />
+              <item name="sortalgorithms" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -420,9 +253,10 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545811102945" />
-    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="Arquillian JUnit4" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545813198232" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Arquillian JUnit4" value="" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="create.test.in.the.same.root" value="true" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -433,6 +267,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.libalgojv.sortalgorithms.tests" />
       <recent name="com.libalgojv.stacks.linkedliststack" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
@@ -487,13 +322,15 @@
     <history-entry file="AllTests - 2018.12.26 at 02h 14m 53s.xml">
       <configuration name="AllTests" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="AllTests - 2018.12.26 at 03h 32m 49s.xml">
+      <configuration name="AllTests" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4160000" />
+    <option name="totallyTimeSpent" value="6249000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="4" y="22" width="1436" height="805" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24964131" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -505,13 +342,13 @@
       <window_info id="Image Layers" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3289855" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49928263" visible="true" weight="0.3289855" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50071734" side_tool="true" visible="true" weight="0.3289855" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Version Control" order="10" />
       <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
@@ -734,36 +571,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/libalgojv/stacks/arraystack/ArrayStack.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="2" selection-start-line="2" selection-end-line="5" selection-end-column="61" />
-          <folding>
-            <element signature="n#!!doc;n#array#0;n#ArrayStack#0" />
-            <element signature="n#!!doc;n#ArrayStack#0;n#ArrayStack#0" />
-            <element signature="method#pop#0;class#ArrayStack#0" />
-            <element signature="e#946#995#1" />
-            <element signature="method#push#0;class#ArrayStack#0" />
-            <element signature="e#1111#1160#1" />
-            <element signature="method#toString#0;class#ArrayStack#0" />
-            <element signature="e#1614#1713#0" />
-            <element signature="n#!!doc;n#resize#0;n#ArrayStack#0" />
-            <element signature="method#resize#0;class#ArrayStack#0" />
-            <element signature="n#!!doc;n#iterator#0;n#ArrayStack#0" />
-            <element signature="method#iterator#0;class#ArrayStack#0" />
-            <element signature="class#2087:2479" />
-            <element signature="method#next#0;class#2087:2479" />
-            <element signature="e#2339#2403#1" />
-            <element signature="method#forEach#0;class#ArrayStack#0" />
-            <element signature="e#2585#2630#1" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/libalgojv/lists/singlelinkedlist/SingleLinkedList.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-367">
-          <caret line="67" column="16" lean-forward="true" selection-start-line="67" selection-start-column="16" selection-end-line="67" selection-end-column="16" />
+          <caret line="67" column="16" selection-start-line="67" selection-start-column="16" selection-end-line="67" selection-end-column="16" />
           <folding>
             <element signature="e#0#14458#0" expanded="true" />
             <element signature="imports" expanded="true" />
@@ -896,14 +707,14 @@
     <entry file="file://$PROJECT_DIR$/src/com/libalgojv/common/interfaces/Stack.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
-          <caret line="3" column="2" lean-forward="true" selection-end-line="7" />
+          <caret line="3" column="2" selection-end-line="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/libalgojv/common/interfaces/Bag.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
-          <caret line="2" column="4" lean-forward="true" selection-end-line="6" selection-end-column="3" />
+          <caret line="2" column="4" selection-end-line="6" selection-end-column="3" />
         </state>
       </provider>
     </entry>
@@ -914,13 +725,136 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/libalgojv/stacks/arraystack/ArrayStack.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="8" selection-end-line="6" selection-end-column="3" />
+          <folding>
+            <element signature="n#!!doc;n#array#0;n#ArrayStack#0" />
+            <element signature="n#!!doc;n#ArrayStack#0;n#ArrayStack#0" />
+            <element signature="method#pop#0;class#ArrayStack#0" />
+            <element signature="method#push#0;class#ArrayStack#0" />
+            <element signature="method#toString#0;class#ArrayStack#0" />
+            <element signature="n#!!doc;n#resize#0;n#ArrayStack#0" />
+            <element signature="method#resize#0;class#ArrayStack#0" />
+            <element signature="n#!!doc;n#iterator#0;n#ArrayStack#0" />
+            <element signature="method#iterator#0;class#ArrayStack#0" />
+            <element signature="method#forEach#0;class#ArrayStack#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/libalgojv/common/interfaces/Sortable.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+        <state relative-caret-position="204">
+          <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
           <folding>
             <element signature="e#0#263#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/libalgojv/sortalgorithms/tests/SortCheckerTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="18" column="46" lean-forward="true" selection-start-line="17" selection-start-column="3" selection-end-line="19" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/libalgojv/sortalgorithms/tests/SortChecker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="10" column="12" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/libalgojv/sortalgorithms/BottomUpMergeSort.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="22" column="50" selection-start-line="22" selection-start-column="50" selection-end-line="22" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/libalgojv/sortalgorithms/InsertionSort.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="263">
+          <caret line="22" column="50" selection-start-line="22" selection-start-column="50" selection-end-line="22" selection-end-column="50" />
+          <folding>
+            <element signature="e#0#635#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/libalgojv/sortalgorithms/MergeSort.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="22" column="50" selection-start-line="22" selection-start-column="50" selection-end-line="22" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/libalgojv/sortalgorithms/RadixSort.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="22" column="50" selection-start-line="22" selection-start-column="50" selection-end-line="22" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/libalgojv/sortalgorithms/ShellSort.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="22" column="50" selection-start-line="22" selection-start-column="50" selection-end-line="22" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/libalgojv/sortalgorithms/HeapSort.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="22" column="50" selection-start-line="22" selection-start-column="50" selection-end-line="22" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/libalgojv/sortalgorithms/tests/ShellSortTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="25" column="32" selection-start-line="25" selection-start-column="32" selection-end-line="25" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/libalgojv/sortalgorithms/tests/MergeSortTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/libalgojv/sortalgorithms/tests/InsertionSortTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/libalgojv/sortalgorithms/tests/HeapSortTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="22" column="9" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/libalgojv/sortalgorithms/tests/BottomUpMergeSortTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="22" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/libalgojv/sortalgorithms/tests/RadixSortTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
         </state>
       </provider>
     </entry>

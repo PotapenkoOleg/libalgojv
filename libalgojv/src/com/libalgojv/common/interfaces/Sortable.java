@@ -9,5 +9,5 @@
 package com.libalgojv.common.interfaces;
 
 public interface Sortable {
-    void sort(Comparable[] array);
+    Comparable[] sort(Comparable[] array);
 }
