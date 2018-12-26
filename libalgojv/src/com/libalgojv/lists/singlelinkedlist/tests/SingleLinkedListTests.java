@@ -29,7 +29,7 @@ class SingleLinkedListTests {
 
     @BeforeEach
     void setUp() {
-        list = new SingleLinkedList<>(AlgorithmType.ITERATIVE);
+        list = new SingleLinkedList<>(AlgorithmType.RECURSIVE);
     }
 
     @AfterEach

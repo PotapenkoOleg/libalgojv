@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9f56ce26-7942-4300-be10-00f249394c3e" name="Default Changelist" comment="" />
+    <list default="true" id="9f56ce26-7942-4300-be10-00f249394c3e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/out/production/libalgojv/META-INF/libalgojv.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/libalgojv/lists/singlelinkedlist/tests/SingleLinkedListTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/libalgojv/lists/singlelinkedlist/tests/SingleLinkedListTests.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -11,15 +14,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/libalgojv/common/interfaces/Bag.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="2" selection-start-line="2" selection-end-line="5" selection-end-column="61" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/libalgojv/stacks/linkedliststack/LinkedListStack.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -54,7 +48,7 @@
         <entry file="file://$PROJECT_DIR$/src/com/libalgojv/stacks/arraystack/ArrayStack.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="51">
-              <caret line="3" column="2" lean-forward="true" selection-start-line="2" selection-end-line="5" selection-end-column="61" />
+              <caret line="3" column="2" selection-start-line="2" selection-end-line="5" selection-end-column="61" />
               <folding>
                 <element signature="n#!!doc;n#array#0;n#ArrayStack#0" />
                 <element signature="n#!!doc;n#ArrayStack#0;n#ArrayStack#0" />
@@ -94,9 +88,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/libalgojv/lists/singlelinkedlist/SingleLinkedList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="186">
-              <caret line="187" lean-forward="true" selection-start-line="187" selection-end-line="187" />
+            <state relative-caret-position="-367">
+              <caret line="67" column="16" lean-forward="true" selection-start-line="67" selection-start-column="16" selection-end-line="67" selection-end-column="16" />
               <folding>
+                <element signature="e#0#14458#0" expanded="true" />
+                <element signature="imports" expanded="true" />
                 <element signature="e#618#642#0" />
                 <element signature="e#764#786#0" />
                 <element signature="e#996#1016#0" />
@@ -211,13 +207,121 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/libalgojv/lists/doublelinkedlist/tests/DoubleLinkedListTests.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="266">
+              <caret line="31" column="61" selection-start-line="31" selection-start-column="61" selection-end-line="31" selection-end-column="61" />
+              <folding>
+                <element signature="e#0#12623#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#834#835#0" expanded="true" />
+                <element signature="e#881#882#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/libalgojv/lists/doublelinkedlist/DoubleLinkedList.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="680">
+              <caret line="162" column="25" selection-start-line="162" selection-start-column="25" selection-end-line="162" selection-end-column="25" />
+              <folding>
+                <element signature="n#!!doc;n#first#0;n#DoubleLinkedList#0" />
+                <element signature="n#!!doc;n#DoubleLinkedList#0;n#DoubleLinkedList#0" />
+                <element signature="n#!!doc;n#DoublelinkedListNode#0;n#DoubleLinkedList#0" />
+                <element signature="class#DoublelinkedListNode#0;class#DoubleLinkedList#0" />
+                <element signature="method#DoublelinkedListNode#0;class#DoublelinkedListNode#0;class#DoubleLinkedList#0" />
+                <element signature="n#!!doc;n#getKey#0;n#DoublelinkedListNode#0;n#DoubleLinkedList#0" />
+                <element signature="method#add#0;class#DoubleLinkedList#0" />
+                <element signature="e#2308#2356#1" />
+                <element signature="e#2401#2443#1" />
+                <element signature="method#add#1;class#DoubleLinkedList#0" />
+                <element signature="e#2593#2655#1" />
+                <element signature="e#2710#2772#1" />
+                <element signature="method#remove#0;class#DoubleLinkedList#0" />
+                <element signature="e#3017#3070#1" />
+                <element signature="e#3115#3162#1" />
+                <element signature="method#remove#1;class#DoubleLinkedList#0" />
+                <element signature="e#3273#3309#1" />
+                <element signature="e#3337#3471#1" />
+                <element signature="e#3526#3583#1" />
+                <element signature="e#3638#3695#1" />
+                <element signature="method#get#0;class#DoubleLinkedList#0" />
+                <element signature="e#3803#3839#1" />
+                <element signature="e#3894#3948#1" />
+                <element signature="e#4003#4057#1" />
+                <element signature="method#clear#0;class#DoubleLinkedList#0" />
+                <element signature="method#getSize#0;class#DoubleLinkedList#0" />
+                <element signature="e#4326#4359#1" />
+                <element signature="e#4414#4464#1" />
+                <element signature="e#4519#4569#1" />
+                <element signature="method#makeCyclic#0;class#DoubleLinkedList#0" />
+                <element signature="e#4653#4684#1" />
+                <element signature="e#4785#4837#1" />
+                <element signature="method#makeCyclic#1;class#DoubleLinkedList#0" />
+                <element signature="e#4984#5015#1" />
+                <element signature="e#5176#5325#1" />
+                <element signature="e#5221#5274#1" />
+                <element signature="method#isCyclic#0;class#DoubleLinkedList#0" />
+                <element signature="e#5534#5571#1" />
+                <element signature="e#5609#5646#1" />
+                <element signature="e#5788#6112#1" />
+                <element signature="e#5850#5895#1" />
+                <element signature="e#5949#5993#1" />
+                <element signature="e#5999#6102#1" />
+                <element signature="method#toString#0;class#DoubleLinkedList#0" />
+                <element signature="e#6245#6344#0" />
+                <element signature="n#!!doc;n#addAtBeginning#0;n#DoubleLinkedList#0" />
+                <element signature="method#addAtBeginning#0;class#DoubleLinkedList#0" />
+                <element signature="e#6551#6639#1" />
+                <element signature="method#addAtEnd#0;class#DoubleLinkedList#0" />
+                <element signature="e#6843#6931#1" />
+                <element signature="method#addByKeyIterative#0;class#DoubleLinkedList#0" />
+                <element signature="method#addByKeyRecursive#0;class#DoubleLinkedList#0" />
+                <element signature="method#getByKeyIterative#0;class#DoubleLinkedList#0" />
+                <element signature="e#7445#7599#1" />
+                <element signature="e#7490#7548#1" />
+                <element signature="n#!!block;n#getByKeyRecursive#0;n#DoubleLinkedList#0" />
+                <element signature="method#getByKeyRecursive#1;class#DoubleLinkedList#0" />
+                <element signature="e#7896#7946#1" />
+                <element signature="e#8048#8112#1" />
+                <element signature="method#removeFromBeginning#0;class#DoubleLinkedList#0" />
+                <element signature="e#8210#8246#1" />
+                <element signature="e#8315#8404#1" />
+                <element signature="method#removeFromEnd#0;class#DoubleLinkedList#0" />
+                <element signature="e#8564#8600#1" />
+                <element signature="e#8668#8757#1" />
+                <element signature="method#removeByKeyIterative#0;class#DoubleLinkedList#0" />
+                <element signature="e#8997#9757#1" />
+                <element signature="e#9077#9706#1" />
+                <element signature="e#9275#9408#1" />
+                <element signature="e#9446#9577#1" />
+                <element signature="method#removeByKeyRecursive#1;class#DoubleLinkedList#0" />
+                <element signature="method#getSizeIterative#0;class#DoubleLinkedList#0" />
+                <element signature="e#10188#10260#1" />
+                <element signature="n#!!doc;n#iterator#0;n#DoubleLinkedList#0" />
+                <element signature="method#iterator#0;class#DoubleLinkedList#0" />
+                <element signature="class#10522:11250" />
+                <element signature="initializer##0;class#10522:11250" />
+                <element signature="method#next#0;class#10522:11250" />
+                <element signature="e#11059#11174#1" />
+                <element signature="method#forEach#0;class#DoubleLinkedList#0" />
+                <element signature="e#11363#11407#1" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/libalgojv/lists/singlelinkedlist/tests/SingleLinkedListTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="44" selection-start-line="12" selection-start-column="44" selection-end-line="12" selection-end-column="44" />
+            <state relative-caret-position="280">
+              <caret line="456" column="32" selection-start-line="456" selection-start-column="32" selection-end-line="456" selection-end-column="32" />
               <folding>
                 <element signature="e#0#13483#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -227,7 +331,7 @@
         <entry file="file://$PROJECT_DIR$/src/com/libalgojv/queues/arrayqueue/ArrayQueue.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-58">
-              <caret line="34" column="9" lean-forward="true" selection-start-line="34" selection-start-column="9" selection-end-line="34" selection-end-column="9" />
+              <caret line="34" column="9" selection-start-line="34" selection-start-column="9" selection-end-line="34" selection-end-column="9" />
               <folding>
                 <element signature="n#!!doc;n#array#0;n#ArrayQueue#0" />
                 <element signature="n#!!doc;n#ArrayQueue#0;n#ArrayQueue#0" />
@@ -284,15 +388,6 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/libalgojv.iml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="34" column="9" selection-start-line="34" selection-start-column="9" selection-end-line="34" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -301,6 +396,14 @@
         <option value="Arquillian JUnit Test Class" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>getNthFromEnd</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>getNthElementFromEnd</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -350,8 +453,13 @@
         <option value="$PROJECT_DIR$/src/com/libalgojv/singlelinked/SingleLinkedList.java" />
         <option value="$PROJECT_DIR$/src/com/libalgojv/singlelinked/tests/SingleLinkedListTests.java" />
         <option value="$PROJECT_DIR$/src/com/libalgojv/lists/singlelinked/tests/SingleLinkedListTests.java" />
-        <option value="$PROJECT_DIR$/src/com/libalgojv/lists/singlelinkedlist/tests/SingleLinkedListTests.java" />
         <option value="$PROJECT_DIR$/src/com/libalgojv/lists/singlelinkedlist/SingleLinkedList.java" />
+        <option value="$PROJECT_DIR$/src/com/libalgojv/lists/doublelinked/DoubleLinkedList.java" />
+        <option value="$PROJECT_DIR$/src/com/libalgojv/lists/doublelinked/tests/DoubleLinkedListTests.java" />
+        <option value="$PROJECT_DIR$/src/com/libalgoj/lists/doublelinkedlist/tests/DoubleLinkedListTests.java" />
+        <option value="$PROJECT_DIR$/src/com/libalgojv/lists/doublelinkedlist/DoubleLinkedList.java" />
+        <option value="$PROJECT_DIR$/src/com/libalgojv/lists/doublelinkedlist/tests/DoubleLinkedListTests.java" />
+        <option value="$PROJECT_DIR$/src/com/libalgojv/lists/singlelinkedlist/tests/SingleLinkedListTests.java" />
       </list>
     </option>
   </component>
@@ -397,6 +505,31 @@
               <item name="libalgojv" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="libalgojv" type="462c0819:PsiDirectoryNode" />
+              <item name="lists" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="libalgojv" type="b2602c69:ProjectViewProjectNode" />
+              <item name="libalgojv" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="libalgojv" type="462c0819:PsiDirectoryNode" />
+              <item name="lists" type="462c0819:PsiDirectoryNode" />
+              <item name="doublelinkedlist" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="libalgojv" type="b2602c69:ProjectViewProjectNode" />
+              <item name="libalgojv" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="libalgojv" type="462c0819:PsiDirectoryNode" />
+              <item name="lists" type="462c0819:PsiDirectoryNode" />
+              <item name="doublelinkedlist" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="libalgojv" type="b2602c69:ProjectViewProjectNode" />
+              <item name="libalgojv" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="libalgojv" type="462c0819:PsiDirectoryNode" />
+              <item name="lists" type="462c0819:PsiDirectoryNode" />
               <item name="singlelinkedlist" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -404,6 +537,7 @@
               <item name="libalgojv" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="libalgojv" type="462c0819:PsiDirectoryNode" />
+              <item name="lists" type="462c0819:PsiDirectoryNode" />
               <item name="singlelinkedlist" type="462c0819:PsiDirectoryNode" />
               <item name="tests" type="462c0819:PsiDirectoryNode" />
             </path>
@@ -422,7 +556,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545809401495" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545810414671" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="Arquillian JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Arquillian JUnit4" value="" />
     <property name="create.test.in.the.same.root" value="true" />
@@ -489,15 +623,27 @@
     <history-entry file="AllTests - 2018.12.26 at 02h 14m 53s.xml">
       <configuration name="AllTests" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="AllTests - 2018.12.26 at 02h 30m 04s.xml">
+      <configuration name="AllTests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AllTests - 2018.12.26 at 02h 44m 48s.xml">
+      <configuration name="AllTests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AllTests - 2018.12.26 at 02h 45m 27s.xml">
+      <configuration name="AllTests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AllTests - 2018.12.26 at 02h 46m 09s.xml">
+      <configuration name="AllTests" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3871000" />
+    <option name="totallyTimeSpent" value="4886000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="4" y="22" width="1436" height="805" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24964131" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24964131" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Learn" order="3" />
@@ -507,7 +653,7 @@
       <window_info id="Image Layers" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3289855" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3289855" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -710,7 +856,7 @@
     <entry file="file://$PROJECT_DIR$/src/com/libalgojv/queues/arrayqueue/ArrayQueue.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-58">
-          <caret line="34" column="9" lean-forward="true" selection-start-line="34" selection-start-column="9" selection-end-line="34" selection-end-column="9" />
+          <caret line="34" column="9" selection-start-line="34" selection-start-column="9" selection-end-line="34" selection-end-column="9" />
           <folding>
             <element signature="n#!!doc;n#array#0;n#ArrayQueue#0" />
             <element signature="n#!!doc;n#ArrayQueue#0;n#ArrayQueue#0" />
@@ -767,7 +913,7 @@
     <entry file="file://$PROJECT_DIR$/src/com/libalgojv/stacks/arraystack/ArrayStack.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
-          <caret line="3" column="2" lean-forward="true" selection-start-line="2" selection-end-line="5" selection-end-column="61" />
+          <caret line="3" column="2" selection-start-line="2" selection-end-line="5" selection-end-column="61" />
           <folding>
             <element signature="n#!!doc;n#array#0;n#ArrayStack#0" />
             <element signature="n#!!doc;n#ArrayStack#0;n#ArrayStack#0" />
@@ -792,9 +938,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/libalgojv/lists/singlelinkedlist/SingleLinkedList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="187" lean-forward="true" selection-start-line="187" selection-end-line="187" />
+        <state relative-caret-position="-367">
+          <caret line="67" column="16" lean-forward="true" selection-start-line="67" selection-start-column="16" selection-end-line="67" selection-end-column="16" />
           <folding>
+            <element signature="e#0#14458#0" expanded="true" />
+            <element signature="imports" expanded="true" />
             <element signature="e#618#642#0" />
             <element signature="e#764#786#0" />
             <element signature="e#996#1016#0" />
@@ -908,12 +1056,116 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/libalgojv/lists/doublelinkedlist/DoubleLinkedList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="680">
+          <caret line="162" column="25" selection-start-line="162" selection-start-column="25" selection-end-line="162" selection-end-column="25" />
+          <folding>
+            <element signature="n#!!doc;n#first#0;n#DoubleLinkedList#0" />
+            <element signature="n#!!doc;n#DoubleLinkedList#0;n#DoubleLinkedList#0" />
+            <element signature="n#!!doc;n#DoublelinkedListNode#0;n#DoubleLinkedList#0" />
+            <element signature="class#DoublelinkedListNode#0;class#DoubleLinkedList#0" />
+            <element signature="method#DoublelinkedListNode#0;class#DoublelinkedListNode#0;class#DoubleLinkedList#0" />
+            <element signature="n#!!doc;n#getKey#0;n#DoublelinkedListNode#0;n#DoubleLinkedList#0" />
+            <element signature="method#add#0;class#DoubleLinkedList#0" />
+            <element signature="e#2308#2356#1" />
+            <element signature="e#2401#2443#1" />
+            <element signature="method#add#1;class#DoubleLinkedList#0" />
+            <element signature="e#2593#2655#1" />
+            <element signature="e#2710#2772#1" />
+            <element signature="method#remove#0;class#DoubleLinkedList#0" />
+            <element signature="e#3017#3070#1" />
+            <element signature="e#3115#3162#1" />
+            <element signature="method#remove#1;class#DoubleLinkedList#0" />
+            <element signature="e#3273#3309#1" />
+            <element signature="e#3337#3471#1" />
+            <element signature="e#3526#3583#1" />
+            <element signature="e#3638#3695#1" />
+            <element signature="method#get#0;class#DoubleLinkedList#0" />
+            <element signature="e#3803#3839#1" />
+            <element signature="e#3894#3948#1" />
+            <element signature="e#4003#4057#1" />
+            <element signature="method#clear#0;class#DoubleLinkedList#0" />
+            <element signature="method#getSize#0;class#DoubleLinkedList#0" />
+            <element signature="e#4326#4359#1" />
+            <element signature="e#4414#4464#1" />
+            <element signature="e#4519#4569#1" />
+            <element signature="method#makeCyclic#0;class#DoubleLinkedList#0" />
+            <element signature="e#4653#4684#1" />
+            <element signature="e#4785#4837#1" />
+            <element signature="method#makeCyclic#1;class#DoubleLinkedList#0" />
+            <element signature="e#4984#5015#1" />
+            <element signature="e#5176#5325#1" />
+            <element signature="e#5221#5274#1" />
+            <element signature="method#isCyclic#0;class#DoubleLinkedList#0" />
+            <element signature="e#5534#5571#1" />
+            <element signature="e#5609#5646#1" />
+            <element signature="e#5788#6112#1" />
+            <element signature="e#5850#5895#1" />
+            <element signature="e#5949#5993#1" />
+            <element signature="e#5999#6102#1" />
+            <element signature="method#toString#0;class#DoubleLinkedList#0" />
+            <element signature="e#6245#6344#0" />
+            <element signature="n#!!doc;n#addAtBeginning#0;n#DoubleLinkedList#0" />
+            <element signature="method#addAtBeginning#0;class#DoubleLinkedList#0" />
+            <element signature="e#6551#6639#1" />
+            <element signature="method#addAtEnd#0;class#DoubleLinkedList#0" />
+            <element signature="e#6843#6931#1" />
+            <element signature="method#addByKeyIterative#0;class#DoubleLinkedList#0" />
+            <element signature="method#addByKeyRecursive#0;class#DoubleLinkedList#0" />
+            <element signature="method#getByKeyIterative#0;class#DoubleLinkedList#0" />
+            <element signature="e#7445#7599#1" />
+            <element signature="e#7490#7548#1" />
+            <element signature="n#!!block;n#getByKeyRecursive#0;n#DoubleLinkedList#0" />
+            <element signature="method#getByKeyRecursive#1;class#DoubleLinkedList#0" />
+            <element signature="e#7896#7946#1" />
+            <element signature="e#8048#8112#1" />
+            <element signature="method#removeFromBeginning#0;class#DoubleLinkedList#0" />
+            <element signature="e#8210#8246#1" />
+            <element signature="e#8315#8404#1" />
+            <element signature="method#removeFromEnd#0;class#DoubleLinkedList#0" />
+            <element signature="e#8564#8600#1" />
+            <element signature="e#8668#8757#1" />
+            <element signature="method#removeByKeyIterative#0;class#DoubleLinkedList#0" />
+            <element signature="e#8997#9757#1" />
+            <element signature="e#9077#9706#1" />
+            <element signature="e#9275#9408#1" />
+            <element signature="e#9446#9577#1" />
+            <element signature="method#removeByKeyRecursive#1;class#DoubleLinkedList#0" />
+            <element signature="method#getSizeIterative#0;class#DoubleLinkedList#0" />
+            <element signature="e#10188#10260#1" />
+            <element signature="n#!!doc;n#iterator#0;n#DoubleLinkedList#0" />
+            <element signature="method#iterator#0;class#DoubleLinkedList#0" />
+            <element signature="class#10522:11250" />
+            <element signature="initializer##0;class#10522:11250" />
+            <element signature="method#next#0;class#10522:11250" />
+            <element signature="e#11059#11174#1" />
+            <element signature="method#forEach#0;class#DoubleLinkedList#0" />
+            <element signature="e#11363#11407#1" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/libalgojv/lists/doublelinkedlist/tests/DoubleLinkedListTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="31" column="61" selection-start-line="31" selection-start-column="61" selection-end-line="31" selection-end-column="61" />
+          <folding>
+            <element signature="e#0#12623#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#834#835#0" expanded="true" />
+            <element signature="e#881#882#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/libalgojv/lists/singlelinkedlist/tests/SingleLinkedListTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="44" selection-start-line="12" selection-start-column="44" selection-end-line="12" selection-end-column="44" />
+        <state relative-caret-position="280">
+          <caret line="456" column="32" selection-start-line="456" selection-start-column="32" selection-end-line="456" selection-end-column="32" />
           <folding>
             <element signature="e#0#13483#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
