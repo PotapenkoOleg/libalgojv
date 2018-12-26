@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9f56ce26-7942-4300-be10-00f249394c3e" name="Default Changelist" comment="" />
+    <list default="true" id="9f56ce26-7942-4300-be10-00f249394c3e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/com/libalgojv/stacks/arraystack/ArrayStack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/libalgojv/stacks/arraystack/ArrayStack.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -10,7 +12,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/libalgojv/common/interfaces/Bag.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -27,12 +29,6 @@
               <caret line="3" column="2" selection-start-line="2" selection-end-line="5" selection-end-column="61" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1569#1570#0" expanded="true" />
-                <element signature="e#1605#1606#0" expanded="true" />
-                <element signature="e#1647#1648#0" expanded="true" />
-                <element signature="e#1674#1675#0" expanded="true" />
-                <element signature="e#1725#1726#0" expanded="true" />
-                <element signature="e#1751#1752#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -41,38 +37,29 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/libalgojv/stacks/linkedliststack/tests/LinkedListStackTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
+            <state relative-caret-position="153">
               <caret line="15" selection-start-line="15" selection-end-line="15" />
-              <folding>
-                <element signature="e#0#2936#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/libalgojv/stacks/arraystack/ArrayStack.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="2" lean-forward="true" selection-start-line="2" selection-end-line="5" selection-end-column="61" />
+            <state relative-caret-position="272">
+              <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
               <folding>
+                <element signature="e#0#2682#0" expanded="true" />
                 <element signature="n#!!doc;n#array#0;n#ArrayStack#0" />
                 <element signature="n#!!doc;n#ArrayStack#0;n#ArrayStack#0" />
                 <element signature="method#pop#0;class#ArrayStack#0" />
-                <element signature="e#946#995#1" />
                 <element signature="method#push#0;class#ArrayStack#0" />
-                <element signature="e#1111#1160#1" />
                 <element signature="method#toString#0;class#ArrayStack#0" />
-                <element signature="e#1614#1713#0" />
                 <element signature="n#!!doc;n#resize#0;n#ArrayStack#0" />
                 <element signature="method#resize#0;class#ArrayStack#0" />
                 <element signature="n#!!doc;n#iterator#0;n#ArrayStack#0" />
                 <element signature="method#iterator#0;class#ArrayStack#0" />
-                <element signature="class#2087:2479" />
-                <element signature="method#next#0;class#2087:2479" />
-                <element signature="e#2339#2403#1" />
                 <element signature="method#forEach#0;class#ArrayStack#0" />
-                <element signature="e#2585#2630#1" />
               </folding>
             </state>
           </provider>
@@ -81,10 +68,9 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/libalgojv/stacks/arraystack/tests/ArrayStackTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="20" column="6" selection-start-line="20" selection-start-column="6" selection-end-line="20" selection-end-column="6" />
+            <state relative-caret-position="386">
+              <caret line="34" column="16" lean-forward="true" selection-start-line="34" selection-start-column="16" selection-end-line="34" selection-end-column="16" />
               <folding>
-                <element signature="e#0#4218#0" expanded="true" />
                 <element signature="imports" expanded="true" />
               </folding>
             </state>
@@ -94,131 +80,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/libalgojv/lists/singlelinkedlist/SingleLinkedList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="186">
-              <caret line="187" lean-forward="true" selection-start-line="187" selection-end-line="187" />
-              <folding>
-                <element signature="e#618#642#0" />
-                <element signature="e#764#786#0" />
-                <element signature="e#996#1016#0" />
-                <element signature="e#996#1777#0" />
-                <element signature="e#1274#1400#0" />
-                <element signature="e#1410#1438#0" />
-                <element signature="e#1800#2208#0" />
-                <element signature="e#2067#2115#1" />
-                <element signature="e#2160#2202#1" />
-                <element signature="e#2214#2779#0" />
-                <element signature="e#2398#2458#1" />
-                <element signature="e#2497#2545#1" />
-                <element signature="e#2600#2659#1" />
-                <element signature="e#2714#2773#1" />
-                <element signature="e#2901#3254#0" />
-                <element signature="e#2995#3031#1" />
-                <element signature="e#3082#3135#1" />
-                <element signature="e#3180#3227#1" />
-                <element signature="e#3260#3781#0" />
-                <element signature="e#3338#3374#1" />
-                <element signature="e#3410#3530#1" />
-                <element signature="e#3585#3642#1" />
-                <element signature="e#3697#3754#1" />
-                <element signature="e#3787#4143#0" />
-                <element signature="e#3862#3898#1" />
-                <element signature="e#3953#4007#1" />
-                <element signature="e#4062#4116#1" />
-                <element signature="e#4300#4704#0" />
-                <element signature="e#4364#4397#1" />
-                <element signature="e#4435#4468#1" />
-                <element signature="e#4523#4570#1" />
-                <element signature="e#4625#4680#1" />
-                <element signature="e#4710#4979#0" />
-                <element signature="e#4831#4930#0" />
-                <element signature="e#4985#5960#0" />
-                <element signature="e#5054#5090#1" />
-                <element signature="e#5261#5774#1" />
-                <element signature="e#5301#5350#1" />
-                <element signature="e#5456#5494#1" />
-                <element signature="e#5532#5764#1" />
-                <element signature="e#5550#5602#0" />
-                <element signature="e#5882#5918#1" />
-                <element signature="e#5966#6242#0" />
-                <element signature="e#6020#6051#1" />
-                <element signature="e#6152#6204#1" />
-                <element signature="e#6248#6697#0" />
-                <element signature="e#6315#6346#1" />
-                <element signature="e#6507#6654#1" />
-                <element signature="e#6550#6603#1" />
-                <element signature="e#6703#7342#0" />
-                <element signature="e#6758#6795#1" />
-                <element signature="e#6833#6870#1" />
-                <element signature="e#7012#7336#1" />
-                <element signature="e#7074#7119#1" />
-                <element signature="e#7173#7217#1" />
-                <element signature="e#7223#7326#1" />
-                <element signature="e#7366#7391#0" />
-                <element signature="e#7366#7530#0" />
-                <element signature="e#7536#7907#0" />
-                <element signature="e#7629#7689#1" />
-                <element signature="e#7744#7795#1" />
-                <element signature="e#7850#7901#1" />
-                <element signature="e#7913#8180#0" />
-                <element signature="e#8088#8140#1" />
-                <element signature="e#8315#8632#0" />
-                <element signature="e#8501#8550#1" />
-                <element signature="e#8556#8626#1" />
-                <element signature="e#8638#9115#0" />
-                <element signature="e#8825#9065#1" />
-                <element signature="e#8881#9014#1" />
-                <element signature="e#9121#9264#0" />
-                <element signature="e#9270#9678#0" />
-                <element signature="e#9491#9588#1" />
-                <element signature="e#9594#9672#1" />
-                <element signature="e#9684#9824#0" />
-                <element signature="e#9830#10110#0" />
-                <element signature="e#9916#9972#1" />
-                <element signature="e#10027#10083#1" />
-                <element signature="e#10116#10579#0" />
-                <element signature="e#10194#10303#1" />
-                <element signature="e#10414#10466#1" />
-                <element signature="e#10585#10824#0" />
-                <element signature="e#10663#10772#1" />
-                <element signature="e#10830#11154#0" />
-                <element signature="e#10960#11090#1" />
-                <element signature="e#11160#11619#0" />
-                <element signature="e#11347#11399#1" />
-                <element signature="e#11439#11592#1" />
-                <element signature="e#11731#12208#0" />
-                <element signature="e#11920#12181#1" />
-                <element signature="e#11964#12115#1" />
-                <element signature="e#12214#12530#0" />
-                <element signature="e#12326#12478#1" />
-                <element signature="e#12369#12427#1" />
-                <element signature="e#12636#13001#0" />
-                <element signature="e#12758#12808#1" />
-                <element signature="e#12910#12974#1" />
-                <element signature="e#13007#13280#0" />
-                <element signature="e#13196#13253#1" />
-                <element signature="e#13286#13531#0" />
-                <element signature="e#13407#13479#1" />
-                <element signature="e#13554#13572#0" />
-                <element signature="e#13554#14280#0" />
-                <element signature="class#13646:14273" />
-                <element signature="initializer##0;class#13646:14273" />
-                <element signature="method#next#0;class#13646:14273" />
-                <element signature="e#14082#14197#1" />
-                <element signature="e#14286#14438#0" />
-                <element signature="e#14387#14432#1" />
-              </folding>
+            <state relative-caret-position="2635">
+              <caret line="187" selection-start-line="187" selection-end-line="187" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/libalgojv/lists/singlelinkedlist/tests/SingleLinkedListTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
+            <state relative-caret-position="102">
               <caret line="12" column="44" selection-start-line="12" selection-start-column="44" selection-end-line="12" selection-end-column="44" />
-              <folding>
-                <element signature="e#0#13483#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -226,8 +98,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/libalgojv/queues/arrayqueue/ArrayQueue.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-58">
-              <caret line="34" column="9" lean-forward="true" selection-start-line="34" selection-start-column="9" selection-end-line="34" selection-end-column="9" />
+            <state relative-caret-position="204">
+              <caret line="34" column="9" selection-start-line="34" selection-start-column="9" selection-end-line="34" selection-end-column="9" />
               <folding>
                 <element signature="n#!!doc;n#array#0;n#ArrayQueue#0" />
                 <element signature="n#!!doc;n#ArrayQueue#0;n#ArrayQueue#0" />
@@ -256,7 +128,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/libalgojv/queues/linkedlistqueue/LinkedListQueue.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="9">
+            <state relative-caret-position="204">
               <caret line="50" column="13" selection-start-line="50" selection-start-column="7" selection-end-line="50" selection-end-column="13" />
               <folding>
                 <element signature="n#!!doc;n#first#0;n#LinkedListQueue#0" />
@@ -287,7 +159,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/libalgojv.iml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
+            <state relative-caret-position="578">
               <caret line="34" column="9" selection-start-line="34" selection-start-column="9" selection-end-line="34" selection-end-column="9" />
             </state>
           </provider>
@@ -339,7 +211,6 @@
         <option value="$PROJECT_DIR$/src/com/libalgojv/stacks/linkedliststack/LinkedListStack.java" />
         <option value="$PROJECT_DIR$/src/com/libalgojv/stacks/ArrayStack.java" />
         <option value="$PROJECT_DIR$/src/com/libalgojv/stacks/tests/ArrayStackTests.java" />
-        <option value="$PROJECT_DIR$/src/com/libalgojv/stacks/arraystack/ArrayStack.java" />
         <option value="$PROJECT_DIR$/src/com/libalgojv/stacks/arraystack/tests/ArrayStackTests.java" />
         <option value="$PROJECT_DIR$/src/com/arrayqueue/ArrayQueue.java" />
         <option value="$PROJECT_DIR$/src/com/arrayqueue/tests/ArrayQueueTests.java" />
@@ -352,6 +223,7 @@
         <option value="$PROJECT_DIR$/src/com/libalgojv/lists/singlelinked/tests/SingleLinkedListTests.java" />
         <option value="$PROJECT_DIR$/src/com/libalgojv/lists/singlelinkedlist/tests/SingleLinkedListTests.java" />
         <option value="$PROJECT_DIR$/src/com/libalgojv/lists/singlelinkedlist/SingleLinkedList.java" />
+        <option value="$PROJECT_DIR$/src/com/libalgojv/stacks/arraystack/ArrayStack.java" />
       </list>
     </option>
   </component>
@@ -361,7 +233,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
+  <component name="ProjectFrameBounds">
     <option name="x" value="4" />
     <option name="y" value="22" />
     <option name="width" value="1436" />
@@ -374,6 +246,7 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -407,11 +280,34 @@
               <item name="singlelinkedlist" type="462c0819:PsiDirectoryNode" />
               <item name="tests" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="libalgojv" type="b2602c69:ProjectViewProjectNode" />
+              <item name="libalgojv" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="libalgojv" type="462c0819:PsiDirectoryNode" />
+              <item name="stacks" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="libalgojv" type="b2602c69:ProjectViewProjectNode" />
+              <item name="libalgojv" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="libalgojv" type="462c0819:PsiDirectoryNode" />
+              <item name="stacks" type="462c0819:PsiDirectoryNode" />
+              <item name="arraystack" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="libalgojv" type="b2602c69:ProjectViewProjectNode" />
+              <item name="libalgojv" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="libalgojv" type="462c0819:PsiDirectoryNode" />
+              <item name="stacks" type="462c0819:PsiDirectoryNode" />
+              <item name="arraystack" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -422,7 +318,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545809401495" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545817920101" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="Arquillian JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Arquillian JUnit4" value="" />
     <property name="create.test.in.the.same.root" value="true" />
@@ -476,6 +372,7 @@
       <option name="presentableId" value="Default" />
       <updated>1545804171809</updated>
       <workItem from="1545804173419" duration="1307000" />
+      <workItem from="1545817720728" duration="196000" />
     </task>
     <servers />
   </component>
@@ -491,13 +388,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3871000" />
+    <option name="totallyTimeSpent" value="4067000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="4" y="22" width="1436" height="805" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24964131" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25322813" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Learn" order="3" />
@@ -507,7 +404,7 @@
       <window_info id="Image Layers" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3289855" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3289855" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -631,57 +528,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/libalgojv/stacks/linkedliststack/LinkedListStackTest.java" />
-    <entry file="file://$PROJECT_DIR$/libalgojv.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="34" column="9" selection-start-line="34" selection-start-column="9" selection-end-line="34" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/libalgojv/common/interfaces/Bag.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="2" selection-start-line="2" selection-end-line="5" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/libalgojv/stacks/linkedliststack/tests/LinkedListStackTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-          <folding>
-            <element signature="e#0#2936#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/libalgojv/stacks/arraystack/tests/ArrayStackTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="6" selection-start-line="20" selection-start-column="6" selection-end-line="20" selection-end-column="6" />
-          <folding>
-            <element signature="e#0#4218#0" expanded="true" />
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/libalgojv/stacks/linkedliststack/LinkedListStack.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="2" selection-start-line="2" selection-end-line="5" selection-end-column="61" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1569#1570#0" expanded="true" />
-            <element signature="e#1605#1606#0" expanded="true" />
-            <element signature="e#1647#1648#0" expanded="true" />
-            <element signature="e#1674#1675#0" expanded="true" />
-            <element signature="e#1725#1726#0" expanded="true" />
-            <element signature="e#1751#1752#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/libalgojv/queues/arrayqueue/tests/ArrayQueueTests.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="485">
@@ -707,10 +553,41 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/libalgojv/common/interfaces/Bag.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="2" selection-start-line="2" selection-end-line="5" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/libalgojv/stacks/linkedliststack/LinkedListStack.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="2" selection-start-line="2" selection-end-line="5" selection-end-column="61" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/libalgojv/stacks/linkedliststack/tests/LinkedListStackTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/libalgojv/lists/singlelinkedlist/SingleLinkedList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2635">
+          <caret line="187" selection-start-line="187" selection-end-line="187" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/libalgojv/queues/arrayqueue/ArrayQueue.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-58">
-          <caret line="34" column="9" lean-forward="true" selection-start-line="34" selection-start-column="9" selection-end-line="34" selection-end-column="9" />
+        <state relative-caret-position="204">
+          <caret line="34" column="9" selection-start-line="34" selection-start-column="9" selection-end-line="34" selection-end-column="9" />
           <folding>
             <element signature="n#!!doc;n#array#0;n#ArrayQueue#0" />
             <element signature="n#!!doc;n#ArrayQueue#0;n#ArrayQueue#0" />
@@ -737,7 +614,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/libalgojv/queues/linkedlistqueue/LinkedListQueue.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="9">
+        <state relative-caret-position="204">
           <caret line="50" column="13" selection-start-line="50" selection-start-column="7" selection-end-line="50" selection-end-column="13" />
           <folding>
             <element signature="n#!!doc;n#first#0;n#LinkedListQueue#0" />
@@ -764,156 +641,46 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/libalgojv/stacks/arraystack/ArrayStack.java">
+    <entry file="file://$PROJECT_DIR$/libalgojv.iml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="2" lean-forward="true" selection-start-line="2" selection-end-line="5" selection-end-column="61" />
-          <folding>
-            <element signature="n#!!doc;n#array#0;n#ArrayStack#0" />
-            <element signature="n#!!doc;n#ArrayStack#0;n#ArrayStack#0" />
-            <element signature="method#pop#0;class#ArrayStack#0" />
-            <element signature="e#946#995#1" />
-            <element signature="method#push#0;class#ArrayStack#0" />
-            <element signature="e#1111#1160#1" />
-            <element signature="method#toString#0;class#ArrayStack#0" />
-            <element signature="e#1614#1713#0" />
-            <element signature="n#!!doc;n#resize#0;n#ArrayStack#0" />
-            <element signature="method#resize#0;class#ArrayStack#0" />
-            <element signature="n#!!doc;n#iterator#0;n#ArrayStack#0" />
-            <element signature="method#iterator#0;class#ArrayStack#0" />
-            <element signature="class#2087:2479" />
-            <element signature="method#next#0;class#2087:2479" />
-            <element signature="e#2339#2403#1" />
-            <element signature="method#forEach#0;class#ArrayStack#0" />
-            <element signature="e#2585#2630#1" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/libalgojv/lists/singlelinkedlist/SingleLinkedList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="187" lean-forward="true" selection-start-line="187" selection-end-line="187" />
-          <folding>
-            <element signature="e#618#642#0" />
-            <element signature="e#764#786#0" />
-            <element signature="e#996#1016#0" />
-            <element signature="e#996#1777#0" />
-            <element signature="e#1274#1400#0" />
-            <element signature="e#1410#1438#0" />
-            <element signature="e#1800#2208#0" />
-            <element signature="e#2067#2115#1" />
-            <element signature="e#2160#2202#1" />
-            <element signature="e#2214#2779#0" />
-            <element signature="e#2398#2458#1" />
-            <element signature="e#2497#2545#1" />
-            <element signature="e#2600#2659#1" />
-            <element signature="e#2714#2773#1" />
-            <element signature="e#2901#3254#0" />
-            <element signature="e#2995#3031#1" />
-            <element signature="e#3082#3135#1" />
-            <element signature="e#3180#3227#1" />
-            <element signature="e#3260#3781#0" />
-            <element signature="e#3338#3374#1" />
-            <element signature="e#3410#3530#1" />
-            <element signature="e#3585#3642#1" />
-            <element signature="e#3697#3754#1" />
-            <element signature="e#3787#4143#0" />
-            <element signature="e#3862#3898#1" />
-            <element signature="e#3953#4007#1" />
-            <element signature="e#4062#4116#1" />
-            <element signature="e#4300#4704#0" />
-            <element signature="e#4364#4397#1" />
-            <element signature="e#4435#4468#1" />
-            <element signature="e#4523#4570#1" />
-            <element signature="e#4625#4680#1" />
-            <element signature="e#4710#4979#0" />
-            <element signature="e#4831#4930#0" />
-            <element signature="e#4985#5960#0" />
-            <element signature="e#5054#5090#1" />
-            <element signature="e#5261#5774#1" />
-            <element signature="e#5301#5350#1" />
-            <element signature="e#5456#5494#1" />
-            <element signature="e#5532#5764#1" />
-            <element signature="e#5550#5602#0" />
-            <element signature="e#5882#5918#1" />
-            <element signature="e#5966#6242#0" />
-            <element signature="e#6020#6051#1" />
-            <element signature="e#6152#6204#1" />
-            <element signature="e#6248#6697#0" />
-            <element signature="e#6315#6346#1" />
-            <element signature="e#6507#6654#1" />
-            <element signature="e#6550#6603#1" />
-            <element signature="e#6703#7342#0" />
-            <element signature="e#6758#6795#1" />
-            <element signature="e#6833#6870#1" />
-            <element signature="e#7012#7336#1" />
-            <element signature="e#7074#7119#1" />
-            <element signature="e#7173#7217#1" />
-            <element signature="e#7223#7326#1" />
-            <element signature="e#7366#7391#0" />
-            <element signature="e#7366#7530#0" />
-            <element signature="e#7536#7907#0" />
-            <element signature="e#7629#7689#1" />
-            <element signature="e#7744#7795#1" />
-            <element signature="e#7850#7901#1" />
-            <element signature="e#7913#8180#0" />
-            <element signature="e#8088#8140#1" />
-            <element signature="e#8315#8632#0" />
-            <element signature="e#8501#8550#1" />
-            <element signature="e#8556#8626#1" />
-            <element signature="e#8638#9115#0" />
-            <element signature="e#8825#9065#1" />
-            <element signature="e#8881#9014#1" />
-            <element signature="e#9121#9264#0" />
-            <element signature="e#9270#9678#0" />
-            <element signature="e#9491#9588#1" />
-            <element signature="e#9594#9672#1" />
-            <element signature="e#9684#9824#0" />
-            <element signature="e#9830#10110#0" />
-            <element signature="e#9916#9972#1" />
-            <element signature="e#10027#10083#1" />
-            <element signature="e#10116#10579#0" />
-            <element signature="e#10194#10303#1" />
-            <element signature="e#10414#10466#1" />
-            <element signature="e#10585#10824#0" />
-            <element signature="e#10663#10772#1" />
-            <element signature="e#10830#11154#0" />
-            <element signature="e#10960#11090#1" />
-            <element signature="e#11160#11619#0" />
-            <element signature="e#11347#11399#1" />
-            <element signature="e#11439#11592#1" />
-            <element signature="e#11731#12208#0" />
-            <element signature="e#11920#12181#1" />
-            <element signature="e#11964#12115#1" />
-            <element signature="e#12214#12530#0" />
-            <element signature="e#12326#12478#1" />
-            <element signature="e#12369#12427#1" />
-            <element signature="e#12636#13001#0" />
-            <element signature="e#12758#12808#1" />
-            <element signature="e#12910#12974#1" />
-            <element signature="e#13007#13280#0" />
-            <element signature="e#13196#13253#1" />
-            <element signature="e#13286#13531#0" />
-            <element signature="e#13407#13479#1" />
-            <element signature="e#13554#13572#0" />
-            <element signature="e#13554#14280#0" />
-            <element signature="class#13646:14273" />
-            <element signature="initializer##0;class#13646:14273" />
-            <element signature="method#next#0;class#13646:14273" />
-            <element signature="e#14082#14197#1" />
-            <element signature="e#14286#14438#0" />
-            <element signature="e#14387#14432#1" />
-          </folding>
+        <state relative-caret-position="578">
+          <caret line="34" column="9" selection-start-line="34" selection-start-column="9" selection-end-line="34" selection-end-column="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/libalgojv/lists/singlelinkedlist/tests/SingleLinkedListTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
+        <state relative-caret-position="102">
           <caret line="12" column="44" selection-start-line="12" selection-start-column="44" selection-end-line="12" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/libalgojv/stacks/arraystack/tests/ArrayStackTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="386">
+          <caret line="34" column="16" lean-forward="true" selection-start-line="34" selection-start-column="16" selection-end-line="34" selection-end-column="16" />
           <folding>
-            <element signature="e#0#13483#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/libalgojv/stacks/arraystack/ArrayStack.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+          <folding>
+            <element signature="e#0#2682#0" expanded="true" />
+            <element signature="n#!!doc;n#array#0;n#ArrayStack#0" />
+            <element signature="n#!!doc;n#ArrayStack#0;n#ArrayStack#0" />
+            <element signature="method#pop#0;class#ArrayStack#0" />
+            <element signature="method#push#0;class#ArrayStack#0" />
+            <element signature="method#toString#0;class#ArrayStack#0" />
+            <element signature="n#!!doc;n#resize#0;n#ArrayStack#0" />
+            <element signature="method#resize#0;class#ArrayStack#0" />
+            <element signature="n#!!doc;n#iterator#0;n#ArrayStack#0" />
+            <element signature="method#iterator#0;class#ArrayStack#0" />
+            <element signature="method#forEach#0;class#ArrayStack#0" />
           </folding>
         </state>
       </provider>
