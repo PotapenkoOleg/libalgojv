@@ -6,7 +6,7 @@
  * Copyright © 2018-2019 Oleg Potapenko. All rights reserved.
  */
 
-package com.libalgojv.lists.singlelinkedlist.tests;
+package com.libalgojv.tests.unit.lists.singlelinkedlist;
 
 import com.libalgojv.common.interfaces.List;
 import com.libalgojv.common.enums.AlgorithmType;
@@ -29,7 +29,7 @@ class SingleLinkedListTests {
 
     @BeforeEach
     void setUp() {
-        list = new SingleLinkedList<>(AlgorithmType.RECURSIVE);
+        list = new SingleLinkedList<>(AlgorithmType.ITERATIVE);
     }
 
     @AfterEach
@@ -87,25 +87,27 @@ class SingleLinkedListTests {
         Integer expected = 42;
         SingleLinkedList singleLinkedList = (SingleLinkedList) list;
 
-        list.add(expected, -expected, expected);
-        Integer actual = list.get(expected);
-
-        assertEquals(Optional.of(-expected), Optional.of(actual));
+        try {
+            // invalid position - should be exception here
+            // can't add by value in empty list
+            list.add(expected, -expected, expected);
+        } catch (NoSuchElementException ex) {
+        }
 
         list.clear();
         for (Integer i = expected; i <= expected + 3; i++) {
-            list.add(i, i, InsertPosition.END);
+            list.add(i, -i, InsertPosition.END);
         }
 
         list.add(0, 0, (expected + 2));
         Iterator<Integer> iterator = singleLinkedList.iterator();
         iterator.next();
         iterator.next();
-        actual = iterator.next();
+        Integer actual = iterator.next();
         assertEquals(Optional.of(0), Optional.of(actual));
 
         try {
-            // invalid position - should be exception here
+            // invalid key - should be exception here
             list.add(100, -100, 100);
         } catch (NoSuchElementException ex) {
         }
