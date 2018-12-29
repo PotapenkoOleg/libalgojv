@@ -17,9 +17,25 @@ public abstract class MergeSort implements Sortable {
     public abstract Comparable[] sort(Comparable[] array);
 
     public static Comparable[] sortArray(Comparable[] array) {
+        return MergeSort.sortArray(array, 0, array.length / 1, array.length);
+    }
+
+    public static Comparable[] sortArray(Comparable[] array, int low, int middle, int high) {
         if (array == null) {
             return null;
         }
-        throw new UnsupportedOperationException();
+        Comparable[] result = new Comparable[array.length];
+        int i = low;
+        int j = middle + 1;
+        for (int k = low; k <= high; k++) {
+            if (i > middle) {
+                result[k] = array[j++];
+            } else if (j > high) {
+                result[k] = array[i++];
+            } else if (Sortable.less(array[j], array[i])) {
+                result[k] = array[j++];
+            } else result[k] = array[i++];
+        }
+        return result;
     }
 }

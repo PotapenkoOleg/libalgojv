@@ -30,7 +30,7 @@ class MergeSortTests {
 
     @Test
     void sortArray() {
-        MergeSort.sortArray(null);
+        //MergeSort.sortArray(null);
         fail("Not Implemented");
     }
 }
