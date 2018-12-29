@@ -16,21 +16,35 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 class MergeSortTests {
-    private final int[] sortedArray = new int[]{1, 2, 3};
-    private final int[] unsortedArray = new int[]{1, 3, 2};
-    private final int[] reverseSortedArray = new int[]{3, 2, 1};
+    private Integer[] sortedArray;
+    private Integer[] unsortedArray;
+    private Integer[] reverseSortedArray;
+
+    private Character[] sortExampleActual;
+    private Character[] sortExampleExpected;
 
     @BeforeEach
     void setUp() {
+        sortedArray = new Integer[]{1, 2, 3};
+        unsortedArray = new Integer[]{1, 3, 2};
+        reverseSortedArray = new Integer[]{3, 2, 1};
+
+        sortExampleActual = new Character[]{'S', 'O', 'R', 'T', 'E', 'X', 'A', 'M', 'P', 'L', 'E'};
+        sortExampleExpected = new Character[]{'A', 'E', 'E', 'L', 'M', 'O', 'P', 'R', 'S', 'T', 'X'};
     }
 
     @AfterEach
     void tearDown() {
-    }
+        sortedArray = null;
+        unsortedArray = null;
+        reverseSortedArray = null;
 
+        sortExampleActual = null;
+        sortExampleExpected = null;
+    }
     @Test
     void sortArray() {
-        //MergeSort.sortArray(null);
+        MergeSort.sort(null);
         fail("Not Implemented");
     }
 }

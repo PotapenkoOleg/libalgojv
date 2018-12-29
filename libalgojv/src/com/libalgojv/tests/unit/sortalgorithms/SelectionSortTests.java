@@ -13,41 +13,50 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import java.util.Arrays;
-
 import static org.junit.jupiter.api.Assertions.*;
 
-class SelectionSortTests {
-    private final Integer[] sortedArray = new Integer[]{1, 2, 3};
-    private final Integer[] unsortedArray = new Integer[]{1, 3, 2};
-    private final Integer[] reverseSortedArray = new Integer[]{3, 2, 1};
+class SelectionSortTests {private Integer[] sortedArray;
+    private Integer[] unsortedArray;
+    private Integer[] reverseSortedArray;
 
-    private final Character[] sortExample = new Character[]{'S', 'O', 'R', 'T', 'E', 'X', 'A', 'M', 'P', 'L', 'E'};
+    private Character[] sortExampleActual;
+    private Character[] sortExampleExpected;
 
     @BeforeEach
     void setUp() {
+        sortedArray = new Integer[]{1, 2, 3};
+        unsortedArray = new Integer[]{1, 3, 2};
+        reverseSortedArray = new Integer[]{3, 2, 1};
+
+        sortExampleActual = new Character[]{'S', 'O', 'R', 'T', 'E', 'X', 'A', 'M', 'P', 'L', 'E'};
+        sortExampleExpected = new Character[]{'A', 'E', 'E', 'L', 'M', 'O', 'P', 'R', 'S', 'T', 'X'};
     }
 
     @AfterEach
     void tearDown() {
+        sortedArray = null;
+        unsortedArray = null;
+        reverseSortedArray = null;
+
+        sortExampleActual = null;
+        sortExampleExpected = null;
     }
 
     @Test
     void sortArray() {
-        Integer[] actual = (Integer[]) SelectionSort.sortArray(sortedArray);
-        assertTrue(SortChecker.isSorted(actual));
+        SelectionSort.sort(sortedArray);
+        assertTrue(SortChecker.isSorted(sortedArray));
 
-        actual = (Integer[]) SelectionSort.sortArray(unsortedArray);
-        assertTrue(SortChecker.isSorted(actual));
+        SelectionSort.sort(unsortedArray);
+        assertTrue(SortChecker.isSorted(unsortedArray));
 
-        actual = (Integer[]) SelectionSort.sortArray(unsortedArray);
-        assertTrue(SortChecker.isSorted(actual));
+        SelectionSort.sort(reverseSortedArray);
+        assertTrue(SortChecker.isSorted(reverseSortedArray));
     }
 
     @Test
     void sortExample() {
-        Character[] expected = new Character[]{'A', 'E', 'E', 'L', 'M', 'O', 'P', 'R', 'S', 'T', 'X'};
-        Character[] actual = (Character[]) SelectionSort.sortArray(sortExample);
-        assertTrue(Arrays.equals(expected, actual));
+        SelectionSort.sort(sortExampleActual);
+        assertArrayEquals(sortExampleExpected, sortExampleActual);
     }
 }

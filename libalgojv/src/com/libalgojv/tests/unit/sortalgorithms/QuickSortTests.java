@@ -1,5 +1,5 @@
 /*
- * InsertionSortTests.java
+ * QuickSortTests.java
  * Project libalgojv
  *
  * Created by Oleg Potapenko on 12/25/18 12:00 PM.
@@ -8,14 +8,14 @@
 
 package com.libalgojv.tests.unit.sortalgorithms;
 
-import com.libalgojv.sortalgorithms.InsertionSort;
+import com.libalgojv.sortalgorithms.QuickSort;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class InsertionSortTests {
+class QuickSortTests {
     private Integer[] sortedArray;
     private Integer[] unsortedArray;
     private Integer[] reverseSortedArray;
@@ -44,20 +44,8 @@ class InsertionSortTests {
     }
 
     @Test
-    void sortArray() {
-        InsertionSort.sort(sortedArray);
-        assertTrue(SortChecker.isSorted(sortedArray));
-
-        InsertionSort.sort(unsortedArray);
-        assertTrue(SortChecker.isSorted(unsortedArray));
-
-        InsertionSort.sort(reverseSortedArray);
-        assertTrue(SortChecker.isSorted(reverseSortedArray));
-    }
-
-    @Test
-    void sortExample() {
-        InsertionSort.sort(sortExampleActual);
-        assertArrayEquals(sortExampleExpected, sortExampleActual);
+    void sort() {
+        QuickSort.sort(null);
+        fail("Not Implemented");
     }
 }

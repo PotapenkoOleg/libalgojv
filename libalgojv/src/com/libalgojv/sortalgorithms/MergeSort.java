@@ -10,17 +10,18 @@ package com.libalgojv.sortalgorithms;
 
 import com.libalgojv.common.interfaces.Sortable;
 
-public abstract class MergeSort implements Sortable {
-    // make implementation abstract to implement marker interface
-    // and avoid creating instance of a class
-    @Override
-    public abstract Comparable[] sort(Comparable[] array);
-
-    public static Comparable[] sortArray(Comparable[] array) {
-        return MergeSort.sortArray(array, 0, array.length / 1, array.length);
+public final class MergeSort implements Sortable {
+    private MergeSort() {
     }
 
-    public static Comparable[] sortArray(Comparable[] array, int low, int middle, int high) {
+    public static Comparable[] sort(Comparable[] array) {
+        if (array == null) {
+            return null;
+        }
+        return MergeSort.sort(array, 0, array.length / 1, array.length);
+    }
+
+    public static Comparable[] sort(Comparable[] array, int low, int middle, int high) {
         if (array == null) {
             return null;
         }

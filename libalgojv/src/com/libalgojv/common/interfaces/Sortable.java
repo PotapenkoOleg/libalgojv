@@ -9,8 +9,6 @@
 package com.libalgojv.common.interfaces;
 
 public interface Sortable {
-    Comparable[] sort(Comparable[] array);
-
     static boolean less(Comparable left, Comparable right) {
         return left.compareTo(right) < 0;
     }

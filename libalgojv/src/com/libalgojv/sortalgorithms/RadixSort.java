@@ -10,13 +10,11 @@ package com.libalgojv.sortalgorithms;
 
 import com.libalgojv.common.interfaces.Sortable;
 
-public abstract class RadixSort implements Sortable {
-    // make implementation abstract to implement marker interface
-    // and avoid creating instance of a class
-    @Override
-    public abstract Comparable[] sort(Comparable[] array);
+public final class RadixSort implements Sortable {
+    private RadixSort() {
+    }
 
-    public static Comparable[] sortArray(Comparable[] array) {
+    public static Comparable[] sort(Comparable[] array) {
         if (array == null) {
             return null;
         }
