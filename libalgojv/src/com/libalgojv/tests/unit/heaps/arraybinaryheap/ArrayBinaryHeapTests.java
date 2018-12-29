@@ -6,7 +6,7 @@
  * Copyright © 2018-2019 Oleg Potapenko. All rights reserved.
  */
 
-package com.libalgojv.heaps.arraybinaryheap.tests;
+package com.libalgojv.tests.unit.heaps.arraybinaryheap;
 
 import com.libalgojv.heaps.arraybinaryheap.ArrayBinaryHeap;
 import org.junit.jupiter.api.AfterEach;
