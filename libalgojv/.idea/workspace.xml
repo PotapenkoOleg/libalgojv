@@ -216,8 +216,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/libalgojv/tests/unit/lists/doublelinkedlist/DoubleLinkedListTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+            <state relative-caret-position="-8191">
+              <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
               <folding>
                 <element signature="e#0#12666#0" expanded="true" />
               </folding>
@@ -296,8 +296,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/libalgojv/lists/doublelinkedlist/DoubleLinkedList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1186">
-              <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+            <state relative-caret-position="177">
+              <caret line="369" column="33" lean-forward="true" selection-start-line="369" selection-start-column="33" selection-end-line="369" selection-end-column="33" />
               <folding>
                 <element signature="e#0#11486#0" expanded="true" />
                 <element signature="imports" expanded="true" />
@@ -334,7 +334,7 @@
                 <element signature="e#14565#14566#0" expanded="true" />
                 <element signature="e#14634#14635#0" expanded="true" />
                 <element signature="e#14707#14708#0" expanded="true" />
-                <element signature="e#15794#15795#0" expanded="true" />
+                <element signature="e#15804#15805#0" expanded="true" />
                 <element signature="e#16317#16318#0" expanded="true" />
                 <element signature="e#16390#16391#0" expanded="true" />
               </folding>
@@ -530,7 +530,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546062311999" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546063325256" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="Arquillian JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Arquillian JUnit4" value="" />
     <property name="create.test.in.the.same.root" value="true" />
@@ -650,30 +650,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="DoubleLinkedListTests_removeByKey - 2018.12.29 at 00h 32m 16s.xml">
-      <configuration name="DoubleLinkedListTests.removeByKey" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="DoubleLinkedListTests_removeByKey - 2018.12.29 at 00h 32m 56s.xml">
-      <configuration name="DoubleLinkedListTests.removeByKey" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="DoubleLinkedListTests_removeByKey - 2018.12.29 at 00h 34m 29s.xml">
-      <configuration name="DoubleLinkedListTests.removeByKey" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="DoubleLinkedListTests_removeByKey - 2018.12.29 at 00h 35m 41s.xml">
-      <configuration name="DoubleLinkedListTests.removeByKey" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="DoubleLinkedListTests_removeByKey - 2018.12.29 at 00h 36m 57s.xml">
-      <configuration name="DoubleLinkedListTests.removeByKey" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="DoubleLinkedListTests_removeByKey - 2018.12.29 at 00h 37m 48s.xml">
-      <configuration name="DoubleLinkedListTests.removeByKey" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="DoubleLinkedListTests_removeByKey - 2018.12.29 at 00h 38m 40s.xml">
-      <configuration name="DoubleLinkedListTests.removeByKey" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="DoubleLinkedListTests_removeByKey - 2018.12.29 at 00h 41m 22s.xml">
-      <configuration name="DoubleLinkedListTests.removeByKey" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="DoubleLinkedListTests_removeByKey - 2018.12.29 at 00h 41m 51s.xml">
       <configuration name="DoubleLinkedListTests.removeByKey" configurationId="JUnit" />
     </history-entry>
@@ -692,9 +668,33 @@
     <history-entry file="AllTests - 2018.12.29 at 00h 45m 08s.xml">
       <configuration name="AllTests" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="AllTests - 2018.12.29 at 00h 46m 01s.xml">
+      <configuration name="AllTests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DoubleLinkedListTests_listIterator - 2018.12.29 at 00h 50m 24s.xml">
+      <configuration name="DoubleLinkedListTests.listIterator" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AllTests - 2018.12.29 at 00h 55m 56s.xml">
+      <configuration name="AllTests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DoubleLinkedListTests_removeByKey - 2018.12.29 at 00h 58m 18s.xml">
+      <configuration name="DoubleLinkedListTests.removeByKey" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DoubleLinkedListTests_removeByKey - 2018.12.29 at 00h 59m 27s.xml">
+      <configuration name="DoubleLinkedListTests.removeByKey" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DoubleLinkedListTests_removeByKey - 2018.12.29 at 01h 00m 04s.xml">
+      <configuration name="DoubleLinkedListTests.removeByKey" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AllTests - 2018.12.29 at 01h 00m 48s.xml">
+      <configuration name="AllTests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AllTests - 2018.12.29 at 01h 01m 38s.xml">
+      <configuration name="AllTests" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17755000" />
+    <option name="totallyTimeSpent" value="18764000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -758,15 +758,15 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/libalgojv/tests/unit/lists/doublelinkedlist/DoubleLinkedListTests.java</url>
-          <line>518</line>
+          <line>519</line>
           <properties />
           <option name="timeStamp" value="10" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/libalgojv/tests/unit/lists/doublelinkedlist/DoubleLinkedListTests.java</url>
-          <line>284</line>
+          <line>499</line>
           <properties />
-          <option name="timeStamp" value="19" />
+          <option name="timeStamp" value="21" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -1165,8 +1165,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/libalgojv/lists/doublelinkedlist/DoubleLinkedList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1186">
-          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+        <state relative-caret-position="177">
+          <caret line="369" column="33" lean-forward="true" selection-start-line="369" selection-start-column="33" selection-end-line="369" selection-end-column="33" />
           <folding>
             <element signature="e#0#11486#0" expanded="true" />
             <element signature="imports" expanded="true" />
@@ -1203,7 +1203,7 @@
             <element signature="e#14565#14566#0" expanded="true" />
             <element signature="e#14634#14635#0" expanded="true" />
             <element signature="e#14707#14708#0" expanded="true" />
-            <element signature="e#15794#15795#0" expanded="true" />
+            <element signature="e#15804#15805#0" expanded="true" />
             <element signature="e#16317#16318#0" expanded="true" />
             <element signature="e#16390#16391#0" expanded="true" />
           </folding>
@@ -1212,8 +1212,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/libalgojv/tests/unit/lists/doublelinkedlist/DoubleLinkedListTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        <state relative-caret-position="-8191">
+          <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
           <folding>
             <element signature="e#0#12666#0" expanded="true" />
           </folding>

@@ -26,6 +26,7 @@ import java.util.Optional;
 import static org.junit.jupiter.api.Assertions.*;
 
 // TODO: check back links
+// TODO: inverse values
 
 class DoubleLinkedListTests {
 

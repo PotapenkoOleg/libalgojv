@@ -363,7 +363,7 @@ public class DoubleLinkedList<Key, Value> implements List<Key, Value>, BagKeyVal
         DoubleLinkedListNode<Key, Value> current = first;
         while (current != null) {
             Value result = current.getValue();
-            if (result == key) {
+            if (current.getKey() == key) {
                 DoubleLinkedListNode<Key, Value> previous = current.getPrevious();
                 DoubleLinkedListNode<Key, Value> next = current.getNext();
                 if (current == first) {
