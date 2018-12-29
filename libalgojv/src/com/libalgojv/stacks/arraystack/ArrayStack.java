@@ -15,6 +15,9 @@ import java.util.Iterator;
 import java.util.NoSuchElementException;
 import java.util.function.Consumer;
 
+/**
+ * Implements Stack using dynamic array
+ */
 public final class ArrayStack<E> implements Stack<E>, Bag<E> {
 
     //#region Private Fields
