@@ -16,10 +16,18 @@ public abstract class SelectionSort implements Sortable {
     @Override
     public abstract Comparable[] sort(Comparable[] array);
 
-    public static Comparable[] sortArray(Comparable[] array) {
+    public static void sortArray(Comparable[] array) {
         if (array == null) {
-            return null;
+            return;
         }
-        throw new UnsupportedOperationException();
+        for (int i = 0; i < array.length; i++) {
+            int min = i;
+            for (int j = i + 1; j < array.length; j++) {
+                if (Sortable.less(array[j], array[min])) {
+                    min = j;
+                }
+            }
+            Sortable.exchange(array, i, min);
+        }
     }
 }
