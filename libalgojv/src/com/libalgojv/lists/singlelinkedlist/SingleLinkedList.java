@@ -167,10 +167,10 @@ public class SingleLinkedList<Key, Value> implements List<Key, Value>, BagKeyVal
             return 1;
         }
         if (algorithmType == AlgorithmType.ITERATIVE) {
-            return sizeIterative();
+            return getSizeIterative();
         }
         if (algorithmType == AlgorithmType.RECURSIVE) {
-            return sizeRecursive(first, 0);
+            return getSizeRecursive(first, 0);
         }
         return 0;
     }
@@ -443,16 +443,16 @@ public class SingleLinkedList<Key, Value> implements List<Key, Value>, BagKeyVal
         return null;
     }
 
-    private int sizeRecursive(SingleLinkedListNode<Key, Value> current, int size) {
+    private int getSizeRecursive(SingleLinkedListNode<Key, Value> current, int size) {
         size++;
         SingleLinkedListNode<Key, Value> next = current.getNext();
         if (next != null) {
-            size = sizeRecursive(next, size);
+            size = getSizeRecursive(next, size);
         }
         return size;
     }
 
-    private int sizeIterative() {
+    private int getSizeIterative() {
         SingleLinkedListNode<Key, Value> current = first;
         int size = 0;
         do {
