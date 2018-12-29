@@ -10,4 +10,14 @@ package com.libalgojv.common.interfaces;
 
 public interface Sortable {
     Comparable[] sort(Comparable[] array);
+
+    static boolean less(Comparable left, Comparable right) {
+        return left.compareTo(right) < 0;
+    }
+
+    static void exchange(Comparable[] array, int i, int j) {
+        Comparable temp = array[i];
+        array[i] = array[j];
+        array[j] = temp;
+    }
 }
