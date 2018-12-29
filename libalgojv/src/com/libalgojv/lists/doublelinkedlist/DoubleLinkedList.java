@@ -9,20 +9,23 @@
 package com.libalgojv.lists.doublelinkedlist;
 
 import com.libalgojv.common.interfaces.BagKeyValue;
-import com.libalgojv.common.interfaces.List;
+
 import com.libalgojv.common.enums.AlgorithmType;
 import com.libalgojv.common.enums.InsertPosition;
 import com.libalgojv.common.enums.RemovePosition;
+import com.libalgojv.common.interfaces.List;
+import com.libalgojv.lists.singlelinkedlist.SingleLinkedList;
 
 import java.util.Iterator;
+import java.util.ListIterator;
 import java.util.NoSuchElementException;
 import java.util.function.Consumer;
 
 public class DoubleLinkedList<Key, Value> implements List<Key, Value>, BagKeyValue<Key, Value> {
 
     //#region Private Fields
-    private DoublelinkedListNode<Key, Value> first;
-    private DoublelinkedListNode<Key, Value> last;
+    private DoubleLinkedListNode<Key, Value> first;
+    private DoubleLinkedListNode<Key, Value> last;
     private final AlgorithmType algorithmType;
     //#endregion
 
@@ -37,13 +40,13 @@ public class DoubleLinkedList<Key, Value> implements List<Key, Value>, BagKeyVal
     //#endregion
 
     //region Node Class
-    private class DoublelinkedListNode<Key, Value> {
+    private class DoubleLinkedListNode<Key, Value> {
         private Key key;
         private Value value;
-        private DoublelinkedListNode<Key, Value> next;
-        private DoublelinkedListNode<Key, Value> previous;
+        private DoubleLinkedListNode<Key, Value> next;
+        private DoubleLinkedListNode<Key, Value> previous;
 
-        DoublelinkedListNode(final Key key, final Value value) {
+        DoubleLinkedListNode(final Key key, final Value value) {
             this.key = key;
             this.value = value;
         }
@@ -57,19 +60,19 @@ public class DoubleLinkedList<Key, Value> implements List<Key, Value>, BagKeyVal
             return value;
         }
 
-        DoublelinkedListNode<Key, Value> getNext() {
+        DoubleLinkedListNode<Key, Value> getNext() {
             return next;
         }
 
-        void setNext(DoublelinkedListNode<Key, Value> next) {
+        void setNext(DoubleLinkedListNode<Key, Value> next) {
             this.next = next;
         }
 
-        DoublelinkedListNode<Key, Value> getPrevious() {
+        DoubleLinkedListNode<Key, Value> getPrevious() {
             return previous;
         }
 
-        void setPrevious(DoublelinkedListNode<Key, Value> previous) {
+        void setPrevious(DoubleLinkedListNode<Key, Value> previous) {
             this.previous = previous;
         }
         //#endregion
@@ -79,7 +82,12 @@ public class DoubleLinkedList<Key, Value> implements List<Key, Value>, BagKeyVal
     //#region Public Methods
     @Override
     public void add(final Key key, final Value value, final InsertPosition position) {
-        DoublelinkedListNode<Key, Value> newNode = new DoublelinkedListNode<>(key, value);
+        DoubleLinkedListNode<Key, Value> newNode = new DoubleLinkedListNode<>(key, value);
+        if (first == null) {
+            first = newNode;
+            last = newNode;
+            return;
+        }
         if (position == InsertPosition.BEGINNING) {
             addAtBeginning(newNode);
         }
@@ -90,11 +98,18 @@ public class DoubleLinkedList<Key, Value> implements List<Key, Value>, BagKeyVal
 
     @Override
     public void add(final Key key, final Value value, final Key before) {
+        if (first == null) {
+            throw new NoSuchElementException();
+        }
+        DoubleLinkedListNode<Key, Value> newNode = new DoubleLinkedListNode<>(key, value);
+        if (first.getKey() == before) {
+            addAtBeginning(newNode);
+        }
         if (algorithmType == AlgorithmType.ITERATIVE) {
-            addByKeyIterative(key, value, before);
+            addByKeyIterative(before, newNode);
         }
         if (algorithmType == AlgorithmType.RECURSIVE) {
-            addByKeyRecursive(key, value, before);
+            addByKeyRecursive(before, newNode);
         }
     }
 
@@ -168,7 +183,7 @@ public class DoubleLinkedList<Key, Value> implements List<Key, Value>, BagKeyVal
             return getSizeIterative();
         }
         if (algorithmType == AlgorithmType.RECURSIVE) {
-            return getSizeRecursive();
+            return getSizeRecursive(first, 0);
         }
         return 0;
     }
@@ -177,7 +192,7 @@ public class DoubleLinkedList<Key, Value> implements List<Key, Value>, BagKeyVal
         if (first == null) {
             return;
         }
-        DoublelinkedListNode<Key, Value> current = first;
+        DoubleLinkedListNode<Key, Value> current = first;
         while (current.getNext() != null) {
             current = current.getNext();
         }
@@ -189,8 +204,8 @@ public class DoubleLinkedList<Key, Value> implements List<Key, Value>, BagKeyVal
         if (first == null) {
             return;
         }
-        DoublelinkedListNode<Key, Value> current = first;
-        DoublelinkedListNode<Key, Value> cyclicNode = null;
+        DoubleLinkedListNode<Key, Value> current = first;
+        DoubleLinkedListNode<Key, Value> cyclicNode = null;
         while (current.getNext() != null) {
             if (current.getValue() == key) {
                 cyclicNode = current;
@@ -208,8 +223,8 @@ public class DoubleLinkedList<Key, Value> implements List<Key, Value>, BagKeyVal
         if (first.getNext() == null) {
             return false;
         }
-        DoublelinkedListNode<Key, Value> slow = first;
-        DoublelinkedListNode<Key, Value> fast = first.getNext();
+        DoubleLinkedListNode<Key, Value> slow = first;
+        DoubleLinkedListNode<Key, Value> fast = first.getNext();
         while (true) {
             if ((fast == null) || (fast.getNext() == null)) {
                 return false;
@@ -234,18 +249,13 @@ public class DoubleLinkedList<Key, Value> implements List<Key, Value>, BagKeyVal
     //#endregion
 
     //#region Private Methods
-    private void addAtBeginning(final DoublelinkedListNode<Key, Value> newNode) {
-        if (first == null) {
-            first = newNode;
-            last = newNode;
-            return;
-        }
+    private void addAtBeginning(final DoubleLinkedListNode<Key, Value> newNode) {
         first.setPrevious(newNode);
         newNode.setNext(first);
         first = newNode;
     }
 
-    private void addAtEnd(final DoublelinkedListNode<Key, Value> newNode) {
+    private void addAtEnd(final DoubleLinkedListNode<Key, Value> newNode) {
         if (first == null) {
             first = newNode;
             last = newNode;
@@ -256,16 +266,27 @@ public class DoubleLinkedList<Key, Value> implements List<Key, Value>, BagKeyVal
         last = newNode;
     }
 
-    private void addByKeyIterative(final Key key, final Value value, final Key before) {
-        throw new UnsupportedOperationException();
+    private void addByKeyIterative(final Key before, final DoubleLinkedListNode<Key, Value> newNode) {
+        DoubleLinkedListNode<Key, Value> current = first;
+        while (current.getNext() != null) {
+            if (current.getNext().getKey() == before) {
+                newNode.setNext(current.getNext());
+                current.setNext(newNode);
+                newNode.setPrevious(current);
+                newNode.getNext().setPrevious(newNode);
+                return;
+            }
+            current = current.getNext();
+        }
+        throw new NoSuchElementException();
     }
 
-    private void addByKeyRecursive(final Key key, final Value value, final Key before) {
+    private void addByKeyRecursive(final Key before, final DoubleLinkedListNode<Key, Value> newNode) {
         throw new UnsupportedOperationException();
     }
 
     private Value getByKeyIterative(final Key key) {
-        DoublelinkedListNode<Key, Value> current = first;
+        DoubleLinkedListNode<Key, Value> current = first;
         do {
             if (current.getValue() == key) {
                 return current.getValue();
@@ -275,15 +296,15 @@ public class DoubleLinkedList<Key, Value> implements List<Key, Value>, BagKeyVal
         return null;
     }
 
-    private Value getByKeyRecursive(final Key key){
+    private Value getByKeyRecursive(final Key key) {
         return getByKeyRecursive(key, first);
     }
 
-    private Value getByKeyRecursive(final Key key, final DoublelinkedListNode<Key, Value> current) {
+    private Value getByKeyRecursive(final Key key, final DoubleLinkedListNode<Key, Value> current) {
         if (current.getKey() == key) {
             return current.getValue();
         }
-        DoublelinkedListNode<Key, Value> nextNode = current.getNext();
+        DoubleLinkedListNode<Key, Value> nextNode = current.getNext();
         if (nextNode != null) {
             return getByKeyRecursive(key, nextNode);
         }
@@ -321,12 +342,12 @@ public class DoubleLinkedList<Key, Value> implements List<Key, Value>, BagKeyVal
     }
 
     private Value removeByKeyIterative(final Key key) {
-        DoublelinkedListNode<Key, Value> current = first;
+        DoubleLinkedListNode<Key, Value> current = first;
         while (current != null) {
             Value result = current.getValue();
             if (result == key) {
-                DoublelinkedListNode<Key, Value> previous = current.getPrevious();
-                DoublelinkedListNode<Key, Value> next = current.getNext();
+                DoubleLinkedListNode<Key, Value> previous = current.getPrevious();
+                DoubleLinkedListNode<Key, Value> next = current.getNext();
                 if (current == first) {
                     first = next;
                     first.setPrevious(null);
@@ -350,13 +371,13 @@ public class DoubleLinkedList<Key, Value> implements List<Key, Value>, BagKeyVal
         return removeByKeyRecursive(key, first);
     }
 
-    private Value removeByKeyRecursive(final Key key, final DoublelinkedListNode<Key, Value> current) {
+    private Value removeByKeyRecursive(final Key key, final DoubleLinkedListNode<Key, Value> current) {
         throw new UnsupportedOperationException();
     }
 
     private int getSizeIterative() {
         int size = 0;
-        DoublelinkedListNode<Key, Value> current = first;
+        DoubleLinkedListNode<Key, Value> current = first;
         do {
             size++;
             current = current.getNext();
@@ -364,8 +385,13 @@ public class DoubleLinkedList<Key, Value> implements List<Key, Value>, BagKeyVal
         return size;
     }
 
-    private int getSizeRecursive() {
-        throw new UnsupportedOperationException();
+    private int getSizeRecursive(DoubleLinkedListNode<Key, Value> current, int size) {
+        size++;
+        DoubleLinkedListNode<Key, Value> next = current.getNext();
+        if (next != null) {
+            size = getSizeRecursive(next, size);
+        }
+        return size;
     }
     //#endregion
 
@@ -373,12 +399,12 @@ public class DoubleLinkedList<Key, Value> implements List<Key, Value>, BagKeyVal
     @Override
     public Iterator<Value> iterator() {
         return new Iterator<Value>() {
-            private DoublelinkedListNode<Key, Value> current;
+            private DoubleLinkedListNode<Key, Value> current;
 
             {
-                this.current = new DoublelinkedListNode<Key, Value>(null, null);
+                this.current = new DoubleLinkedListNode<>(null, null);
                 current.setNext(first);
-                // don't set first previous - it might corrupt list
+                // don't set first's previous - it might corrupt list
             }
 
             @Override
@@ -404,4 +430,75 @@ public class DoubleLinkedList<Key, Value> implements List<Key, Value>, BagKeyVal
         }
     }
     //#endregion
+
+    //#region ListIterator
+    public ListIterator<Value> getListiterator() {
+        return new ListIterator<Value>() {
+            private DoubleLinkedListNode<Key, Value> current;
+            private int currentIndex = -1;
+
+            {
+                this.current = new DoubleLinkedListNode<>(null, null);
+                current.setNext(first);
+                // don't set first's previous - it might corrupt list
+            }
+
+            @Override
+            public boolean hasNext() {
+                return (current != null) && (current.getNext() != null);
+            }
+
+            @Override
+            public Value next() {
+                if (hasNext()) {
+                    currentIndex++;
+                    current = current.getNext();
+                    return current.getValue();
+                }
+                throw new NoSuchElementException();
+            }
+
+            @Override
+            public boolean hasPrevious() {
+                return (current != null) && (current.getPrevious() != null);
+            }
+
+            @Override
+            public Value previous() {
+                if (hasPrevious()) {
+                    currentIndex--;
+                    current = current.getPrevious();
+                    return current.getValue();
+                }
+                throw new NoSuchElementException();
+            }
+
+            @Override
+            public int nextIndex() {
+                return currentIndex + 1;
+            }
+
+            @Override
+            public int previousIndex() {
+                return currentIndex - 1;
+            }
+
+            @Override
+            public void remove() {
+                throw new UnsupportedOperationException();
+            }
+
+            @Override
+            public void set(Value value) {
+                throw new UnsupportedOperationException();
+            }
+
+            @Override
+            public void add(Value value) {
+                throw new UnsupportedOperationException();
+            }
+        };
+    }
+    //#endregion
+
 }

@@ -6,7 +6,7 @@
  * Copyright © 2018-2019 Oleg Potapenko. All rights reserved.
  */
 
-package com.libalgojv.lists.doublelinkedlist.tests;
+package com.libalgojv.tests.unit.lists.doublelinkedlist;
 
 import com.libalgojv.common.enums.AlgorithmType;
 import com.libalgojv.common.interfaces.List;
@@ -23,13 +23,15 @@ import java.util.Optional;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+// TODO: check back links
+
 class DoubleLinkedListTests {
 
     private List<Integer, Integer> list;
 
     @BeforeEach
     void setUp() {
-        list = new DoubleLinkedList<>(AlgorithmType.RECURSIVE);
+        list = new DoubleLinkedList<>(AlgorithmType.ITERATIVE);
     }
 
     @AfterEach
@@ -119,10 +121,12 @@ class DoubleLinkedListTests {
         Integer expected = 42;
         DoubleLinkedList doubleLinkedList = (DoubleLinkedList) list;
 
-        list.add(expected, -expected, expected);
-        Integer actual = list.get(expected);
-
-        assertEquals(Optional.of(-expected), Optional.of(actual));
+        try {
+            // invalid position - should be exception here
+            // can't add by value in empty list
+            list.add(expected, -expected, expected);
+        } catch (NoSuchElementException ex) {
+        }
 
         list.clear();
         for (Integer i = expected; i <= expected + 3; i++) {
@@ -133,7 +137,7 @@ class DoubleLinkedListTests {
         Iterator<Integer> iterator = doubleLinkedList.iterator();
         iterator.next();
         iterator.next();
-        actual = iterator.next();
+        Integer actual = iterator.next();
         assertEquals(Optional.of(0), Optional.of(actual));
 
         try {
