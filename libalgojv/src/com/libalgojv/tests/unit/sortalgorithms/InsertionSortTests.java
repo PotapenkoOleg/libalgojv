@@ -13,12 +13,16 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import java.util.Arrays;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class InsertionSortTests {
-    private final int[] sortedArray = new int[]{1, 2, 3};
-    private final int[] unsortedArray = new int[]{1, 3, 2};
-    private final int[] reverseSortedArray = new int[]{3, 2, 1};
+    private final Integer[] sortedArray = new Integer[]{1, 2, 3};
+    private final Integer[] unsortedArray = new Integer[]{1, 3, 2};
+    private final Integer[] reverseSortedArray = new Integer[]{3, 2, 1};
+
+    private final Character[] sortExample = new Character[]{'S', 'O', 'R', 'T', 'E', 'X', 'A', 'M', 'P', 'L', 'E'};
 
     @BeforeEach
     void setUp() {
@@ -30,7 +34,20 @@ class InsertionSortTests {
 
     @Test
     void sortArray() {
-        InsertionSort.sortArray(null);
-        fail("Not Implemented");
+        Integer[] actual = (Integer[]) InsertionSort.sortArray(sortedArray);
+        assertTrue(SortChecker.isSorted(actual));
+
+        actual = (Integer[]) InsertionSort.sortArray(unsortedArray);
+        assertTrue(SortChecker.isSorted(actual));
+
+        actual = (Integer[]) InsertionSort.sortArray(unsortedArray);
+        assertTrue(SortChecker.isSorted(actual));
+    }
+
+    @Test
+    void sortExample() {
+        Character[] expected = new Character[]{'A', 'E', 'E', 'L', 'M', 'O', 'P', 'R', 'S', 'T', 'X'};
+        Character[] actual = (Character[]) InsertionSort.sortArray(sortExample);
+        assertTrue(Arrays.equals(expected, actual));
     }
 }

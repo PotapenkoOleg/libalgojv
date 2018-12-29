@@ -16,10 +16,18 @@ public abstract class InsertionSort implements Sortable {
     @Override
     public abstract Comparable[] sort(Comparable[] array);
 
-    public static Comparable[] sortArray(Comparable[] array) {
+    public static void sortArray(Comparable[] array) {
         if (array == null) {
-            return null;
+            return;
         }
-        throw new UnsupportedOperationException();
+        for (int i = 0; i < array.length; i++) {
+            for (int j = i; j > 0; j--) {
+                if (Sortable.less(array[j], array[j - 1])) {
+                    Sortable.exchange(array, j, j - 1);
+                } else {
+                    break;
+                }
+            }
+        }
     }
 }
