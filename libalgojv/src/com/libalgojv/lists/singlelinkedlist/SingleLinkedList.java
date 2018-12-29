@@ -27,7 +27,7 @@ public class SingleLinkedList<Key, Value> implements List<Key, Value>, BagKeyVal
 
     //#region Constructors
     public SingleLinkedList() {
-        this(AlgorithmType.RECURSIVE);
+        this(AlgorithmType.ITERATIVE);
     }
 
     public SingleLinkedList(AlgorithmType algorithmType) {
@@ -81,11 +81,10 @@ public class SingleLinkedList<Key, Value> implements List<Key, Value>, BagKeyVal
 
     @Override
     public void add(Key key, Value value, Key before) {
-        SingleLinkedListNode<Key, Value> newNode = new SingleLinkedListNode<>(key, value);
         if (first == null) {
-            first = newNode;
-            return;
+            throw new NoSuchElementException();
         }
+        SingleLinkedListNode<Key, Value> newNode = new SingleLinkedListNode<>(key, value);
         if (first.getKey() == before) {
             addAtBeginning(newNode);
         }
@@ -328,6 +327,9 @@ public class SingleLinkedList<Key, Value> implements List<Key, Value>, BagKeyVal
             SingleLinkedListNode<Key, Value> current,
             SingleLinkedListNode<Key, Value> newNode
     ) {
+        if (current.getNext() == null) {
+            throw new NoSuchElementException();
+        }
         if (current.getNext().getKey() == before) {
             newNode.setNext(current.getNext());
             current.setNext(newNode);
