@@ -6,7 +6,7 @@
  * Copyright © 2018-2019 Oleg Potapenko. All rights reserved.
  */
 
-package com.libalgojv.queues.linkedlistqueue.tests;
+package com.libalgojv.tests.unit.queues.linkedlistqueue;
 
 import com.libalgojv.common.interfaces.Queue;
 import com.libalgojv.queues.linkedlistqueue.LinkedListQueue;

@@ -27,7 +27,7 @@ public class SingleLinkedList<Key, Value> implements List<Key, Value>, BagKeyVal
 
     //#region Constructors
     public SingleLinkedList() {
-        this(AlgorithmType.RECURSIVE);
+        this(AlgorithmType.ITERATIVE);
     }
 
     public SingleLinkedList(AlgorithmType algorithmType) {
@@ -81,11 +81,10 @@ public class SingleLinkedList<Key, Value> implements List<Key, Value>, BagKeyVal
 
     @Override
     public void add(Key key, Value value, Key before) {
-        SingleLinkedListNode<Key, Value> newNode = new SingleLinkedListNode<>(key, value);
         if (first == null) {
-            first = newNode;
-            return;
+            throw new NoSuchElementException();
         }
+        SingleLinkedListNode<Key, Value> newNode = new SingleLinkedListNode<>(key, value);
         if (first.getKey() == before) {
             addAtBeginning(newNode);
         }
@@ -168,10 +167,10 @@ public class SingleLinkedList<Key, Value> implements List<Key, Value>, BagKeyVal
             return 1;
         }
         if (algorithmType == AlgorithmType.ITERATIVE) {
-            return sizeIterative();
+            return getSizeIterative();
         }
         if (algorithmType == AlgorithmType.RECURSIVE) {
-            return sizeRecursive(first, 0);
+            return getSizeRecursive(first, 0);
         }
         return 0;
     }
@@ -328,6 +327,9 @@ public class SingleLinkedList<Key, Value> implements List<Key, Value>, BagKeyVal
             SingleLinkedListNode<Key, Value> current,
             SingleLinkedListNode<Key, Value> newNode
     ) {
+        if (current.getNext() == null) {
+            throw new NoSuchElementException();
+        }
         if (current.getNext().getKey() == before) {
             newNode.setNext(current.getNext());
             current.setNext(newNode);
@@ -441,16 +443,16 @@ public class SingleLinkedList<Key, Value> implements List<Key, Value>, BagKeyVal
         return null;
     }
 
-    private int sizeRecursive(SingleLinkedListNode<Key, Value> current, int size) {
+    private int getSizeRecursive(SingleLinkedListNode<Key, Value> current, int size) {
         size++;
         SingleLinkedListNode<Key, Value> next = current.getNext();
         if (next != null) {
-            size = sizeRecursive(next, size);
+            size = getSizeRecursive(next, size);
         }
         return size;
     }
 
-    private int sizeIterative() {
+    private int getSizeIterative() {
         SingleLinkedListNode<Key, Value> current = first;
         int size = 0;
         do {
