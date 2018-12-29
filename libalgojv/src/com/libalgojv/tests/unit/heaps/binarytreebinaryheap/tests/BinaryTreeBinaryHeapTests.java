@@ -6,7 +6,7 @@
  * Copyright © 2018-2019 Oleg Potapenko. All rights reserved.
  */
 
-package com.libalgojv.heaps.binarytreebinaryheap.tests;
+package com.libalgojv.tests.unit.heaps.binarytreebinaryheap.tests;
 
 import com.libalgojv.heaps.binarytreebinaryheap.BinaryTreeBinaryHeap;
 import org.junit.jupiter.api.AfterEach;
