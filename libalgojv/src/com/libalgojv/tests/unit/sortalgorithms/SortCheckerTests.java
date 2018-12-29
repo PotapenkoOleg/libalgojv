@@ -19,6 +19,10 @@ class SortCheckerTests {
     private final int[] unsortedArray = new int[]{1, 3, 2};
     private final int[] reverseSortedArray = new int[]{3, 2, 1};
 
+    private final Integer[] sortedArrayComparable = new Integer[]{1, 2, 3};
+    private final Integer[] unsortedArrayComparable = new Integer[]{1, 3, 2};
+    private final Integer[] reverseSortedArrayComparable = new Integer[]{3, 2, 1};
+
     @BeforeEach
     void setUp() {
     }
@@ -36,6 +40,18 @@ class SortCheckerTests {
         assertFalse(actual);
 
         actual = SortChecker.isSorted(reverseSortedArray);
+        assertFalse(actual);
+    }
+
+    @Test
+    void isSortedComparable() {
+        boolean actual = SortChecker.isSorted(sortedArrayComparable);
+        assertTrue(actual);
+
+        actual = SortChecker.isSorted(unsortedArrayComparable);
+        assertFalse(actual);
+
+        actual = SortChecker.isSorted(reverseSortedArrayComparable);
         assertFalse(actual);
     }
 }
