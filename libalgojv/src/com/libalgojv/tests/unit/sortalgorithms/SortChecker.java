@@ -6,7 +6,7 @@
  * Copyright © 2018-2019 Oleg Potapenko. All rights reserved.
  */
 
-package com.libalgojv.sortalgorithms.tests;
+package com.libalgojv.tests.unit.sortalgorithms;
 
 final class SortChecker {
     static boolean isSorted(final Comparable[] array) {
