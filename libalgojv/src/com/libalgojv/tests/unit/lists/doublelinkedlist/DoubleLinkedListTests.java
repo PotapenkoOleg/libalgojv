@@ -16,8 +16,10 @@ import com.libalgojv.common.enums.RemovePosition;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import sun.jvm.hotspot.utilities.Assert;
 
 import java.util.Iterator;
+import java.util.ListIterator;
 import java.util.NoSuchElementException;
 import java.util.Optional;
 
@@ -31,7 +33,7 @@ class DoubleLinkedListTests {
 
     @BeforeEach
     void setUp() {
-        list = new DoubleLinkedList<>(AlgorithmType.ITERATIVE);
+        list = new DoubleLinkedList<>(AlgorithmType.RECURSIVE);
     }
 
     @AfterEach
@@ -138,6 +140,7 @@ class DoubleLinkedListTests {
         iterator.next();
         iterator.next();
         Integer actual = iterator.next();
+
         assertEquals(Optional.of(0), Optional.of(actual));
 
         try {
@@ -156,6 +159,13 @@ class DoubleLinkedListTests {
         actual = iterator.next();
 
         assertEquals(Optional.of(100), Optional.of(actual));
+
+        // first element
+        list.add(-200, 200, expected);
+        iterator = doubleLinkedList.iterator();
+        actual = iterator.next();
+
+        assertEquals(Optional.of(200), Optional.of(actual));
     }
 
     @Test
@@ -245,27 +255,37 @@ class DoubleLinkedListTests {
         assertEquals(expected, actual);
         assertTrue(list.isEmpty());
 
-        list.add(expected + 1, expected + 1, InsertPosition.BEGINNING);
-        list.add(expected, expected, InsertPosition.BEGINNING);
-
+        // last element
+        list.add(expected + 1, -expected + 1, InsertPosition.BEGINNING);
+        list.add(expected, -expected, InsertPosition.BEGINNING);
         actual = list.remove(expected);
 
-        assertEquals(expected, actual);
+        assertEquals(-expected, actual);
 
         list.clear();
 
-        list.add(expected + 2, expected + 2, InsertPosition.BEGINNING);
-        list.add(expected, expected, InsertPosition.BEGINNING);
-        list.add(expected + 1, expected + 1, InsertPosition.BEGINNING);
+        list.add(expected + 2, -expected + 2, InsertPosition.BEGINNING);
+        list.add(expected, -expected, InsertPosition.BEGINNING);
+        list.add(expected + 1, -expected + 1, InsertPosition.BEGINNING);
 
         actual = list.remove(expected);
 
-        assertEquals(expected, actual);
+        assertEquals(-expected, actual);
         assertFalse(list.isEmpty());
 
+        // check last pointer is updated
+        actual = list.remove(RemovePosition.END);
+        assertEquals(-expected + 2, actual);
+
         // key not found
-        actual = list.remove(expected - 1);
+        actual = list.remove(100);
         assertNull(actual);
+
+        // first element
+        list.add(44, -44, InsertPosition.END);
+        actual = list.remove(expected + 1);
+        assertEquals(-expected + 1, actual);
+        assertFalse(list.isEmpty());
     }
 
     @Test
@@ -440,6 +460,78 @@ class DoubleLinkedListTests {
 
         for (Integer actual : list) {
             assertEquals(expected, actual);
+        }
+    }
+
+    @Test
+    void listIterator() {
+        if (!(list instanceof DoubleLinkedList)) {
+            fail("Invalid test class ");
+        }
+
+        DoubleLinkedList<Integer, Integer> doubleLinkedList = (DoubleLinkedList<Integer, Integer>) list;
+
+        Integer expected = 42;
+        Integer actual;
+
+        for (Integer i = expected; i <= expected + 5; i++) {
+            doubleLinkedList.add(i, -i, InsertPosition.END);
+        }
+
+        ListIterator listIterator = doubleLinkedList.getListiterator();
+
+        // set list iterator position to the end of the list
+        for (Integer i = expected; i <= expected + 5; i++) {
+            actual = (Integer) listIterator.next();
+            assertEquals(-i, actual);
+        }
+
+        for (Integer i = expected + 5; i > expected; i--) {
+            actual = (Integer) listIterator.previous();
+            assertEquals(-i + 1, actual);
+        }
+
+        // remove test
+        doubleLinkedList.remove(44);
+        doubleLinkedList.remove(42);
+        doubleLinkedList.remove(47);
+
+        listIterator = doubleLinkedList.getListiterator();
+
+        // set list iterator position to the end of the list
+        for (Integer i = expected + 1; i < expected + 5; i++) {
+            if (i == 44) {
+                continue;
+            }
+            actual = (Integer) listIterator.next();
+            assertEquals(-i, actual);
+        }
+
+        for (Integer i = expected + 4; i > expected + 1; i--) {
+            if (i == 45) {
+                continue;
+            }
+            actual = (Integer) listIterator.previous();
+            assertEquals(-i + 1, actual);
+        }
+
+        // add test
+        doubleLinkedList.add(42, -42, 43);
+        doubleLinkedList.add(44, -44, 45);
+        doubleLinkedList.remove(45);
+        doubleLinkedList.add(45, -45, 46);
+
+        listIterator = doubleLinkedList.getListiterator();
+
+        // set list iterator position to the end of the list
+        for (Integer i = expected; i <= expected + 4; i++) {
+            actual = (Integer) listIterator.next();
+            assertEquals(-i, actual);
+        }
+
+        for (Integer i = expected + 4; i > expected; i--) {
+            actual = (Integer) listIterator.previous();
+            assertEquals(-i + 1, actual);
         }
     }
 

@@ -14,7 +14,6 @@ import com.libalgojv.common.enums.AlgorithmType;
 import com.libalgojv.common.enums.InsertPosition;
 import com.libalgojv.common.enums.RemovePosition;
 import com.libalgojv.common.interfaces.List;
-import com.libalgojv.lists.singlelinkedlist.SingleLinkedList;
 
 import java.util.Iterator;
 import java.util.ListIterator;
@@ -104,6 +103,7 @@ public class DoubleLinkedList<Key, Value> implements List<Key, Value>, BagKeyVal
         DoubleLinkedListNode<Key, Value> newNode = new DoubleLinkedListNode<>(key, value);
         if (first.getKey() == before) {
             addAtBeginning(newNode);
+            return;
         }
         if (algorithmType == AlgorithmType.ITERATIVE) {
             addByKeyIterative(before, newNode);
@@ -134,7 +134,7 @@ public class DoubleLinkedList<Key, Value> implements List<Key, Value>, BagKeyVal
         if (first == null) {
             return null;
         }
-        if (first == last) {
+        if ((first == last) && (first.getKey() == key)) {
             Value result = first.getValue();
             first = null;
             last = null;
@@ -282,7 +282,25 @@ public class DoubleLinkedList<Key, Value> implements List<Key, Value>, BagKeyVal
     }
 
     private void addByKeyRecursive(final Key before, final DoubleLinkedListNode<Key, Value> newNode) {
-        throw new UnsupportedOperationException();
+        addByKeyRecursive(before, first, newNode);
+    }
+
+    private void addByKeyRecursive(
+            final Key before,
+            final DoubleLinkedListNode<Key, Value> current,
+            final DoubleLinkedListNode<Key, Value> newNode
+    ) {
+        if (current.getNext() == null) {
+            throw new NoSuchElementException();
+        }
+        if (current.getNext().getKey() == before) {
+            newNode.setNext(current.getNext());
+            current.setNext(newNode);
+            newNode.setPrevious(current);
+            newNode.getNext().setPrevious(newNode);
+        } else {
+            addByKeyRecursive(before, current.getNext(), newNode);
+        }
     }
 
     private Value getByKeyIterative(final Key key) {
@@ -368,11 +386,33 @@ public class DoubleLinkedList<Key, Value> implements List<Key, Value>, BagKeyVal
     }
 
     private Value removeByKeyRecursive(final Key key) {
+        if (first.getKey() == key) {
+            Value result = first.getValue();
+            first = first.getNext();
+            first.setPrevious(null);
+            return result;
+        }
         return removeByKeyRecursive(key, first);
     }
 
     private Value removeByKeyRecursive(final Key key, final DoubleLinkedListNode<Key, Value> current) {
-        throw new UnsupportedOperationException();
+        DoubleLinkedListNode<Key, Value> nextNode = current.getNext();
+        if (nextNode != null) {
+            if (nextNode.getKey() == key) {
+                Value result = nextNode.getValue();
+                current.setNext(nextNode.getNext());
+                // null check if last node is removed
+                if (current.getNext() != null) {
+                    current.getNext().setPrevious(current);
+                } else {
+                    // current node is the last node
+                    last = current;
+                }
+                return result;
+            }
+            return removeByKeyRecursive(key, nextNode);
+        }
+        return null;
     }
 
     private int getSizeIterative() {
