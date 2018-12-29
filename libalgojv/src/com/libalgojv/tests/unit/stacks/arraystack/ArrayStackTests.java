@@ -6,7 +6,7 @@
  * Copyright © 2018-2019 Oleg Potapenko. All rights reserved.
  */
 
-package com.libalgojv.stacks.arraystack.tests;
+package com.libalgojv.tests.unit.stacks.arraystack;
 
 import com.libalgojv.common.interfaces.Stack;
 import com.libalgojv.stacks.arraystack.ArrayStack;
