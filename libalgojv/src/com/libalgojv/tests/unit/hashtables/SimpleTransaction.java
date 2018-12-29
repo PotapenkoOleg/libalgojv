@@ -6,7 +6,7 @@
  * Copyright © 2018-2019 Oleg Potapenko. All rights reserved.
  */
 
-package com.libalgojv.hashtables.tests;
+package com.libalgojv.tests.unit.hashtables;
 
 import java.util.Date;
 
@@ -31,14 +31,19 @@ class SimpleTransaction {
     }
 
     private int normalizeHash(Integer/*Your type here*/ key) {
-        // TODO: pass M in constructor
-        int M = 100; // hash = int between 0 and M-1;
-        return (key.hashCode() & 0x7fffffff) % M;
+        // hash = int between 0 and NUMBER_OF_ELEMENTS_IN_HASH-1;
+        int NUMBER_OF_ELEMENTS_IN_HASH = 100;
+        return (key.hashCode() & 0x7fffffff) % NUMBER_OF_ELEMENTS_IN_HASH;
     }
 
     @Override
     public boolean equals(Object obj) {
-        // TODO: implement equals
-        return super.equals(obj);
+        if (!(obj instanceof SimpleTransaction)) {
+            return false;
+        }
+        if (this == obj) {
+            return true;
+        }
+        return this.hashCode() == obj.hashCode();
     }
 }
