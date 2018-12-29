@@ -16,10 +16,21 @@ public abstract class ShellSort implements Sortable {
     @Override
     public abstract Comparable[] sort(Comparable[] array);
 
-    public static Comparable[] sortArray(Comparable[] array) {
+    public static void sortArray(Comparable[] array) {
         if (array == null) {
-            return null;
+            return;
         }
-        throw new UnsupportedOperationException();
+        int h = 1;
+        while (h < array.length / 3) {
+            h = 3 * h + 1;
+        }
+        while (h >= 1) {
+            for (int i = h; i < array.length; i++) {
+                for (int j = i; j >= h && Sortable.less(array[j], array[j - h]); j -= h) {
+                    Sortable.exchange(array, j, j - h);
+                }
+            }
+            h = h / 3;
+        }
     }
 }
