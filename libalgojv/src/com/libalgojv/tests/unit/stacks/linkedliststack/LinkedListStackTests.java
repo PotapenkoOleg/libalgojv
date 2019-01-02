@@ -6,7 +6,7 @@
  * Copyright © 2018-2019 Oleg Potapenko. All rights reserved.
  */
 
-package com.libalgojv.stacks.linkedliststack.tests;
+package com.libalgojv.tests.unit.stacks.linkedliststack;
 
 import com.libalgojv.common.interfaces.Stack;
 import com.libalgojv.stacks.linkedliststack.LinkedListStack;
