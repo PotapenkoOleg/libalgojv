@@ -8,6 +8,8 @@
 
 package com.libalgojv.tests.unit.heaps.arraybinaryheap;
 
+import com.libalgojv.common.enums.BinaryHeapType;
+import com.libalgojv.common.interfaces.PriorityQueue;
 import com.libalgojv.heaps.arraybinaryheap.ArrayBinaryHeap;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
@@ -16,40 +18,105 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 class ArrayBinaryHeapTests {
-    private ArrayBinaryHeap<Integer> arrayBinaryHeap;
+    private PriorityQueue<Character> priorityQueue = null;
 
     @BeforeEach
     void setUp() {
-        arrayBinaryHeap = new ArrayBinaryHeap<>(50);
+        priorityQueue = new ArrayBinaryHeap<>(BinaryHeapType.MAX);
     }
 
     @AfterEach
     void tearDown() {
-        arrayBinaryHeap = null;
+        priorityQueue = null;
     }
 
     @Test
     void insert() {
-        fail("Not Implemented");
+        String testData = "TPRNHOAEIG";
+        for (int i = 0; i < testData.length(); i++) {
+            Character current = testData.charAt(i);
+            priorityQueue.insert(current);
+        }
+        priorityQueue.insert('S');
+        priorityQueue.delete();
+        priorityQueue.delete();
+        priorityQueue.insert('S');
+
+        StringBuilder stringBuilder = new StringBuilder();
+        for (int i = 0; i < testData.length(); i++) {
+            stringBuilder.append(priorityQueue.delete());
+        }
+        // characters should appear in sorted order
+        String expected = "SRPONIHGEA";
+        String actual = stringBuilder.toString();
+        assertEquals(expected, actual);
     }
 
     @Test
-    void deleteMax() {
-        fail("Not Implemented");
+    void delete() {
+        String testData = "GIEAOHNRPT";
+        for (int i = 0; i < testData.length(); i++) {
+            Character current = testData.charAt(i);
+            priorityQueue.insert(current);
+        }
+        StringBuilder stringBuilder = new StringBuilder();
+        for (int i = 0; i < testData.length(); i++) {
+            stringBuilder.append(priorityQueue.delete());
+        }
+        // characters should appear in sorted order
+        String expected = "TRPONIHGEA";
+        String actual = stringBuilder.toString();
+        assertEquals(expected, actual);
     }
 
     @Test
     void isEmpty() {
-        fail("Not Implemented");
+        assertTrue(priorityQueue.isEmpty());
+        String testData = "GIEAOHNRPT";
+        for (int i = 0; i < testData.length(); i++) {
+            Character current = testData.charAt(i);
+            priorityQueue.insert(current);
+        }
+        assertFalse(priorityQueue.isEmpty());
     }
 
     @Test
     void peek() {
-        fail("Not Implemented");
+        String testData = "GIEAOHNRPT";
+        for (int i = 0; i < testData.length(); i++) {
+            Character current = testData.charAt(i);
+            priorityQueue.insert(current);
+        }
+        Character expected = 'T';
+        Character actual = priorityQueue.peek();
+        assertEquals(expected, actual);
     }
 
     @Test
-    void size() {
-        fail("Not Implemented");
+    void getSize() {
+        String testData = "GIEAOHNRPT";
+        for (int i = 0; i < testData.length(); i++) {
+            Character current = testData.charAt(i);
+            priorityQueue.insert(current);
+        }
+        int expected = 10;
+        int actual = priorityQueue.getSize();
+        assertEquals(expected, actual);
+    }
+
+    @Test
+    void clear() {
+        assertTrue(priorityQueue.isEmpty());
+        String testData = "GIEAOHNRPT";
+        for (int i = 0; i < testData.length(); i++) {
+            Character current = testData.charAt(i);
+            priorityQueue.insert(current);
+        }
+        assertFalse(priorityQueue.isEmpty());
+        priorityQueue.clear();
+        assertTrue(priorityQueue.isEmpty());
+        int expected = 0;
+        int actual = priorityQueue.getSize();
+        assertEquals(expected, actual);
     }
 }

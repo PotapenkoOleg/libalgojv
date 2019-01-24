@@ -2,29 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9f56ce26-7942-4300-be10-00f249394c3e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/project-template.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/libalgojv/common/enums/BinaryHeapType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/libalgojv/hashtables/hashtablelinearprobing/HashTableLinearProbing.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/libalgojv/hashtables/hashtableseparatechaining/HashTableSeparateChaining.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/libalgojv/tests/unit/hashtables/SimpleTransaction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/libalgojv/tests/unit/hashtables/SimpleTransactionKey.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/libalgojv/tests/unit/hashtables/hashtablelinearprobing/HashTableLinearProbingTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/libalgojv/tests/unit/hashtables/hashtableseparatechaining/HashTableSeparateChainingTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/libalgojv/common/interfaces/HashTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/libalgojv/common/interfaces/HashTable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/libalgojv/common/interfaces/PriorityQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/libalgojv/common/interfaces/PriorityQueue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/libalgojv/common/interfaces/Queue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/libalgojv/common/interfaces/Queue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/libalgojv/common/interfaces/Stack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/libalgojv/common/interfaces/Stack.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/libalgojv/heaps/arraybinaryheap/ArrayBinaryHeap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/libalgojv/heaps/arraybinaryheap/ArrayBinaryHeap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/libalgojv/queues/arrayqueue/ArrayQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/libalgojv/queues/arrayqueue/ArrayQueue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/libalgojv/queues/linkedlistqueue/LinkedListQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/libalgojv/queues/linkedlistqueue/LinkedListQueue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/libalgojv/stacks/arraystack/ArrayStack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/libalgojv/stacks/arraystack/ArrayStack.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/libalgojv/stacks/linkedliststack/LinkedListStack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/libalgojv/stacks/linkedliststack/LinkedListStack.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/libalgojv/tests/unit/lists/doublelinkedlist/DoubleLinkedListTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/libalgojv/tests/unit/lists/doublelinkedlist/DoubleLinkedListTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/libalgojv/tests/unit/heaps/arraybinaryheap/ArrayBinaryHeapTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/libalgojv/tests/unit/heaps/arraybinaryheap/ArrayBinaryHeapTests.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -49,42 +28,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/libalgojv/common/enums/RemovePosition.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="10" column="28" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
-              <folding>
-                <element signature="e#0#259#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/libalgojv/common/enums/AlgorithmType.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="10" column="12" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
-              <folding>
-                <element signature="e#0#262#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/libalgojv/common/interfaces/Bag.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-              <folding>
-                <element signature="e#0#319#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/libalgojv/common/interfaces/BagKeyValue.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -133,14 +76,53 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/libalgojv/heaps/arraybinaryheap/ArrayBinaryHeap.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="335">
-              <caret line="104" column="31" selection-start-line="104" selection-start-column="31" selection-end-line="104" selection-end-column="31" />
+            <state relative-caret-position="300">
+              <caret line="15" column="25" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
               <folding>
                 <element signature="e#0#2817#0" expanded="true" />
                 <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/libalgojv/tests/unit/heaps/arraybinaryheap/ArrayBinaryHeapTests.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1505">
+              <caret line="24" column="44" selection-start-line="24" selection-start-column="44" selection-end-line="24" selection-end-column="44" />
+              <folding>
+                <element signature="e#0#1064#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#585#586#0" expanded="true" />
+                <element signature="e#667#668#0" expanded="true" />
+                <element signature="e#705#706#0" expanded="true" />
+                <element signature="e#741#742#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/junit/platform/junit-platform-commons/1.4.0-M1/junit-platform-commons-1.4.0-M1.jar!/org/junit/platform/commons/util/ReflectionUtils.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="155">
+              <caret line="885" selection-start-line="885" selection-end-line="885" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://C:/Program Files/Java/jdk-11.0.1/lib/src.zip!/java.base/java/util/Arrays.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="192">
+              <caret line="265" column="23" selection-start-line="265" selection-start-column="23" selection-end-line="265" selection-end-column="23" />
+              <folding>
+                <element signature="e#10758#10759#0" expanded="true" />
+                <element signature="e#10829#10830#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -162,6 +144,7 @@
       <list>
         <option value="Arquillian JUnit Test Class" />
         <option value="Enum" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -171,9 +154,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/HashTable.java" />
-        <option value="$PROJECT_DIR$/src/Bag.java" />
-        <option value="$PROJECT_DIR$/src/BagKV.java" />
         <option value="$PROJECT_DIR$/src/BinarySearchTree.java" />
         <option value="$PROJECT_DIR$/src/PriorityQueue.java" />
         <option value="$PROJECT_DIR$/src/Queue.java" />
@@ -222,6 +202,9 @@
         <option value="$PROJECT_DIR$/src/com/libalgojv/common/enums/BinaryHeapType.java" />
         <option value="$PROJECT_DIR$/src/com/libalgojv/common/interfaces/PriorityQueue.java" />
         <option value="$PROJECT_DIR$/src/com/libalgojv/heaps/arraybinaryheap/ArrayBinaryHeap.java" />
+        <option value="$PROJECT_DIR$/src/com/libalgojv/tests/unit/heaps/arraybinaryheap/ArrayBinaryHeapTest.java" />
+        <option value="$PROJECT_DIR$/src/com/libalgojv/heaps/arraybinaryheap/ArrayBinaryHeapTests.java" />
+        <option value="$PROJECT_DIR$/src/com/libalgojv/tests/unit/heaps/arraybinaryheap/ArrayBinaryHeapTests.java" />
       </list>
     </option>
   </component>
@@ -274,6 +257,14 @@
               <item name="libalgojv" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="libalgojv" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="interfaces" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="libalgojv" type="b2602c69:ProjectViewProjectNode" />
+              <item name="libalgojv" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="libalgojv" type="462c0819:PsiDirectoryNode" />
               <item name="arraybinaryheap" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -282,6 +273,14 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="libalgojv" type="462c0819:PsiDirectoryNode" />
               <item name="unit" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="libalgojv" type="b2602c69:ProjectViewProjectNode" />
+              <item name="libalgojv" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="libalgojv" type="462c0819:PsiDirectoryNode" />
+              <item name="unit" type="462c0819:PsiDirectoryNode" />
+              <item name="arraybinaryheap" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -300,8 +299,9 @@
     <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546064271156" />
-    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="Arquillian JUnit4" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Arquillian JUnit4" value="" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="create.test.in.the.same.root" value="true" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -312,6 +312,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.libalgojv.tests.unit.heaps.arraybinaryheap" />
+      <recent name="com.libalgojv.heaps.arraybinaryheap" />
       <recent name="com.libalgojv.stacks.linkedliststack" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
@@ -330,7 +332,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.ArrayBinaryHeapTests.clear">
     <configuration name="AllTests" type="JUnit" factoryName="JUnit">
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="" />
@@ -344,6 +346,103 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ArrayBinaryHeapTests.clear" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="libalgojv" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.libalgojv.tests.unit.heaps.arraybinaryheap.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.libalgojv.tests.unit.heaps.arraybinaryheap" />
+      <option name="MAIN_CLASS_NAME" value="com.libalgojv.tests.unit.heaps.arraybinaryheap.ArrayBinaryHeapTests" />
+      <option name="METHOD_NAME" value="clear" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ArrayBinaryHeapTests.delete" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="libalgojv" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.libalgojv.tests.unit.heaps.arraybinaryheap.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.libalgojv.tests.unit.heaps.arraybinaryheap" />
+      <option name="MAIN_CLASS_NAME" value="com.libalgojv.tests.unit.heaps.arraybinaryheap.ArrayBinaryHeapTests" />
+      <option name="METHOD_NAME" value="delete" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ArrayBinaryHeapTests.getSize" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="libalgojv" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.libalgojv.tests.unit.heaps.arraybinaryheap.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.libalgojv.tests.unit.heaps.arraybinaryheap" />
+      <option name="MAIN_CLASS_NAME" value="com.libalgojv.tests.unit.heaps.arraybinaryheap.ArrayBinaryHeapTests" />
+      <option name="METHOD_NAME" value="getSize" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ArrayBinaryHeapTests.isEmpty" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="libalgojv" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.libalgojv.tests.unit.heaps.arraybinaryheap.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.libalgojv.tests.unit.heaps.arraybinaryheap" />
+      <option name="MAIN_CLASS_NAME" value="com.libalgojv.tests.unit.heaps.arraybinaryheap.ArrayBinaryHeapTests" />
+      <option name="METHOD_NAME" value="isEmpty" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ArrayBinaryHeapTests.peek" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="libalgojv" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.libalgojv.tests.unit.heaps.arraybinaryheap.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.libalgojv.tests.unit.heaps.arraybinaryheap" />
+      <option name="MAIN_CLASS_NAME" value="com.libalgojv.tests.unit.heaps.arraybinaryheap.ArrayBinaryHeapTests" />
+      <option name="METHOD_NAME" value="peek" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="JUnit.AllTests" />
+      <item itemvalue="JUnit.ArrayBinaryHeapTests.delete" />
+      <item itemvalue="JUnit.ArrayBinaryHeapTests.isEmpty" />
+      <item itemvalue="JUnit.ArrayBinaryHeapTests.peek" />
+      <item itemvalue="JUnit.ArrayBinaryHeapTests.getSize" />
+      <item itemvalue="JUnit.ArrayBinaryHeapTests.clear" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.ArrayBinaryHeapTests.clear" />
+        <item itemvalue="JUnit.ArrayBinaryHeapTests.getSize" />
+        <item itemvalue="JUnit.ArrayBinaryHeapTests.peek" />
+        <item itemvalue="JUnit.ArrayBinaryHeapTests.isEmpty" />
+        <item itemvalue="JUnit.ArrayBinaryHeapTests.delete" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -357,27 +456,45 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="AllTests - 2018.12.26 at 01h 46m 58s.xml">
-      <configuration name="AllTests" configurationId="JUnit" />
+    <history-entry file="ArrayBinaryHeapTests_insert - 2019.01.23 at 23h 21m 23s.xml">
+      <configuration name="ArrayBinaryHeapTests.insert" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AllTests - 2018.12.26 at 02h 08m 56s.xml">
-      <configuration name="AllTests" configurationId="JUnit" />
+    <history-entry file="ArrayBinaryHeapTests_insert - 2019.01.23 at 23h 22m 58s.xml">
+      <configuration name="ArrayBinaryHeapTests.insert" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AllTests - 2018.12.26 at 02h 14m 53s.xml">
-      <configuration name="AllTests" configurationId="JUnit" />
+    <history-entry file="ArrayBinaryHeapTests_delete - 2019.01.23 at 23h 25m 25s.xml">
+      <configuration name="ArrayBinaryHeapTests.delete" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AllTests - 2018.12.29 at 01h 15m 52s.xml">
-      <configuration name="AllTests" configurationId="JUnit" />
+    <history-entry file="ArrayBinaryHeapTests_delete - 2019.01.23 at 23h 25m 53s.xml">
+      <configuration name="ArrayBinaryHeapTests.delete" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ArrayBinaryHeapTests_delete - 2019.01.23 at 23h 26m 58s.xml">
+      <configuration name="ArrayBinaryHeapTests.delete" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ArrayBinaryHeapTests_delete - 2019.01.23 at 23h 27m 17s.xml">
+      <configuration name="ArrayBinaryHeapTests.delete" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ArrayBinaryHeapTests_isEmpty - 2019.01.23 at 23h 29m 49s.xml">
+      <configuration name="ArrayBinaryHeapTests.isEmpty" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ArrayBinaryHeapTests_peek - 2019.01.23 at 23h 31m 44s.xml">
+      <configuration name="ArrayBinaryHeapTests.peek" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ArrayBinaryHeapTests_getSize - 2019.01.23 at 23h 32m 46s.xml">
+      <configuration name="ArrayBinaryHeapTests.getSize" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ArrayBinaryHeapTests_clear - 2019.01.23 at 23h 33m 58s.xml">
+      <configuration name="ArrayBinaryHeapTests.clear" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4811000" />
+    <option name="totallyTimeSpent" value="6774000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-6" y="-6" width="1633" height="1053" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2495238" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2495238" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Learn" order="3" />
@@ -387,7 +504,7 @@
       <window_info id="Image Layers" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49928263" visible="true" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49928263" visible="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -411,6 +528,18 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/libalgojv/tests/unit/heaps/arraybinaryheap/ArrayBinaryHeapTests.java</url>
+          <line>56</line>
+          <properties />
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -515,16 +644,6 @@
             <element signature="n#!!doc;n#getHashCode#0;n#HashTableLinearProbing#0" />
             <element signature="method#add#1;class#HashTableLinearProbing#0" />
             <element signature="method#resize#0;class#HashTableLinearProbing#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/libalgojv/tests/unit/heaps/arraybinaryheap/ArrayBinaryHeapTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="25" column="14" selection-start-line="25" selection-start-column="14" selection-end-line="25" selection-end-column="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -670,13 +789,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/libalgojv/common/interfaces/Queue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="10" column="37" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/libalgojv/common/interfaces/PriorityQueue.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
@@ -684,13 +796,67 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/libalgojv/tests/unit/heaps/arraybinaryheap/ArrayBinaryHeapTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="415">
+          <caret line="30" column="5" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/libalgojv/heaps/arraybinaryheap/ArrayBinaryHeapTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="415">
+          <caret line="30" column="5" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/libalgojv/heaps/arraybinaryheap/ArrayBinaryHeap.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="335">
-          <caret line="104" column="31" selection-start-line="104" selection-start-column="31" selection-end-line="104" selection-end-column="31" />
+        <state relative-caret-position="300">
+          <caret line="15" column="25" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
           <folding>
             <element signature="e#0#2817#0" expanded="true" />
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/libalgojv/common/interfaces/Queue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="10" column="37" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-11.0.1/lib/src.zip!/java.base/java/util/Arrays.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="265" column="23" selection-start-line="265" selection-start-column="23" selection-end-line="265" selection-end-column="23" />
+          <folding>
+            <element signature="e#10758#10759#0" expanded="true" />
+            <element signature="e#10829#10830#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/junit/platform/junit-platform-commons/1.4.0-M1/junit-platform-commons-1.4.0-M1.jar!/org/junit/platform/commons/util/ReflectionUtils.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="155">
+          <caret line="885" selection-start-line="885" selection-end-line="885" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/libalgojv/tests/unit/heaps/arraybinaryheap/ArrayBinaryHeapTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1505">
+          <caret line="24" column="44" selection-start-line="24" selection-start-column="44" selection-end-line="24" selection-end-column="44" />
+          <folding>
+            <element signature="e#0#1064#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#585#586#0" expanded="true" />
+            <element signature="e#667#668#0" expanded="true" />
+            <element signature="e#705#706#0" expanded="true" />
+            <element signature="e#741#742#0" expanded="true" />
           </folding>
         </state>
       </provider>
