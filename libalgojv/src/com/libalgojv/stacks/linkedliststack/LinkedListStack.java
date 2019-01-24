@@ -69,14 +69,16 @@ public final class LinkedListStack<E> implements Stack<E>, Bag<E> {
 
     @Override
     public E peek() {
-        // TODO:
-        throw new UnsupportedOperationException();
+        if (first == null) {
+            return null;
+        }
+        return first.getItem();
     }
 
     @Override
     public void clear() {
-        // TODO:
-        throw new UnsupportedOperationException();
+        first = null;
+        size = 0;
     }
 
     @Override

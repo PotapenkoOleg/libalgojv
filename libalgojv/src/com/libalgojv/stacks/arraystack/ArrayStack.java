@@ -56,8 +56,7 @@ public final class ArrayStack<E> implements Stack<E>, Bag<E> {
 
     @Override
     public E peek() {
-        // TODO:
-        throw new UnsupportedOperationException();
+        return array[size - 1];
     }
 
     @Override

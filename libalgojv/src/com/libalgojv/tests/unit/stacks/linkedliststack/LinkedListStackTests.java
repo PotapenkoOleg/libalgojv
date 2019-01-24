@@ -58,6 +58,42 @@ class LinkedListStackTests {
     }
 
     @Test
+    void peek() {
+        final int expected = 42;
+        stack.push(expected + 2);
+        stack.push(expected + 1);
+        stack.push(expected);
+
+        assertEquals(3, stack.getSize());
+
+        int actual = stack.peek();
+        assertEquals(expected, actual);
+
+        assertEquals(3, stack.getSize());
+
+        actual = stack.pop();
+        assertEquals(expected, actual);
+    }
+
+    @Test
+    void clear() {
+        assertTrue(stack.isEmpty());
+        final int expected = 42;
+        stack.push(expected + 2);
+        stack.push(expected + 1);
+        stack.push(expected);
+
+        assertFalse(stack.isEmpty());
+        assertEquals(3, stack.getSize());
+
+        stack.clear();
+
+        assertTrue(stack.isEmpty());
+        assertEquals(0, stack.getSize());
+        assertNull(stack.pop());
+    }
+
+    @Test
     void isEmpty() {
         boolean expected = stack.isEmpty();
         assertTrue(expected);
@@ -68,7 +104,7 @@ class LinkedListStackTests {
     }
 
     @Test
-    void size() {
+    void getSize() {
         stack.push(42);
         stack.push(42);
         stack.push(42);
