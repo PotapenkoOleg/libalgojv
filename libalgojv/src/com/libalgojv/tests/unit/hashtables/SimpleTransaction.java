@@ -1,5 +1,5 @@
 /*
- * SimpleTransaction.java
+ * HashTableLinearProbingTests.java
  * Project libalgojv
  *
  * Created by Oleg Potapenko on 12/25/18 12:00 PM.
@@ -10,14 +10,32 @@ package com.libalgojv.tests.unit.hashtables;
 
 import java.util.Date;
 
-class SimpleTransaction {
+public class SimpleTransaction {
     private String who;
     private Date when;
     private double amount;
 
-    public SimpleTransaction(String who, Date when, double amount) {
+    public String getWho() {
+        return who;
+    }
+
+    public void setWho(String who) {
         this.who = who;
+    }
+
+    public Date getWhen() {
+        return when;
+    }
+
+    public void setWhen(Date when) {
         this.when = when;
+    }
+
+    public double getAmount() {
+        return amount;
+    }
+
+    public void setAmount(double amount) {
         this.amount = amount;
     }
 
@@ -30,20 +48,8 @@ class SimpleTransaction {
         return hash;
     }
 
-    private int normalizeHash(Integer/*Your type here*/ key) {
-        // hash = int between 0 and NUMBER_OF_ELEMENTS_IN_HASH-1;
-        int NUMBER_OF_ELEMENTS_IN_HASH = 100;
-        return (key.hashCode() & 0x7fffffff) % NUMBER_OF_ELEMENTS_IN_HASH;
-    }
-
     @Override
     public boolean equals(Object obj) {
-        if (!(obj instanceof SimpleTransaction)) {
-            return false;
-        }
-        if (this == obj) {
-            return true;
-        }
-        return this.hashCode() == obj.hashCode();
+        return super.equals(obj);
     }
 }
