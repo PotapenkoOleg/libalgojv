@@ -11,11 +11,13 @@ package com.libalgojv.common.interfaces;
 public interface PriorityQueue<Key extends Comparable<Key>> {
     void insert(final Key key);
 
-    Key deleteMax();
-
-    boolean isEmpty();
+    Key delete();
 
     Key peek();
+
+    void clear();
+
+    boolean isEmpty();
 
     int getSize();
 }
