@@ -16,7 +16,6 @@ import com.libalgojv.common.enums.RemovePosition;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import sun.jvm.hotspot.utilities.Assert;
 
 import java.util.Iterator;
 import java.util.ListIterator;

@@ -13,6 +13,10 @@ public interface Queue<E> extends Iterable<E> {
 
     E dequeue();
 
+    E peek();
+
+    void clear();
+
     boolean isEmpty();
 
     int getSize();
