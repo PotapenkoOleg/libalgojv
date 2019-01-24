@@ -13,6 +13,10 @@ public interface Stack<E> extends Iterable<E> {
 
     void push(final E item);
 
+    E peek();
+
+    void clear();
+
     boolean isEmpty();
 
     int getSize();

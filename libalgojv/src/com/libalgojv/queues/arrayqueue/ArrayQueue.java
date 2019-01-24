@@ -60,6 +60,18 @@ public class ArrayQueue<E> implements Queue<E>, Bag<E> {
     }
 
     @Override
+    public E peek() {
+        // TODO:
+        throw new UnsupportedOperationException();
+    }
+
+    @Override
+    public void clear() {
+        // TODO:
+        throw new UnsupportedOperationException();
+    }
+
+    @Override
     public boolean isEmpty() {
         return size == 0;
     }
