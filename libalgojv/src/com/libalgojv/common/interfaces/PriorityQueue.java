@@ -15,9 +15,9 @@ public interface PriorityQueue<Key extends Comparable<Key>> {
 
     Key peek();
 
-    void clear();
-
     boolean isEmpty();
 
     int getSize();
+
+    void clear();
 }
