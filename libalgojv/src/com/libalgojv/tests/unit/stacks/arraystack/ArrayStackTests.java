@@ -33,6 +33,8 @@ class ArrayStackTests {
 
     @Test
     void pop() {
+        assertNull(stack.pop());
+
         final int actual = 42;
         stack.push(actual);
         stack.push(actual);
@@ -53,6 +55,8 @@ class ArrayStackTests {
 
     @Test
     void peek() {
+        assertNull(stack.peek());
+
         final int expected = 42;
         stack.push(expected + 2);
         stack.push(expected + 1);
