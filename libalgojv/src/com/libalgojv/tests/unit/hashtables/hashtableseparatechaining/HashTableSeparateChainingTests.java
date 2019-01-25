@@ -61,10 +61,9 @@ class HashTableSeparateChainingTests {
 
     @Test
     void get() {
-        // non existing value in empty table
-        SimpleTransactionKey key100 = new SimpleTransactionKey(100);
-        Integer actual = hashTable.get(key100);
-        assertNull(actual);
+        // empty hash
+        SimpleTransactionKey key42 = new SimpleTransactionKey(42);
+        assertNull(hashTable.get(key42));
 
         SimpleTransactionKey key4 = new SimpleTransactionKey(4);
         SimpleTransactionKey key3 = new SimpleTransactionKey(3);
@@ -78,7 +77,7 @@ class HashTableSeparateChainingTests {
         hashTable.add(key1, 1);
         hashTable.add(key0, 0);
 
-        actual = hashTable.get(key4);
+        Integer actual = hashTable.get(key4);
         assertEquals(java.util.Optional.of(4), java.util.Optional.of(actual));
 
         actual = hashTable.get(key3);
@@ -94,6 +93,7 @@ class HashTableSeparateChainingTests {
         assertEquals(java.util.Optional.of(0), java.util.Optional.of(actual));
 
         // non existing value
+        SimpleTransactionKey key100 = new SimpleTransactionKey(100);
         actual = hashTable.get(key100);
         assertNull(actual);
 
@@ -105,6 +105,10 @@ class HashTableSeparateChainingTests {
 
     @Test
     void remove() {
+        // empty hash
+        SimpleTransactionKey key42 = new SimpleTransactionKey(42);
+        assertNull(hashTable.remove(key42));
+
         SimpleTransactionKey key4 = new SimpleTransactionKey(4);
         SimpleTransactionKey key3 = new SimpleTransactionKey(3);
         SimpleTransactionKey key2 = new SimpleTransactionKey(2);

@@ -43,12 +43,11 @@ class ArrayQueueTests {
 
     @Test
     void dequeue() {
-        Integer actual = queue.dequeue();
-        assertNull(actual);
+        assertNull(queue.dequeue());
 
         Integer expected = 42;
         queue.enqueue(expected);
-        actual = queue.dequeue();
+        Integer actual = queue.dequeue();
         assertEquals(expected, actual);
 
         queue.enqueue(expected);
@@ -69,14 +68,17 @@ class ArrayQueueTests {
 
     @Test
     void size() {
+        int expected = 0;
+        int actual = queue.getSize();
+        assertEquals(expected, actual);
+
         queue.enqueue(42);
         queue.enqueue(42);
         queue.enqueue(42);
         queue.dequeue();
 
-        int expected = 2;
-        int actual = queue.getSize();
-
+        expected = 2;
+        actual = queue.getSize();
         assertEquals(expected, actual);
     }
 

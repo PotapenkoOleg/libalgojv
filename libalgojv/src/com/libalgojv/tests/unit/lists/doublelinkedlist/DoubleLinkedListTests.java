@@ -170,11 +170,10 @@ class DoubleLinkedListTests {
 
     @Test
     void removeFromBeginning() {
-        Integer expected = 42;
         Integer actual = list.remove(RemovePosition.BEGINNING);
-
         assertNull(actual);
 
+        final Integer expected = 42;
         list.add(expected, expected, InsertPosition.BEGINNING);
         actual = list.remove(RemovePosition.BEGINNING);
 
@@ -206,11 +205,10 @@ class DoubleLinkedListTests {
 
     @Test
     void removeFromEnd() {
-        Integer expected = 42;
         Integer actual = list.remove(RemovePosition.END);
-
         assertNull(actual);
 
+        final Integer expected = 42;
         list.add(expected, expected, InsertPosition.BEGINNING);
         actual = list.remove(RemovePosition.END);
 
@@ -290,10 +288,9 @@ class DoubleLinkedListTests {
 
     @Test
     void get() {
+        // empty list
         Integer expected = 42;
         Integer actual = list.get(expected);
-
-        // empty list
         assertNull(actual);
 
         list.add(expected, expected, InsertPosition.BEGINNING);
@@ -311,7 +308,6 @@ class DoubleLinkedListTests {
         // key not found
         assertNull(actual);
     }
-
 
     @Test
     void clear() {

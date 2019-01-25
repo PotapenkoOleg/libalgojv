@@ -109,14 +109,17 @@ class LinkedListStackTests {
 
     @Test
     void getSize() {
+        int expected = 0;
+        int actual = stack.getSize();
+        assertEquals(expected, actual);
+
         stack.push(42);
         stack.push(42);
         stack.push(42);
         stack.pop();
 
-        final int expected = 2;
-        final int actual = stack.getSize();
-
+        expected = 2;
+        actual = stack.getSize();
         assertEquals(expected, actual);
     }
 

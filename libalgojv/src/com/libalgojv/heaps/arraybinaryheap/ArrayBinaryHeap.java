@@ -46,6 +46,9 @@ public class ArrayBinaryHeap<Key extends Comparable<Key>> implements PriorityQue
 
     @Override
     public Key delete() {
+        if (isEmpty()) {
+            return null; // no balancing is needed for empty heap
+        }
         Key max = keys[ROOT_INDEX];
         exchange(1, size);
         size--;

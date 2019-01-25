@@ -76,6 +76,7 @@ class ArrayStackTests {
     @Test
     void clear() {
         assertTrue(stack.isEmpty());
+
         final int expected = 42;
         stack.push(expected + 2);
         stack.push(expected + 1);
@@ -103,14 +104,17 @@ class ArrayStackTests {
 
     @Test
     void getSize() {
+        int expected = 0;
+        int actual = stack.getSize();
+        assertEquals(expected, actual);
+
         stack.push(42);
         stack.push(42);
         stack.push(42);
         stack.pop();
 
-        final int expected = 2;
-        int actual = stack.getSize();
-
+        expected = 2;
+        actual = stack.getSize();
         assertEquals(expected, actual);
     }
 

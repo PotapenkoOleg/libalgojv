@@ -61,6 +61,10 @@ class HashTableLinearProbingTests {
 
     @Test
     void get() {
+        // empty hash
+        SimpleTransactionKey key42 = new SimpleTransactionKey(42);
+        assertNull(hashTable.get(key42));
+
         SimpleTransactionKey key4 = new SimpleTransactionKey(4);
         SimpleTransactionKey key3 = new SimpleTransactionKey(3);
         SimpleTransactionKey key2 = new SimpleTransactionKey(2);
@@ -119,6 +123,10 @@ class HashTableLinearProbingTests {
 
     @Test
     void remove() {
+        // empty hash
+        SimpleTransactionKey key42 = new SimpleTransactionKey(42);
+        assertNull(hashTable.remove(key42));
+
         SimpleTransactionKey key4 = new SimpleTransactionKey(4);
         SimpleTransactionKey key3 = new SimpleTransactionKey(3);
         SimpleTransactionKey key2 = new SimpleTransactionKey(2);
