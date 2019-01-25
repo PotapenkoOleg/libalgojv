@@ -47,7 +47,6 @@ class HashTableSeparateChainingTests {
         hashTable.add(key4, 4);
         hashTable.add(key0, 0);
         assertEquals(3, hashTable.getSize());
-        assertEquals(2, hashTableLinearProbing.getCapacity());
 
         int actual = hashTable.get(key3);
         assertEquals(3, actual);
@@ -177,6 +176,5 @@ class HashTableSeparateChainingTests {
         hashTable.clear();
 
         assertEquals(0, hashTable.getSize());
-        assertEquals(2, hashTableLinearProbing.getCapacity());
     }
 }

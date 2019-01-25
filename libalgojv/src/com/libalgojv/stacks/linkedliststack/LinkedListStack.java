@@ -16,7 +16,6 @@ import java.util.NoSuchElementException;
 import java.util.function.Consumer;
 
 public final class LinkedListStack<E> implements Stack<E>, Bag<E> {
-
     //#region Private Fields
     private LinkedListNode<E> first;
     private int size = 0;

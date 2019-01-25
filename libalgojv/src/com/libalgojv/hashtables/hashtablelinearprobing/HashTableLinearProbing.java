@@ -24,7 +24,7 @@ public class HashTableLinearProbing<Key, Value> implements HashTable<Key, Value>
         this(DEFAULT_CAPACITY);
     }
 
-    public HashTableLinearProbing(int capacity) {
+    public HashTableLinearProbing(final int capacity) {
         this.capacity = capacity;
         values = (Value[]) new Object[capacity];
         keys = (Key[]) new Object[capacity];
@@ -33,7 +33,7 @@ public class HashTableLinearProbing<Key, Value> implements HashTable<Key, Value>
 
     //#region Public Methods
     @Override
-    public void add(Key key, Value value) {
+    public void add(final Key key, final Value value) {
         if (size == getCapacity()) {
             resize(getCapacity() * 2);
         }
@@ -43,7 +43,7 @@ public class HashTableLinearProbing<Key, Value> implements HashTable<Key, Value>
     }
 
     @Override
-    public Value get(Key key) {
+    public Value get(final Key key) {
         int hashCode = getHashCode(key);
         for (
                 int counter = 0;
@@ -58,7 +58,7 @@ public class HashTableLinearProbing<Key, Value> implements HashTable<Key, Value>
     }
 
     @Override
-    public Value remove(Key key) {
+    public Value remove(final Key key) {
         if ((size > 0) && (size == getCapacity() / 4)) {
             resize(getCapacity() / 2);
         }

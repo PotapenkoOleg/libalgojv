@@ -196,4 +196,87 @@ class HashTableLinearProbingTests {
         assertEquals(0, hashTable.getSize());
         assertEquals(8, hashTableLinearProbing.getCapacity());
     }
+
+    @Test
+    void dynamicSizeIncrease() {
+        if (!(hashTable instanceof HashTableLinearProbing)) {
+            fail("Invalid test class ");
+        }
+
+        HashTableLinearProbing<SimpleTransactionKey, Integer> hashTableLinearProbing = (HashTableLinearProbing) hashTable;
+        int expected = 2;
+        int actual = hashTableLinearProbing.getCapacity();
+        assertEquals(expected, actual);
+
+        SimpleTransactionKey key2 = new SimpleTransactionKey(2);
+        SimpleTransactionKey key1 = new SimpleTransactionKey(1);
+        SimpleTransactionKey key0 = new SimpleTransactionKey(0);
+        hashTable.add(key2, 2);
+        hashTable.add(key1, 1);
+        hashTable.add(key0, 0);
+
+        expected = 4;
+        actual = hashTableLinearProbing.getCapacity();
+        assertEquals(expected, actual);
+
+        SimpleTransactionKey key4 = new SimpleTransactionKey(4);
+        SimpleTransactionKey key3 = new SimpleTransactionKey(3);
+        hashTable.add(key4, 4);
+        hashTable.add(key3, 3);
+
+        expected = 8;
+        actual = hashTableLinearProbing.getCapacity();
+        assertEquals(expected, actual);
+    }
+
+    @Test
+    void dynamicSizeDecrease() {
+        if (!(hashTable instanceof HashTableLinearProbing)) {
+            fail("Invalid test class ");
+        }
+
+        HashTableLinearProbing<SimpleTransactionKey, Integer> hashTableLinearProbing = (HashTableLinearProbing) hashTable;
+        int expected = 2;
+        int actual = hashTableLinearProbing.getCapacity();
+        assertEquals(expected, actual);
+
+        SimpleTransactionKey key7 = new SimpleTransactionKey(7);
+        SimpleTransactionKey key6 = new SimpleTransactionKey(6);
+        SimpleTransactionKey key5 = new SimpleTransactionKey(5);
+        SimpleTransactionKey key4 = new SimpleTransactionKey(4);
+        SimpleTransactionKey key3 = new SimpleTransactionKey(3);
+        SimpleTransactionKey key2 = new SimpleTransactionKey(2);
+        SimpleTransactionKey key1 = new SimpleTransactionKey(1);
+        SimpleTransactionKey key0 = new SimpleTransactionKey(0);
+        hashTable.add(key7, 7);
+        hashTable.add(key6, 6);
+        hashTable.add(key5, 5);
+        hashTable.add(key4, 4);
+        hashTable.add(key3, 3);
+        hashTable.add(key2, 2);
+        hashTable.add(key1, 1);
+        hashTable.add(key0, 0);
+
+        expected = 8;
+        actual = hashTableLinearProbing.getCapacity();
+        assertEquals(expected, actual);
+
+        hashTable.remove(key6);
+        hashTable.remove(key5);
+        hashTable.remove(key4);
+        hashTable.remove(key3);
+        hashTable.remove(key2);
+        hashTable.remove(key1);
+        hashTable.remove(key0);
+
+        expected = 4;
+        actual = hashTableLinearProbing.getCapacity();
+        assertEquals(expected, actual);
+
+        hashTable.remove(key7);
+
+        expected = 2;
+        actual = hashTableLinearProbing.getCapacity();
+        assertEquals(expected, actual);
+    }
 }

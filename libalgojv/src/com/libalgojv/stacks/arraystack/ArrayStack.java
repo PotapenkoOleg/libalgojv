@@ -16,7 +16,6 @@ import java.util.NoSuchElementException;
 import java.util.function.Consumer;
 
 public final class ArrayStack<E> implements Stack<E>, Bag<E> {
-
     //#region Private Fields
     private final static int DEFAULT_CAPACITY = 2; // should be power of two
     private E[] array;
@@ -82,10 +81,6 @@ public final class ArrayStack<E> implements Stack<E>, Bag<E> {
         return size;
     }
 
-    public int getCapacity() {
-        return capacity;
-    }
-
     @Override
     public void add(final E item) {
         push(item);
@@ -99,6 +94,10 @@ public final class ArrayStack<E> implements Stack<E>, Bag<E> {
             stringBuilder.append("\n");
         });
         return stringBuilder.toString();
+    }
+
+    public int getCapacity() {
+        return capacity;
     }
     //#endregion
 

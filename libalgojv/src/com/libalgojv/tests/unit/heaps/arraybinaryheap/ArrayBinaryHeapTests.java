@@ -126,4 +126,14 @@ class ArrayBinaryHeapTests {
         int actual = priorityQueue.getSize();
         assertEquals(expected, actual);
     }
+
+    @Test
+    void dynamicSizeIncrease() {
+        fail("Not Implemented");
+    }
+
+    @Test
+    void dynamicSizeDecrease() {
+        fail("Not Implemented");
+    }
 }
