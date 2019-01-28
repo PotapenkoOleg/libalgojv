@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9f56ce26-7942-4300-be10-00f249394c3e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libalgojv.iml" beforeDir="false" afterPath="$PROJECT_DIR$/libalgojv.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/libalgojv/hashtables/hashtablelinearprobing/HashTableLinearProbing.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/libalgojv/hashtables/hashtablelinearprobing/HashTableLinearProbing.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/libalgojv/common/interfaces/PriorityQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/libalgojv/common/interfaces/PriorityQueue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/libalgojv/heaps/arraybinaryheap/ArrayBinaryHeap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/libalgojv/heaps/arraybinaryheap/ArrayBinaryHeap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/libalgojv/tests/unit/heaps/arraybinaryheap/ArrayBinaryHeapTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/libalgojv/tests/unit/heaps/arraybinaryheap/ArrayBinaryHeapTests.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -31,10 +31,57 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/libalgojv/heaps/arraybinaryheap/ArrayBinaryHeap.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="291">
+              <caret line="57" selection-start-line="57" selection-end-line="57" />
+              <folding>
+                <element signature="n#!!doc;n#DEFAULT_CAPACITY#0;n#ArrayBinaryHeap#0" />
+                <element signature="e#804#805#0" expanded="true" />
+                <element signature="e#858#859#0" expanded="true" />
+                <element signature="e#1106#1197#1" />
+                <element signature="e#1203#1294#1" />
+                <element signature="e#1808#1809#0" expanded="true" />
+                <element signature="e#1840#1841#0" expanded="true" />
+                <element signature="method#clear#0;class#ArrayBinaryHeap#0" />
+                <element signature="e#2069#2109#1" />
+                <element signature="e#2164#2165#0" expanded="true" />
+                <element signature="e#2195#2196#0" expanded="true" />
+                <element signature="method#swim#0;class#ArrayBinaryHeap#0" />
+                <element signature="e#2326#2392#1" />
+                <element signature="method#sink#0;class#ArrayBinaryHeap#0" />
+                <element signature="e#2461#2713#1" />
+                <element signature="e#2544#2580#1" />
+                <element signature="e#2618#2656#1" />
+                <element signature="method#exchange#0;class#ArrayBinaryHeap#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/libalgojv/stacks/arraystack/ArrayStack.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="239">
+              <caret line="44" column="43" lean-forward="true" selection-start-line="44" selection-start-column="7" selection-end-line="46" selection-end-column="9" />
+              <folding>
+                <element signature="n#!!doc;n#ArrayStack#0;n#ArrayStack#0" />
+                <element signature="method#ArrayStack#1;class#ArrayStack#0" />
+                <element signature="method#peek#0;class#ArrayStack#0" />
+                <element signature="method#clear#0;class#ArrayStack#0" />
+                <element signature="method#toString#0;class#ArrayStack#0" />
+                <element signature="method#iterator#0;class#ArrayStack#0" />
+                <element signature="method#forEach#0;class#ArrayStack#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/libalgojv/hashtables/hashtablelinearprobing/HashTableLinearProbing.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="361">
-              <caret line="147" column="37" lean-forward="true" selection-start-line="147" selection-start-column="37" selection-end-line="147" selection-end-column="37" />
+            <state relative-caret-position="901">
+              <caret line="147" column="37" selection-start-line="147" selection-start-column="37" selection-end-line="147" selection-end-column="37" />
               <folding>
                 <element signature="method#HashTableLinearProbing#1;class#HashTableLinearProbing#0" />
                 <element signature="method#add#0;class#HashTableLinearProbing#0" />
@@ -49,24 +96,14 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/libalgojv/tests/unit/hashtables/SimpleTransactionKey.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="440">
-              <caret line="32" selection-start-line="32" selection-end-line="32" />
-              <folding>
-                <element signature="e#752#753#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/libalgojv/tests/unit/heaps/arraybinaryheap/ArrayBinaryHeapTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="440">
-              <caret line="138" column="1" lean-forward="true" selection-start-line="138" selection-start-column="1" selection-end-line="138" selection-end-column="1" />
+            <state relative-caret-position="160">
+              <caret line="14" column="23" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
               <folding>
+                <element signature="e#685#686#0" expanded="true" />
+                <element signature="e#758#759#0" expanded="true" />
                 <element signature="e#957#1063#1" />
                 <element signature="e#1310#1379#1" />
                 <element signature="e#1736#1842#1" />
@@ -76,38 +113,18 @@
                 <element signature="method#getSize#0;class#ArrayBinaryHeapTests#0" />
                 <element signature="e#3144#3250#1" />
                 <element signature="e#3533#3639#1" />
-                <element signature="e#3922#3923#0" expanded="true" />
-                <element signature="e#3961#3962#0" expanded="true" />
-                <element signature="e#4005#4006#0" expanded="true" />
-                <element signature="e#4044#4045#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/libalgojv/tests/unit/hashtables/hashtablelinearprobing/HashTableLinearProbingTests.java">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/junit/jupiter/junit-jupiter-api/5.4.0-RC1/junit-jupiter-api-5.4.0-RC1.jar!/org/junit/jupiter/api/Assertions.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-140">
-              <caret line="252" selection-start-line="252" selection-end-line="252" />
+            <state relative-caret-position="189">
+              <caret line="249" selection-start-line="249" selection-end-line="249" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#add#0;class#HashTableLinearProbingTests#0" />
-                <element signature="e#1029#1081#1" />
-                <element signature="method#get#0;class#HashTableLinearProbingTests#0" />
-                <element signature="method#remove#0;class#HashTableLinearProbingTests#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/libalgojv/tests/unit/hashtables/SimpleTransaction.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-              <folding>
-                <element signature="e#0#1084#0" expanded="true" />
+                <element signature="e#7978#7979#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -116,47 +133,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="jar://$MAVEN_REPOSITORY$/org/junit/platform/junit-platform-commons/1.4.0-RC1/junit-platform-commons-1.4.0-RC1.jar!/org/junit/platform/commons/util/ReflectionUtils.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="303" selection-start-line="303" selection-end-line="303" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/libalgojv/heaps/arraybinaryheap/ArrayBinaryHeap.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="248">
-              <caret line="22" column="21" lean-forward="true" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
-              <folding>
-                <element signature="method#ArrayBinaryHeap#1;class#ArrayBinaryHeap#0" />
-                <element signature="method#insert#0;class#ArrayBinaryHeap#0" />
-                <element signature="method#delete#0;class#ArrayBinaryHeap#0" />
-                <element signature="method#clear#0;class#ArrayBinaryHeap#0" />
-                <element signature="e#2204#2205#0" expanded="true" />
-                <element signature="e#2235#2236#0" expanded="true" />
-                <element signature="method#swim#0;class#ArrayBinaryHeap#0" />
-                <element signature="method#sink#0;class#ArrayBinaryHeap#0" />
-                <element signature="method#exchange#0;class#ArrayBinaryHeap#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/libalgojv/queues/linkedlistqueue/LinkedListQueue.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="80">
-              <caret line="84" column="28" selection-start-line="84" selection-start-column="28" selection-end-line="84" selection-end-column="28" />
-              <folding>
-                <element signature="n#!!doc;n#LinkedListNode#0;n#LinkedListQueue#0" />
-                <element signature="class#LinkedListNode#0;class#LinkedListQueue#0" />
-                <element signature="n#!!doc;n#getItem#0;n#LinkedListNode#0;n#LinkedListQueue#0" />
-                <element signature="method#enqueue#0;class#LinkedListQueue#0" />
-                <element signature="method#toString#0;class#LinkedListQueue#0" />
-                <element signature="n#!!doc;n#iterator#0;n#LinkedListQueue#0" />
-                <element signature="method#iterator#0;class#LinkedListQueue#0" />
-                <element signature="method#forEach#0;class#LinkedListQueue#0" />
-              </folding>
+            <state relative-caret-position="132">
+              <caret line="302" selection-start-line="302" selection-end-line="302" />
             </state>
           </provider>
         </entry>
@@ -164,8 +142,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/libalgojv/tests/unit/queues/arrayqueue/ArrayQueueTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-60">
-              <caret line="152" column="9" selection-start-line="152" selection-start-column="9" selection-end-line="152" selection-end-column="9" />
+            <state relative-caret-position="101">
+              <caret line="167" selection-start-line="167" selection-end-line="167" />
               <folding>
                 <element signature="e#607#608#0" expanded="true" />
                 <element signature="e#649#650#0" expanded="true" />
@@ -176,7 +154,6 @@
                 <element signature="method#toStringTest#0;class#ArrayQueueTests#0" />
                 <element signature="method#iterator#0;class#ArrayQueueTests#0" />
                 <element signature="method#forEach#0;class#ArrayQueueTests#0" />
-                <element signature="e#4340#4380#1" />
               </folding>
             </state>
           </provider>
@@ -185,23 +162,45 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/libalgojv/queues/arrayqueue/ArrayQueue.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1340">
-              <caret line="105" column="5" selection-start-line="105" selection-start-column="5" selection-end-line="105" selection-end-column="5" />
+            <state relative-caret-position="100">
+              <caret line="52" selection-start-line="52" selection-end-line="52" />
               <folding>
-                <element signature="n#!!doc;n#array#0;n#ArrayQueue#0" />
                 <element signature="n#!!doc;n#ArrayQueue#0;n#ArrayQueue#0" />
                 <element signature="method#ArrayQueue#1;class#ArrayQueue#0" />
                 <element signature="method#toString#0;class#ArrayQueue#0" />
-                <element signature="e#2078#2177#0" />
-                <element signature="e#2415#2416#0" expanded="true" />
-                <element signature="e#2443#2444#0" expanded="true" />
                 <element signature="n#!!doc;n#iterator#0;n#ArrayQueue#0" />
                 <element signature="method#iterator#0;class#ArrayQueue#0" />
-                <element signature="class#2551:2943" />
-                <element signature="method#next#0;class#2551:2943" />
-                <element signature="e#2803#2867#1" />
                 <element signature="method#forEach#0;class#ArrayQueue#0" />
-                <element signature="e#3049#3094#1" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/libalgojv/tests/unit/queues/linkedlistqueue/LinkedListQueueTests.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="366">
+              <caret line="138" selection-start-line="138" selection-end-line="138" />
+              <folding>
+                <element signature="method#enqueue#0;class#LinkedListQueueTests#0" />
+                <element signature="method#dequeue#0;class#LinkedListQueueTests#0" />
+                <element signature="method#isEmpty#0;class#LinkedListQueueTests#0" />
+                <element signature="method#size#0;class#LinkedListQueueTests#0" />
+                <element signature="method#toStringTest#0;class#LinkedListQueueTests#0" />
+                <element signature="method#iterator#0;class#LinkedListQueueTests#0" />
+                <element signature="method#forEach#0;class#LinkedListQueueTests#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/libalgojv/common/enums/BinaryHeapType.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
+              <folding>
+                <element signature="e#0#252#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -221,7 +220,14 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>Uns</find>
+      <find>Key</find>
+      <find>keys</find>
+      <find>capacity</find>
     </findStrings>
+    <replaceStrings>
+      <replace>E</replace>
+      <replace>array</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -258,7 +264,6 @@
         <option value="$PROJECT_DIR$/src/com/libalgojv/heap/arraybinaryheap/tests/ArrayBinaryHeapTests.java" />
         <option value="$PROJECT_DIR$/src/com/libalgojv/heaps/arraybinaryheap/tests/ArrayBinaryHeapTests.java" />
         <option value="$PROJECT_DIR$/src/com/libalgojv/common/enums/BinaryHeapType.java" />
-        <option value="$PROJECT_DIR$/src/com/libalgojv/common/interfaces/PriorityQueue.java" />
         <option value="$PROJECT_DIR$/src/com/libalgojv/tests/unit/heaps/arraybinaryheap/ArrayBinaryHeapTest.java" />
         <option value="$PROJECT_DIR$/src/com/libalgojv/heaps/arraybinaryheap/ArrayBinaryHeapTests.java" />
         <option value="$PROJECT_DIR$/src/com/libalgojv/tests/unit/lists/singlelinkedlist/SingleLinkedListTests.java" />
@@ -268,18 +273,19 @@
         <option value="$PROJECT_DIR$/src/com/libalgojv/lists/singlelinkedlist/SingleLinkedList.java" />
         <option value="$PROJECT_DIR$/src/com/libalgojv/stacks/linkedliststack/LinkedListStack.java" />
         <option value="$PROJECT_DIR$/src/com/libalgojv/common/interfaces/HashTable.java" />
-        <option value="$PROJECT_DIR$/src/com/libalgojv/heaps/arraybinaryheap/ArrayBinaryHeap.java" />
         <option value="$PROJECT_DIR$/src/com/libalgojv/hashtables/hashtableseparatechaining/HashTableSeparateChaining.java" />
         <option value="$PROJECT_DIR$/src/com/libalgojv/tests/unit/hashtables/hashtableseparatechaining/HashTableSeparateChainingTests.java" />
         <option value="$PROJECT_DIR$/src/com/libalgojv/tests/unit/stacks/arraystack/ArrayStackTests.java" />
-        <option value="$PROJECT_DIR$/src/com/libalgojv/tests/unit/heaps/arraybinaryheap/ArrayBinaryHeapTests.java" />
         <option value="$PROJECT_DIR$/src/com/libalgojv/stacks/arraystack/ArrayStack.java" />
         <option value="$PROJECT_DIR$/src/com/libalgojv/queues/arrayqueue/ArrayQueue.java" />
         <option value="$PROJECT_DIR$/src/com/libalgojv/tests/unit/queues/linkedlistqueue/LinkedListQueueTests.java" />
         <option value="$PROJECT_DIR$/src/com/libalgojv/queues/linkedlistqueue/LinkedListQueue.java" />
-        <option value="$PROJECT_DIR$/src/com/libalgojv/tests/unit/queues/arrayqueue/ArrayQueueTests.java" />
         <option value="$PROJECT_DIR$/src/com/libalgojv/tests/unit/hashtables/hashtablelinearprobing/HashTableLinearProbingTests.java" />
         <option value="$PROJECT_DIR$/src/com/libalgojv/hashtables/hashtablelinearprobing/HashTableLinearProbing.java" />
+        <option value="$PROJECT_DIR$/src/com/libalgojv/common/interfaces/PriorityQueue.java" />
+        <option value="$PROJECT_DIR$/src/com/libalgojv/heaps/arraybinaryheap/ArrayBinaryHeap.java" />
+        <option value="$PROJECT_DIR$/src/com/libalgojv/tests/unit/heaps/arraybinaryheap/ArrayBinaryHeapTests.java" />
+        <option value="$PROJECT_DIR$/src/com/libalgojv/tests/unit/queues/arrayqueue/ArrayQueueTests.java" />
       </list>
     </option>
   </component>
@@ -327,22 +333,48 @@
               <item name="libalgojv" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="libalgojv" type="462c0819:PsiDirectoryNode" />
-              <item name="hashtables" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="libalgojv" type="b2602c69:ProjectViewProjectNode" />
-              <item name="libalgojv" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="libalgojv" type="462c0819:PsiDirectoryNode" />
-              <item name="hashtables" type="462c0819:PsiDirectoryNode" />
-              <item name="hashtablelinearprobing" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="libalgojv" type="b2602c69:ProjectViewProjectNode" />
-              <item name="libalgojv" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="libalgojv" type="462c0819:PsiDirectoryNode" />
               <item name="arraybinaryheap" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="libalgojv" type="b2602c69:ProjectViewProjectNode" />
+              <item name="libalgojv" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="libalgojv" type="462c0819:PsiDirectoryNode" />
+              <item name="unit" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="libalgojv" type="b2602c69:ProjectViewProjectNode" />
+              <item name="libalgojv" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="libalgojv" type="462c0819:PsiDirectoryNode" />
+              <item name="unit" type="462c0819:PsiDirectoryNode" />
+              <item name="arraybinaryheap" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="libalgojv" type="b2602c69:ProjectViewProjectNode" />
+              <item name="libalgojv" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="libalgojv" type="462c0819:PsiDirectoryNode" />
+              <item name="unit" type="462c0819:PsiDirectoryNode" />
+              <item name="queues" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="libalgojv" type="b2602c69:ProjectViewProjectNode" />
+              <item name="libalgojv" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="libalgojv" type="462c0819:PsiDirectoryNode" />
+              <item name="unit" type="462c0819:PsiDirectoryNode" />
+              <item name="queues" type="462c0819:PsiDirectoryNode" />
+              <item name="arrayqueue" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="libalgojv" type="b2602c69:ProjectViewProjectNode" />
+              <item name="libalgojv" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="libalgojv" type="462c0819:PsiDirectoryNode" />
+              <item name="unit" type="462c0819:PsiDirectoryNode" />
+              <item name="queues" type="462c0819:PsiDirectoryNode" />
+              <item name="linkedlistqueue" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -410,22 +442,39 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ArrayQueueTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ArrayBinaryHeapTests.dynamicSizeDecrease" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="libalgojv" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.libalgojv.tests.unit.queues.arrayqueue.*" />
+          <option name="PATTERN" value="com.libalgojv.tests.unit.heaps.arraybinaryheap.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.libalgojv.tests.unit.queues.arrayqueue" />
-      <option name="MAIN_CLASS_NAME" value="com.libalgojv.tests.unit.queues.arrayqueue.ArrayQueueTests" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="com.libalgojv.tests.unit.heaps.arraybinaryheap" />
+      <option name="MAIN_CLASS_NAME" value="com.libalgojv.tests.unit.heaps.arraybinaryheap.ArrayBinaryHeapTests" />
+      <option name="METHOD_NAME" value="dynamicSizeDecrease" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ArrayQueueTests.dynamicSizeIncrease" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ArrayBinaryHeapTests.dynamicSizeIncrease" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="libalgojv" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.libalgojv.tests.unit.heaps.arraybinaryheap.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.libalgojv.tests.unit.heaps.arraybinaryheap" />
+      <option name="MAIN_CLASS_NAME" value="com.libalgojv.tests.unit.heaps.arraybinaryheap.ArrayBinaryHeapTests" />
+      <option name="METHOD_NAME" value="dynamicSizeIncrease" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ArrayQueueTests.dynamicSizeDecrease" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="libalgojv" />
       <extension name="coverage">
         <pattern>
@@ -435,7 +484,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.libalgojv.tests.unit.queues.arrayqueue" />
       <option name="MAIN_CLASS_NAME" value="com.libalgojv.tests.unit.queues.arrayqueue.ArrayQueueTests" />
-      <option name="METHOD_NAME" value="dynamicSizeIncrease" />
+      <option name="METHOD_NAME" value="dynamicSizeDecrease" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -472,36 +521,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LinkedListQueueTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="libalgojv" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.libalgojv.tests.unit.queues.linkedlistqueue.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.libalgojv.tests.unit.queues.linkedlistqueue" />
-      <option name="MAIN_CLASS_NAME" value="com.libalgojv.tests.unit.queues.linkedlistqueue.LinkedListQueueTests" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
       <item itemvalue="JUnit.AllTests" />
-      <item itemvalue="JUnit.ArrayQueueTests" />
-      <item itemvalue="JUnit.ArrayQueueTests.dynamicSizeIncrease" />
-      <item itemvalue="JUnit.LinkedListQueueTests" />
       <item itemvalue="JUnit.HashTableLinearProbingTests" />
       <item itemvalue="JUnit.HashTableLinearProbingTests.dynamicSizeDecrease" />
+      <item itemvalue="JUnit.ArrayBinaryHeapTests.dynamicSizeIncrease" />
+      <item itemvalue="JUnit.ArrayBinaryHeapTests.dynamicSizeDecrease" />
+      <item itemvalue="JUnit.ArrayQueueTests.dynamicSizeDecrease" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ArrayQueueTests.dynamicSizeDecrease" />
+        <item itemvalue="JUnit.ArrayBinaryHeapTests.dynamicSizeDecrease" />
+        <item itemvalue="JUnit.ArrayBinaryHeapTests.dynamicSizeIncrease" />
         <item itemvalue="JUnit.HashTableLinearProbingTests.dynamicSizeDecrease" />
         <item itemvalue="JUnit.HashTableLinearProbingTests" />
-        <item itemvalue="JUnit.LinkedListQueueTests" />
-        <item itemvalue="JUnit.ArrayQueueTests" />
-        <item itemvalue="JUnit.ArrayQueueTests.dynamicSizeIncrease" />
       </list>
     </recent_temporary>
   </component>
@@ -517,34 +551,34 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="HashTableLinearProbingTests_dynamicSizeDecrease - 2019.01.28 at 10h 50m 31s.xml">
-      <configuration name="HashTableLinearProbingTests.dynamicSizeDecrease" configurationId="JUnit" />
+    <history-entry file="ArrayBinaryHeapTests_dynamicSizeDecrease - 2019.01.28 at 11h 44m 53s.xml">
+      <configuration name="ArrayBinaryHeapTests.dynamicSizeDecrease" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="HashTableLinearProbingTests_dynamicSizeDecrease - 2019.01.28 at 10h 51m 09s.xml">
-      <configuration name="HashTableLinearProbingTests.dynamicSizeDecrease" configurationId="JUnit" />
+    <history-entry file="ArrayBinaryHeapTests_dynamicSizeDecrease - 2019.01.28 at 11h 46m 52s.xml">
+      <configuration name="ArrayBinaryHeapTests.dynamicSizeDecrease" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="HashTableLinearProbingTests_dynamicSizeDecrease - 2019.01.28 at 10h 52m 05s.xml">
-      <configuration name="HashTableLinearProbingTests.dynamicSizeDecrease" configurationId="JUnit" />
+    <history-entry file="ArrayBinaryHeapTests_dynamicSizeDecrease - 2019.01.28 at 11h 48m 11s.xml">
+      <configuration name="ArrayBinaryHeapTests.dynamicSizeDecrease" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="HashTableLinearProbingTests_dynamicSizeDecrease - 2019.01.28 at 10h 52m 16s.xml">
-      <configuration name="HashTableLinearProbingTests.dynamicSizeDecrease" configurationId="JUnit" />
+    <history-entry file="ArrayBinaryHeapTests_dynamicSizeDecrease - 2019.01.28 at 11h 49m 59s.xml">
+      <configuration name="ArrayBinaryHeapTests.dynamicSizeDecrease" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="HashTableLinearProbingTests_dynamicSizeDecrease - 2019.01.28 at 10h 52m 40s.xml">
-      <configuration name="HashTableLinearProbingTests.dynamicSizeDecrease" configurationId="JUnit" />
+    <history-entry file="ArrayQueueTests_dynamicSizeDecrease - 2019.01.28 at 11h 50m 57s.xml">
+      <configuration name="ArrayQueueTests.dynamicSizeDecrease" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="HashTableLinearProbingTests_dynamicSizeDecrease - 2019.01.28 at 10h 53m 11s.xml">
-      <configuration name="HashTableLinearProbingTests.dynamicSizeDecrease" configurationId="JUnit" />
+    <history-entry file="ArrayBinaryHeapTests_dynamicSizeDecrease - 2019.01.28 at 11h 52m 44s.xml">
+      <configuration name="ArrayBinaryHeapTests.dynamicSizeDecrease" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="HashTableLinearProbingTests_dynamicSizeDecrease - 2019.01.28 at 10h 55m 52s.xml">
-      <configuration name="HashTableLinearProbingTests.dynamicSizeDecrease" configurationId="JUnit" />
+    <history-entry file="AllTests - 2019.01.28 at 11h 53m 07s.xml">
+      <configuration name="AllTests" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="HashTableLinearProbingTests_dynamicSizeDecrease - 2019.01.28 at 10h 56m 14s.xml">
-      <configuration name="HashTableLinearProbingTests.dynamicSizeDecrease" configurationId="JUnit" />
+    <history-entry file="ArrayQueueTests_dynamicSizeDecrease - 2019.01.28 at 11h 54m 46s.xml">
+      <configuration name="ArrayQueueTests.dynamicSizeDecrease" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="HashTableLinearProbingTests_dynamicSizeDecrease - 2019.01.28 at 10h 56m 41s.xml">
-      <configuration name="HashTableLinearProbingTests.dynamicSizeDecrease" configurationId="JUnit" />
+    <history-entry file="AllTests - 2019.01.28 at 11h 55m 04s.xml">
+      <configuration name="AllTests" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AllTests - 2019.01.28 at 10h 57m 06s.xml">
+    <history-entry file="AllTests - 2019.01.28 at 11h 55m 37s.xml">
       <configuration name="AllTests" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -555,7 +589,7 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1401919" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1401919" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Learn" order="3" />
@@ -565,7 +599,7 @@
       <window_info id="Image Layers" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.30222222" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49928263" visible="true" weight="0.32444444" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49928263" visible="true" weight="0.34666666" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.34111112" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -611,6 +645,24 @@
           <properties />
           <option name="timeStamp" value="24" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/libalgojv/tests/unit/heaps/arraybinaryheap/ArrayBinaryHeapTests.java</url>
+          <line>135</line>
+          <properties />
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/libalgojv/tests/unit/heaps/arraybinaryheap/ArrayBinaryHeapTests.java</url>
+          <line>171</line>
+          <properties />
+          <option name="timeStamp" value="29" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/libalgojv/tests/unit/queues/arrayqueue/ArrayQueueTests.java</url>
+          <line>167</line>
+          <properties />
+          <option name="timeStamp" value="31" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
@@ -646,16 +698,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/libalgojv/common/enums/BinaryHeapType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="10" column="12" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
-          <folding>
-            <element signature="e#0#252#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/libalgojv/common/enums/InsertPosition.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
@@ -676,219 +718,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/libalgojv/lists/doublelinkedlist/DoubleLinkedList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret lean-forward="true" />
-          <folding>
-            <element signature="e#0#15982#0" expanded="true" />
-            <element signature="e#703#727#0" />
-            <element signature="e#900#922#0" />
-            <element signature="e#1132#1151#0" />
-            <element signature="e#1132#2103#0" />
-            <element signature="e#1382#1508#0" />
-            <element signature="e#1518#1547#0" />
-            <element signature="e#2126#2150#0" />
-            <element signature="e#2126#2650#0" />
-            <element signature="e#2370#2458#1" />
-            <element signature="e#2509#2557#1" />
-            <element signature="e#2602#2644#1" />
-            <element signature="e#2656#3258#0" />
-            <element signature="e#2767#2826#1" />
-            <element signature="e#2956#3024#1" />
-            <element signature="e#3079#3138#1" />
-            <element signature="e#3193#3252#1" />
-            <element signature="e#3380#3669#0" />
-            <element signature="e#3497#3550#1" />
-            <element signature="e#3595#3642#1" />
-            <element signature="e#3675#4231#0" />
-            <element signature="e#3753#3789#1" />
-            <element signature="e#3846#3980#1" />
-            <element signature="e#4035#4092#1" />
-            <element signature="e#4147#4204#1" />
-            <element signature="e#4237#4593#0" />
-            <element signature="e#4312#4348#1" />
-            <element signature="e#4403#4457#1" />
-            <element signature="e#4512#4566#1" />
-            <element signature="e#4599#4683#0" />
-            <element signature="e#4771#5110#0" />
-            <element signature="e#4835#4868#1" />
-            <element signature="e#4923#4973#1" />
-            <element signature="e#5028#5086#1" />
-            <element signature="e#5116#5428#0" />
-            <element signature="e#5170#5201#1" />
-            <element signature="e#5302#5354#1" />
-            <element signature="e#5434#5990#0" />
-            <element signature="e#5501#5532#1" />
-            <element signature="e#5693#5842#1" />
-            <element signature="e#5738#5791#1" />
-            <element signature="e#5996#6635#0" />
-            <element signature="e#6051#6088#1" />
-            <element signature="e#6126#6163#1" />
-            <element signature="e#6305#6629#1" />
-            <element signature="e#6367#6412#1" />
-            <element signature="e#6466#6510#1" />
-            <element signature="e#6516#6619#1" />
-            <element signature="e#6641#6910#0" />
-            <element signature="e#6762#6861#0" />
-            <element signature="e#6933#6958#0" />
-            <element signature="e#6933#7139#0" />
-            <element signature="e#7145#7428#0" />
-            <element signature="e#7244#7332#1" />
-            <element signature="e#7434#8025#0" />
-            <element signature="e#7633#7975#1" />
-            <element signature="e#7689#7924#1" />
-            <element signature="e#8031#8186#0" />
-            <element signature="e#8192#8811#0" />
-            <element signature="e#8420#8479#1" />
-            <element signature="e#8530#8721#1" />
-            <element signature="e#8727#8805#1" />
-            <element signature="e#8817#9141#0" />
-            <element signature="e#8935#9089#1" />
-            <element signature="e#8980#9038#1" />
-            <element signature="e#9253#9630#0" />
-            <element signature="e#9387#9437#1" />
-            <element signature="e#9539#9603#1" />
-            <element signature="e#9636#9990#0" />
-            <element signature="e#9701#9737#1" />
-            <element signature="e#9806#9895#1" />
-            <element signature="e#9996#10340#0" />
-            <element signature="e#10055#10091#1" />
-            <element signature="e#10159#10248#1" />
-            <element signature="e#10346#11285#0" />
-            <element signature="e#10488#11258#1" />
-            <element signature="e#10578#11207#1" />
-            <element signature="e#10776#10909#1" />
-            <element signature="e#10947#11078#1" />
-            <element signature="e#11291#11590#0" />
-            <element signature="e#11378#11535#1" />
-            <element signature="e#11596#12380#0" />
-            <element signature="e#11797#12353#1" />
-            <element signature="e#11841#12287#1" />
-            <element signature="e#12049#12128#1" />
-            <element signature="e#12134#12242#1" />
-            <element signature="e#12386#12634#0" />
-            <element signature="e#12510#12582#1" />
-            <element signature="e#12640#12919#0" />
-            <element signature="e#12832#12892#1" />
-            <element signature="e#12942#12960#0" />
-            <element signature="e#12942#13761#0" />
-            <element signature="class#13034:13754" />
-            <element signature="initializer##0;class#13034:13754" />
-            <element signature="method#next#0;class#13034:13754" />
-            <element signature="e#13563#13678#1" />
-            <element signature="e#13767#13917#0" />
-            <element signature="e#13867#13911#1" />
-            <element signature="e#13940#13962#0" />
-            <element signature="e#13940#15961#0" />
-            <element signature="class#14033:15954" />
-            <element signature="initializer##0;class#14033:15954" />
-            <element signature="method#next#0;class#14033:15954" />
-            <element signature="e#14609#14760#1" />
-            <element signature="method#previous#0;class#14033:15954" />
-            <element signature="e#15080#15235#1" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/libalgojv/stacks/linkedliststack/LinkedListStack.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret lean-forward="true" />
-          <folding>
-            <element signature="e#0#3181#0" expanded="true" />
-            <element signature="n#!!doc;n#first#0;n#LinkedListStack#0" />
-            <element signature="n#!!doc;n#LinkedListNode#0;n#LinkedListStack#0" />
-            <element signature="class#LinkedListNode#0;class#LinkedListStack#0" />
-            <element signature="n#!!doc;n#getItem#0;n#LinkedListNode#0;n#LinkedListStack#0" />
-            <element signature="n#!!doc;n#pop#0;n#LinkedListStack#0" />
-            <element signature="method#pop#0;class#LinkedListStack#0" />
-            <element signature="e#1208#1244#1" />
-            <element signature="method#push#0;class#LinkedListStack#0" />
-            <element signature="method#peek#0;class#LinkedListStack#0" />
-            <element signature="e#1614#1650#1" />
-            <element signature="method#clear#0;class#LinkedListStack#0" />
-            <element signature="method#toString#0;class#LinkedListStack#0" />
-            <element signature="e#2130#2229#0" />
-            <element signature="n#!!doc;n#iterator#0;n#LinkedListStack#0" />
-            <element signature="method#iterator#0;class#LinkedListStack#0" />
-            <element signature="class#2389:3006" />
-            <element signature="initializer##0;class#2389:3006" />
-            <element signature="method#next#0;class#2389:3006" />
-            <element signature="e#2816#2930#1" />
-            <element signature="method#forEach#0;class#LinkedListStack#0" />
-            <element signature="e#3111#3155#1" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/libalgojv/common/interfaces/Bag.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-          <folding>
-            <element signature="e#0#319#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/libalgojv/common/interfaces/BagKeyValue.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
           <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
           <folding>
             <element signature="e#0#362#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/libalgojv/common/interfaces/HashTable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="15" column="23" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
-          <folding>
-            <element signature="e#0#400#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/libalgojv/common/interfaces/Stack.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-          <folding>
-            <element signature="e#0#372#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/libalgojv/common/interfaces/Queue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-          <folding>
-            <element signature="e#0#379#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/libalgojv/common/interfaces/PriorityQueue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-          <folding>
-            <element signature="e#0#404#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/libalgojv/common/interfaces/List.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
-          <folding>
-            <element signature="e#0#687#0" expanded="true" />
-            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -917,125 +752,6 @@
             <element signature="method#toStringTest#0;class#LinkedListStackTests#0" />
             <element signature="method#iterator#0;class#LinkedListStackTests#0" />
             <element signature="method#forEach#0;class#LinkedListStackTests#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/libalgojv/lists/singlelinkedlist/SingleLinkedList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-38">
-          <caret line="68" column="4" lean-forward="true" selection-start-line="68" selection-start-column="4" selection-end-line="68" selection-end-column="4" />
-          <folding>
-            <element signature="e#670#694#0" />
-            <element signature="e#816#838#0" />
-            <element signature="e#1048#1068#0" />
-            <element signature="e#1048#1829#0" />
-            <element signature="e#1326#1452#0" />
-            <element signature="e#1462#1490#0" />
-            <element signature="e#1852#2260#0" />
-            <element signature="e#2119#2167#1" />
-            <element signature="e#2212#2254#1" />
-            <element signature="e#2266#2830#0" />
-            <element signature="e#2359#2418#1" />
-            <element signature="e#2548#2596#1" />
-            <element signature="e#2651#2710#1" />
-            <element signature="e#2765#2824#1" />
-            <element signature="e#2952#3305#0" />
-            <element signature="e#3046#3082#1" />
-            <element signature="e#3133#3186#1" />
-            <element signature="e#3231#3278#1" />
-            <element signature="e#3311#3832#0" />
-            <element signature="e#3389#3425#1" />
-            <element signature="e#3461#3581#1" />
-            <element signature="e#3636#3693#1" />
-            <element signature="e#3748#3805#1" />
-            <element signature="e#3838#4194#0" />
-            <element signature="e#3913#3949#1" />
-            <element signature="e#4004#4058#1" />
-            <element signature="e#4113#4167#1" />
-            <element signature="e#4351#4761#0" />
-            <element signature="e#4415#4448#1" />
-            <element signature="e#4486#4519#1" />
-            <element signature="e#4574#4624#1" />
-            <element signature="e#4679#4737#1" />
-            <element signature="e#4767#5036#0" />
-            <element signature="e#4888#4987#0" />
-            <element signature="e#5042#6024#0" />
-            <element signature="e#5118#5154#1" />
-            <element signature="e#5325#5838#1" />
-            <element signature="e#5365#5414#1" />
-            <element signature="e#5520#5558#1" />
-            <element signature="e#5596#5828#1" />
-            <element signature="e#5614#5666#0" />
-            <element signature="e#5946#5982#1" />
-            <element signature="e#6030#6306#0" />
-            <element signature="e#6084#6115#1" />
-            <element signature="e#6216#6268#1" />
-            <element signature="e#6312#6761#0" />
-            <element signature="e#6379#6410#1" />
-            <element signature="e#6571#6718#1" />
-            <element signature="e#6614#6667#1" />
-            <element signature="e#6767#7406#0" />
-            <element signature="e#6822#6859#1" />
-            <element signature="e#6897#6934#1" />
-            <element signature="e#7076#7400#1" />
-            <element signature="e#7138#7183#1" />
-            <element signature="e#7237#7281#1" />
-            <element signature="e#7287#7390#1" />
-            <element signature="e#7430#7455#0" />
-            <element signature="e#7430#7594#0" />
-            <element signature="e#7600#7971#0" />
-            <element signature="e#7693#7753#1" />
-            <element signature="e#7808#7859#1" />
-            <element signature="e#7914#7965#1" />
-            <element signature="e#7977#8244#0" />
-            <element signature="e#8152#8204#1" />
-            <element signature="e#8379#8696#0" />
-            <element signature="e#8565#8614#1" />
-            <element signature="e#8620#8690#1" />
-            <element signature="e#8702#9179#0" />
-            <element signature="e#8889#9129#1" />
-            <element signature="e#8945#9078#1" />
-            <element signature="e#9185#9328#0" />
-            <element signature="e#9334#9841#0" />
-            <element signature="e#9544#9603#1" />
-            <element signature="e#9654#9751#1" />
-            <element signature="e#9757#9835#1" />
-            <element signature="e#9847#9987#0" />
-            <element signature="e#9993#10273#0" />
-            <element signature="e#10079#10135#1" />
-            <element signature="e#10190#10246#1" />
-            <element signature="e#10279#10742#0" />
-            <element signature="e#10357#10466#1" />
-            <element signature="e#10577#10629#1" />
-            <element signature="e#10748#10987#0" />
-            <element signature="e#10826#10935#1" />
-            <element signature="e#10993#11317#0" />
-            <element signature="e#11123#11253#1" />
-            <element signature="e#11323#11782#0" />
-            <element signature="e#11510#11562#1" />
-            <element signature="e#11602#11755#1" />
-            <element signature="e#11894#12371#0" />
-            <element signature="e#12083#12344#1" />
-            <element signature="e#12127#12278#1" />
-            <element signature="e#12377#12693#0" />
-            <element signature="e#12489#12641#1" />
-            <element signature="e#12532#12590#1" />
-            <element signature="e#12799#13164#0" />
-            <element signature="e#12921#12971#1" />
-            <element signature="e#13073#13137#1" />
-            <element signature="e#13170#13449#0" />
-            <element signature="e#13362#13422#1" />
-            <element signature="e#13455#13703#0" />
-            <element signature="e#13579#13651#1" />
-            <element signature="e#13726#13744#0" />
-            <element signature="e#13726#14452#0" />
-            <element signature="class#13818:14445" />
-            <element signature="initializer##0;class#13818:14445" />
-            <element signature="method#next#0;class#13818:14445" />
-            <element signature="e#14254#14369#1" />
-            <element signature="e#14458#14610#0" />
-            <element signature="e#14559#14604#1" />
           </folding>
         </state>
       </provider>
@@ -1186,104 +902,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/libalgojv/stacks/arraystack/ArrayStack.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
-          <caret line="82" selection-start-line="82" selection-end-line="82" />
-          <folding>
-            <element signature="n#!!doc;n#ArrayStack#0;n#ArrayStack#0" />
-            <element signature="method#ArrayStack#1;class#ArrayStack#0" />
-            <element signature="method#pop#0;class#ArrayStack#0" />
-            <element signature="method#push#0;class#ArrayStack#0" />
-            <element signature="method#peek#0;class#ArrayStack#0" />
-            <element signature="method#clear#0;class#ArrayStack#0" />
-            <element signature="method#toString#0;class#ArrayStack#0" />
-            <element signature="e#2260#2261#0" expanded="true" />
-            <element signature="e#2291#2292#0" expanded="true" />
-            <element signature="n#!!doc;n#resize#0;n#ArrayStack#0" />
-            <element signature="method#resize#0;class#ArrayStack#0" />
-            <element signature="n#!!doc;n#iterator#0;n#ArrayStack#0" />
-            <element signature="method#iterator#0;class#ArrayStack#0" />
-            <element signature="method#forEach#0;class#ArrayStack#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/libalgojv/tests/unit/queues/linkedlistqueue/LinkedListQueueTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="366">
-          <caret line="138" selection-start-line="138" selection-end-line="138" />
-          <folding>
-            <element signature="method#enqueue#0;class#LinkedListQueueTests#0" />
-            <element signature="method#dequeue#0;class#LinkedListQueueTests#0" />
-            <element signature="method#isEmpty#0;class#LinkedListQueueTests#0" />
-            <element signature="method#size#0;class#LinkedListQueueTests#0" />
-            <element signature="method#toStringTest#0;class#LinkedListQueueTests#0" />
-            <element signature="method#iterator#0;class#LinkedListQueueTests#0" />
-            <element signature="method#forEach#0;class#LinkedListQueueTests#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/libalgojv/queues/linkedlistqueue/LinkedListQueue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="84" column="28" selection-start-line="84" selection-start-column="28" selection-end-line="84" selection-end-column="28" />
-          <folding>
-            <element signature="n#!!doc;n#LinkedListNode#0;n#LinkedListQueue#0" />
-            <element signature="class#LinkedListNode#0;class#LinkedListQueue#0" />
-            <element signature="n#!!doc;n#getItem#0;n#LinkedListNode#0;n#LinkedListQueue#0" />
-            <element signature="method#enqueue#0;class#LinkedListQueue#0" />
-            <element signature="method#toString#0;class#LinkedListQueue#0" />
-            <element signature="n#!!doc;n#iterator#0;n#LinkedListQueue#0" />
-            <element signature="method#iterator#0;class#LinkedListQueue#0" />
-            <element signature="method#forEach#0;class#LinkedListQueue#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/libalgojv/tests/unit/queues/arrayqueue/ArrayQueueTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-60">
-          <caret line="152" column="9" selection-start-line="152" selection-start-column="9" selection-end-line="152" selection-end-column="9" />
-          <folding>
-            <element signature="e#607#608#0" expanded="true" />
-            <element signature="e#649#650#0" expanded="true" />
-            <element signature="e#687#688#0" expanded="true" />
-            <element signature="e#715#716#0" expanded="true" />
-            <element signature="method#isEmpty#0;class#ArrayQueueTests#0" />
-            <element signature="method#size#0;class#ArrayQueueTests#0" />
-            <element signature="method#toStringTest#0;class#ArrayQueueTests#0" />
-            <element signature="method#iterator#0;class#ArrayQueueTests#0" />
-            <element signature="method#forEach#0;class#ArrayQueueTests#0" />
-            <element signature="e#4340#4380#1" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/libalgojv/queues/arrayqueue/ArrayQueue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1340">
-          <caret line="105" column="5" selection-start-line="105" selection-start-column="5" selection-end-line="105" selection-end-column="5" />
-          <folding>
-            <element signature="n#!!doc;n#array#0;n#ArrayQueue#0" />
-            <element signature="n#!!doc;n#ArrayQueue#0;n#ArrayQueue#0" />
-            <element signature="method#ArrayQueue#1;class#ArrayQueue#0" />
-            <element signature="method#toString#0;class#ArrayQueue#0" />
-            <element signature="e#2078#2177#0" />
-            <element signature="e#2415#2416#0" expanded="true" />
-            <element signature="e#2443#2444#0" expanded="true" />
-            <element signature="n#!!doc;n#iterator#0;n#ArrayQueue#0" />
-            <element signature="method#iterator#0;class#ArrayQueue#0" />
-            <element signature="class#2551:2943" />
-            <element signature="method#next#0;class#2551:2943" />
-            <element signature="e#2803#2867#1" />
-            <element signature="method#forEach#0;class#ArrayQueue#0" />
-            <element signature="e#3049#3094#1" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/libalgojv/tests/unit/hashtables/SimpleTransaction.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -1304,13 +922,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/junit/platform/junit-platform-commons/1.4.0-RC1/junit-platform-commons-1.4.0-RC1.jar!/org/junit/platform/commons/util/ReflectionUtils.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="303" selection-start-line="303" selection-end-line="303" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/libalgojv/tests/unit/hashtables/hashtablelinearprobing/HashTableLinearProbingTests.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-140">
@@ -1325,10 +936,233 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/libalgojv/lists/doublelinkedlist/DoubleLinkedList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/libalgojv/lists/singlelinkedlist/SingleLinkedList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="68" column="4" lean-forward="true" selection-start-line="68" selection-start-column="4" selection-end-line="68" selection-end-column="4" />
+          <folding>
+            <element signature="e#670#694#0" />
+            <element signature="e#816#838#0" />
+            <element signature="e#1048#1068#0" />
+            <element signature="e#1048#1829#0" />
+            <element signature="e#1326#1452#0" />
+            <element signature="e#1462#1490#0" />
+            <element signature="e#1852#2260#0" />
+            <element signature="e#2119#2167#1" />
+            <element signature="e#2212#2254#1" />
+            <element signature="e#2266#2830#0" />
+            <element signature="e#2359#2418#1" />
+            <element signature="e#2548#2596#1" />
+            <element signature="e#2651#2710#1" />
+            <element signature="e#2765#2824#1" />
+            <element signature="e#2952#3305#0" />
+            <element signature="e#3046#3082#1" />
+            <element signature="e#3133#3186#1" />
+            <element signature="e#3231#3278#1" />
+            <element signature="e#3311#3832#0" />
+            <element signature="e#3389#3425#1" />
+            <element signature="e#3461#3581#1" />
+            <element signature="e#3636#3693#1" />
+            <element signature="e#3748#3805#1" />
+            <element signature="e#3838#4194#0" />
+            <element signature="e#3913#3949#1" />
+            <element signature="e#4004#4058#1" />
+            <element signature="e#4113#4167#1" />
+            <element signature="e#4351#4761#0" />
+            <element signature="e#4415#4448#1" />
+            <element signature="e#4486#4519#1" />
+            <element signature="e#4574#4624#1" />
+            <element signature="e#4679#4737#1" />
+            <element signature="e#4767#5036#0" />
+            <element signature="e#4888#4987#0" />
+            <element signature="e#5042#6024#0" />
+            <element signature="e#5118#5154#1" />
+            <element signature="e#5325#5838#1" />
+            <element signature="e#5365#5414#1" />
+            <element signature="e#5520#5558#1" />
+            <element signature="e#5596#5828#1" />
+            <element signature="e#5614#5666#0" />
+            <element signature="e#5946#5982#1" />
+            <element signature="e#6030#6306#0" />
+            <element signature="e#6084#6115#1" />
+            <element signature="e#6216#6268#1" />
+            <element signature="e#6312#6761#0" />
+            <element signature="e#6379#6410#1" />
+            <element signature="e#6571#6718#1" />
+            <element signature="e#6614#6667#1" />
+            <element signature="e#6767#7406#0" />
+            <element signature="e#6822#6859#1" />
+            <element signature="e#6897#6934#1" />
+            <element signature="e#7076#7400#1" />
+            <element signature="e#7138#7183#1" />
+            <element signature="e#7237#7281#1" />
+            <element signature="e#7287#7390#1" />
+            <element signature="e#7430#7455#0" />
+            <element signature="e#7430#7594#0" />
+            <element signature="e#7600#7971#0" />
+            <element signature="e#7693#7753#1" />
+            <element signature="e#7808#7859#1" />
+            <element signature="e#7914#7965#1" />
+            <element signature="e#7977#8244#0" />
+            <element signature="e#8152#8204#1" />
+            <element signature="e#8379#8696#0" />
+            <element signature="e#8565#8614#1" />
+            <element signature="e#8620#8690#1" />
+            <element signature="e#8702#9179#0" />
+            <element signature="e#8889#9129#1" />
+            <element signature="e#8945#9078#1" />
+            <element signature="e#9185#9328#0" />
+            <element signature="e#9334#9841#0" />
+            <element signature="e#9544#9603#1" />
+            <element signature="e#9654#9751#1" />
+            <element signature="e#9757#9835#1" />
+            <element signature="e#9847#9987#0" />
+            <element signature="e#9993#10273#0" />
+            <element signature="e#10079#10135#1" />
+            <element signature="e#10190#10246#1" />
+            <element signature="e#10279#10742#0" />
+            <element signature="e#10357#10466#1" />
+            <element signature="e#10577#10629#1" />
+            <element signature="e#10748#10987#0" />
+            <element signature="e#10826#10935#1" />
+            <element signature="e#10993#11317#0" />
+            <element signature="e#11123#11253#1" />
+            <element signature="e#11323#11782#0" />
+            <element signature="e#11510#11562#1" />
+            <element signature="e#11602#11755#1" />
+            <element signature="e#11894#12371#0" />
+            <element signature="e#12083#12344#1" />
+            <element signature="e#12127#12278#1" />
+            <element signature="e#12377#12693#0" />
+            <element signature="e#12489#12641#1" />
+            <element signature="e#12532#12590#1" />
+            <element signature="e#12799#13164#0" />
+            <element signature="e#12921#12971#1" />
+            <element signature="e#13073#13137#1" />
+            <element signature="e#13170#13449#0" />
+            <element signature="e#13362#13422#1" />
+            <element signature="e#13455#13703#0" />
+            <element signature="e#13579#13651#1" />
+            <element signature="e#13726#13744#0" />
+            <element signature="e#13726#14452#0" />
+            <element signature="class#13818:14445" />
+            <element signature="initializer##0;class#13818:14445" />
+            <element signature="method#next#0;class#13818:14445" />
+            <element signature="e#14254#14369#1" />
+            <element signature="e#14458#14610#0" />
+            <element signature="e#14559#14604#1" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/libalgojv/stacks/linkedliststack/LinkedListStack.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="17" column="19" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
+          <folding>
+            <element signature="n#!!doc;n#first#0;n#LinkedListStack#0" />
+            <element signature="n#!!doc;n#LinkedListNode#0;n#LinkedListStack#0" />
+            <element signature="class#LinkedListNode#0;class#LinkedListStack#0" />
+            <element signature="n#!!doc;n#getItem#0;n#LinkedListNode#0;n#LinkedListStack#0" />
+            <element signature="n#!!doc;n#pop#0;n#LinkedListStack#0" />
+            <element signature="method#pop#0;class#LinkedListStack#0" />
+            <element signature="method#push#0;class#LinkedListStack#0" />
+            <element signature="method#peek#0;class#LinkedListStack#0" />
+            <element signature="method#clear#0;class#LinkedListStack#0" />
+            <element signature="method#toString#0;class#LinkedListStack#0" />
+            <element signature="n#!!doc;n#iterator#0;n#LinkedListStack#0" />
+            <element signature="method#iterator#0;class#LinkedListStack#0" />
+            <element signature="method#forEach#0;class#LinkedListStack#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/libalgojv/queues/linkedlistqueue/LinkedListQueue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="820">
+          <caret line="84" column="28" selection-start-line="84" selection-start-column="28" selection-end-line="84" selection-end-column="28" />
+          <folding>
+            <element signature="n#!!doc;n#LinkedListNode#0;n#LinkedListQueue#0" />
+            <element signature="class#LinkedListNode#0;class#LinkedListQueue#0" />
+            <element signature="n#!!doc;n#getItem#0;n#LinkedListNode#0;n#LinkedListQueue#0" />
+            <element signature="method#enqueue#0;class#LinkedListQueue#0" />
+            <element signature="method#toString#0;class#LinkedListQueue#0" />
+            <element signature="n#!!doc;n#iterator#0;n#LinkedListQueue#0" />
+            <element signature="method#iterator#0;class#LinkedListQueue#0" />
+            <element signature="method#forEach#0;class#LinkedListQueue#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/libalgojv/common/interfaces/List.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="123">
+          <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#687#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/libalgojv/common/interfaces/HashTable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="15" column="23" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/libalgojv/common/interfaces/Bag.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#319#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/libalgojv/common/interfaces/Queue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#379#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/libalgojv/common/interfaces/Stack.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#372#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/libalgojv/common/interfaces/PriorityQueue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+          <folding>
+            <element signature="e#0#404#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/libalgojv/hashtables/hashtablelinearprobing/HashTableLinearProbing.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="147" column="37" lean-forward="true" selection-start-line="147" selection-start-column="37" selection-end-line="147" selection-end-column="37" />
+        <state relative-caret-position="901">
+          <caret line="147" column="37" selection-start-line="147" selection-start-column="37" selection-end-line="147" selection-end-column="37" />
           <folding>
             <element signature="method#HashTableLinearProbing#1;class#HashTableLinearProbing#0" />
             <element signature="method#add#0;class#HashTableLinearProbing#0" />
@@ -1342,11 +1176,132 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/libalgojv/stacks/arraystack/ArrayStack.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="239">
+          <caret line="44" column="43" lean-forward="true" selection-start-line="44" selection-start-column="7" selection-end-line="46" selection-end-column="9" />
+          <folding>
+            <element signature="n#!!doc;n#ArrayStack#0;n#ArrayStack#0" />
+            <element signature="method#ArrayStack#1;class#ArrayStack#0" />
+            <element signature="method#peek#0;class#ArrayStack#0" />
+            <element signature="method#clear#0;class#ArrayStack#0" />
+            <element signature="method#toString#0;class#ArrayStack#0" />
+            <element signature="method#iterator#0;class#ArrayStack#0" />
+            <element signature="method#forEach#0;class#ArrayStack#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/libalgojv/common/enums/BinaryHeapType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
+          <folding>
+            <element signature="e#0#252#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/junit/jupiter/junit-jupiter-api/5.4.0-RC1/junit-jupiter-api-5.4.0-RC1.jar!/org/junit/jupiter/api/Assertions.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="249" selection-start-line="249" selection-end-line="249" />
+          <folding>
+            <element signature="e#7978#7979#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/libalgojv/heaps/arraybinaryheap/ArrayBinaryHeap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="291">
+          <caret line="57" selection-start-line="57" selection-end-line="57" />
+          <folding>
+            <element signature="n#!!doc;n#DEFAULT_CAPACITY#0;n#ArrayBinaryHeap#0" />
+            <element signature="e#804#805#0" expanded="true" />
+            <element signature="e#858#859#0" expanded="true" />
+            <element signature="e#1106#1197#1" />
+            <element signature="e#1203#1294#1" />
+            <element signature="e#1808#1809#0" expanded="true" />
+            <element signature="e#1840#1841#0" expanded="true" />
+            <element signature="method#clear#0;class#ArrayBinaryHeap#0" />
+            <element signature="e#2069#2109#1" />
+            <element signature="e#2164#2165#0" expanded="true" />
+            <element signature="e#2195#2196#0" expanded="true" />
+            <element signature="method#swim#0;class#ArrayBinaryHeap#0" />
+            <element signature="e#2326#2392#1" />
+            <element signature="method#sink#0;class#ArrayBinaryHeap#0" />
+            <element signature="e#2461#2713#1" />
+            <element signature="e#2544#2580#1" />
+            <element signature="e#2618#2656#1" />
+            <element signature="method#exchange#0;class#ArrayBinaryHeap#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/libalgojv/tests/unit/queues/linkedlistqueue/LinkedListQueueTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="366">
+          <caret line="138" selection-start-line="138" selection-end-line="138" />
+          <folding>
+            <element signature="method#enqueue#0;class#LinkedListQueueTests#0" />
+            <element signature="method#dequeue#0;class#LinkedListQueueTests#0" />
+            <element signature="method#isEmpty#0;class#LinkedListQueueTests#0" />
+            <element signature="method#size#0;class#LinkedListQueueTests#0" />
+            <element signature="method#toStringTest#0;class#LinkedListQueueTests#0" />
+            <element signature="method#iterator#0;class#LinkedListQueueTests#0" />
+            <element signature="method#forEach#0;class#LinkedListQueueTests#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/junit/platform/junit-platform-commons/1.4.0-RC1/junit-platform-commons-1.4.0-RC1.jar!/org/junit/platform/commons/util/ReflectionUtils.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="302" selection-start-line="302" selection-end-line="302" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/libalgojv/tests/unit/queues/arrayqueue/ArrayQueueTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="101">
+          <caret line="167" selection-start-line="167" selection-end-line="167" />
+          <folding>
+            <element signature="e#607#608#0" expanded="true" />
+            <element signature="e#649#650#0" expanded="true" />
+            <element signature="e#687#688#0" expanded="true" />
+            <element signature="e#715#716#0" expanded="true" />
+            <element signature="method#isEmpty#0;class#ArrayQueueTests#0" />
+            <element signature="method#size#0;class#ArrayQueueTests#0" />
+            <element signature="method#toStringTest#0;class#ArrayQueueTests#0" />
+            <element signature="method#iterator#0;class#ArrayQueueTests#0" />
+            <element signature="method#forEach#0;class#ArrayQueueTests#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/libalgojv/queues/arrayqueue/ArrayQueue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="52" selection-start-line="52" selection-end-line="52" />
+          <folding>
+            <element signature="n#!!doc;n#ArrayQueue#0;n#ArrayQueue#0" />
+            <element signature="method#ArrayQueue#1;class#ArrayQueue#0" />
+            <element signature="method#toString#0;class#ArrayQueue#0" />
+            <element signature="n#!!doc;n#iterator#0;n#ArrayQueue#0" />
+            <element signature="method#iterator#0;class#ArrayQueue#0" />
+            <element signature="method#forEach#0;class#ArrayQueue#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/libalgojv/tests/unit/heaps/arraybinaryheap/ArrayBinaryHeapTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="138" column="1" lean-forward="true" selection-start-line="138" selection-start-column="1" selection-end-line="138" selection-end-column="1" />
+        <state relative-caret-position="160">
+          <caret line="14" column="23" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
           <folding>
+            <element signature="e#685#686#0" expanded="true" />
+            <element signature="e#758#759#0" expanded="true" />
             <element signature="e#957#1063#1" />
             <element signature="e#1310#1379#1" />
             <element signature="e#1736#1842#1" />
@@ -1356,28 +1311,6 @@
             <element signature="method#getSize#0;class#ArrayBinaryHeapTests#0" />
             <element signature="e#3144#3250#1" />
             <element signature="e#3533#3639#1" />
-            <element signature="e#3922#3923#0" expanded="true" />
-            <element signature="e#3961#3962#0" expanded="true" />
-            <element signature="e#4005#4006#0" expanded="true" />
-            <element signature="e#4044#4045#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/libalgojv/heaps/arraybinaryheap/ArrayBinaryHeap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="22" column="21" lean-forward="true" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
-          <folding>
-            <element signature="method#ArrayBinaryHeap#1;class#ArrayBinaryHeap#0" />
-            <element signature="method#insert#0;class#ArrayBinaryHeap#0" />
-            <element signature="method#delete#0;class#ArrayBinaryHeap#0" />
-            <element signature="method#clear#0;class#ArrayBinaryHeap#0" />
-            <element signature="e#2204#2205#0" expanded="true" />
-            <element signature="e#2235#2236#0" expanded="true" />
-            <element signature="method#swim#0;class#ArrayBinaryHeap#0" />
-            <element signature="method#sink#0;class#ArrayBinaryHeap#0" />
-            <element signature="method#exchange#0;class#ArrayBinaryHeap#0" />
           </folding>
         </state>
       </provider>

@@ -22,7 +22,7 @@ class ArrayBinaryHeapTests {
 
     @BeforeEach
     void setUp() {
-        priorityQueue = new ArrayBinaryHeap<>(BinaryHeapType.MAX);
+        priorityQueue = new ArrayBinaryHeap<>(BinaryHeapType.MAX, 2);
     }
 
     @AfterEach
@@ -129,11 +129,52 @@ class ArrayBinaryHeapTests {
 
     @Test
     void dynamicSizeIncrease() {
-        fail("Not Implemented");
+        if (!(priorityQueue instanceof ArrayBinaryHeap)) {
+            fail("Invalid queue type");
+        }
+
+        ArrayBinaryHeap arrayBinaryHeap = (ArrayBinaryHeap) priorityQueue;
+        int expected = 2;
+        int actual = arrayBinaryHeap.getCapacity();
+        assertEquals(expected, actual);
+        arrayBinaryHeap.insert('A');
+        arrayBinaryHeap.insert('A');
+        arrayBinaryHeap.insert('A');
+        expected = 4;
+        actual = arrayBinaryHeap.getCapacity();
+        assertEquals(expected, actual);
+        arrayBinaryHeap.insert('A');
+        arrayBinaryHeap.insert('A');
+        expected = 8;
+        actual = arrayBinaryHeap.getCapacity();
+        assertEquals(expected, actual);
     }
 
     @Test
     void dynamicSizeDecrease() {
-        fail("Not Implemented");
+        if (!(priorityQueue instanceof ArrayBinaryHeap)) {
+            fail("Invalid queue type");
+        }
+
+        ArrayBinaryHeap arrayBinaryHeap = (ArrayBinaryHeap) priorityQueue;
+        int expected = 2;
+        int actual = arrayBinaryHeap.getCapacity();
+        assertEquals(expected, actual);
+        for (int i = 0; i < 8; i++) {
+            arrayBinaryHeap.insert('A');
+        }
+        expected = 8;
+        actual = arrayBinaryHeap.getCapacity();
+        assertEquals(expected, actual);
+        for (int i = 0; i <= 6; i++) {
+            arrayBinaryHeap.delete();
+        }
+        expected = 4;
+        actual = arrayBinaryHeap.getCapacity();
+        assertEquals(expected, actual);
+        arrayBinaryHeap.delete();
+        expected = 2;
+        actual = arrayBinaryHeap.getCapacity();
+        assertEquals(expected, actual);
     }
 }
