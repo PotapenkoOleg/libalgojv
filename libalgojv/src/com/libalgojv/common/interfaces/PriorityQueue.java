@@ -8,14 +8,16 @@
 
 package com.libalgojv.common.interfaces;
 
-public interface PriorityQueue<Key extends Comparable<Key>> {
-    void insert(final Key key);
+public interface PriorityQueue<E extends Comparable<E>> {
+    void insert(final E item);
 
-    Key deleteMax();
+    E delete();
+
+    E peek();
 
     boolean isEmpty();
 
-    Key peek();
-
     int getSize();
+
+    void clear();
 }

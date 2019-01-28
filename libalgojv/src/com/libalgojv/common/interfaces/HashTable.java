@@ -9,5 +9,15 @@
 package com.libalgojv.common.interfaces;
 
 public interface HashTable<Key, Value> {
-    // TODO: add methods
+    void add(final Key key, final Value value);
+
+    Value get(final Key key);
+
+    Value remove(final Key key);
+
+    boolean isEmpty();
+
+    int getSize();
+
+    void clear();
 }

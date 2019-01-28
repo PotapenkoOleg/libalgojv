@@ -19,7 +19,6 @@ import java.util.NoSuchElementException;
 import java.util.function.Consumer;
 
 public class SingleLinkedList<Key, Value> implements List<Key, Value>, BagKeyValue<Key, Value> {
-
     //#region Private Fields
     private SingleLinkedListNode<Key, Value> first;
     private final AlgorithmType algorithmType;

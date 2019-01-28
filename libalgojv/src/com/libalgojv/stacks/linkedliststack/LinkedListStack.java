@@ -16,7 +16,6 @@ import java.util.NoSuchElementException;
 import java.util.function.Consumer;
 
 public final class LinkedListStack<E> implements Stack<E>, Bag<E> {
-
     //#region Private Fields
     private LinkedListNode<E> first;
     private int size = 0;
@@ -65,6 +64,20 @@ public final class LinkedListStack<E> implements Stack<E>, Bag<E> {
         first = new LinkedListNode<>(item);
         first.setNext(oldFirst);
         ++size;
+    }
+
+    @Override
+    public E peek() {
+        if (first == null) {
+            return null;
+        }
+        return first.getItem();
+    }
+
+    @Override
+    public void clear() {
+        first = null;
+        size = 0;
     }
 
     @Override

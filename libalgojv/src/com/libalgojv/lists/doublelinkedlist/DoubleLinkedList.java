@@ -21,7 +21,6 @@ import java.util.NoSuchElementException;
 import java.util.function.Consumer;
 
 public class DoubleLinkedList<Key, Value> implements List<Key, Value>, BagKeyValue<Key, Value> {
-
     //#region Private Fields
     private DoubleLinkedListNode<Key, Value> first;
     private DoubleLinkedListNode<Key, Value> last;

@@ -17,7 +17,6 @@ import java.util.Stack;
 import java.util.function.Consumer;
 
 public class LinkedListQueue<E> implements Queue<E>, Bag<E> {
-
     //#region Private Fields
     private LinkedListNode<E> first;
     private int size = 0;
@@ -79,6 +78,27 @@ public class LinkedListQueue<E> implements Queue<E>, Bag<E> {
         previous.setNext(null);
         --size;
         return result;
+    }
+
+    @Override
+    public E peek() {
+        if (first == null) {
+            return null;
+        }
+        if (first.getNext() == null) {
+            return first.getItem();
+        }
+        LinkedListNode<E> current = first;
+        while (current.getNext() != null) {
+            current = current.getNext();
+        }
+        return current.getItem();
+    }
+
+    @Override
+    public void clear() {
+        size = 0;
+        first = null;
     }
 
     @Override
