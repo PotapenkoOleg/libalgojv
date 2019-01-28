@@ -139,9 +139,16 @@ public class HashTableLinearProbing<Key, Value> implements HashTable<Key, Value>
         this.capacity = capacity;
         Key[] keysCopy = (Key[]) new Object[capacity];
         Value[] valuesCopy = (Value[]) new Object[capacity];
-        for (int i = 0; i < size; i++) {
+        int i = 0;
+        int j = 0;
+        while (j < size) {
             Key currentKey = keys[i];
             Value currentValue = values[i];
+            i++;
+            if (currentKey == null) {
+                continue;
+            }
+            j++;
             add(currentKey, currentValue, keysCopy, valuesCopy);
         }
         keys = keysCopy;
