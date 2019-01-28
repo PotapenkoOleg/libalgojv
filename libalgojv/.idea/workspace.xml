@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9f56ce26-7942-4300-be10-00f249394c3e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/com/libalgojv/common/interfaces/BinarySearchTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/libalgojv/common/interfaces/BinarySearchTree.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/libalgojv/tests/unit/trees/binarytree/BinaryTreeTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/libalgojv/tests/unit/trees/binarytree/BinaryTreeTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/libalgojv/trees/binarytree/BinaryTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/libalgojv/trees/binarytree/BinaryTree.java" afterDir="false" />
     </list>
@@ -72,18 +71,14 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/libalgojv/tests/unit/trees/binarytree/BinaryTreeTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-761">
-              <caret line="45" column="8" selection-start-line="45" selection-start-column="8" selection-end-line="45" selection-end-column="8" />
+            <state relative-caret-position="559">
+              <caret line="81" column="32" lean-forward="true" selection-start-line="81" selection-start-column="32" selection-end-line="81" selection-end-column="32" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#614#615#0" expanded="true" />
                 <element signature="e#661#662#0" expanded="true" />
                 <element signature="e#699#700#0" expanded="true" />
                 <element signature="e#732#733#0" expanded="true" />
-                <element signature="e#1348#1349#0" expanded="true" />
-                <element signature="e#1387#1388#0" expanded="true" />
-                <element signature="e#1415#1416#0" expanded="true" />
-                <element signature="e#1454#1455#0" expanded="true" />
                 <element signature="e#1484#1485#0" expanded="true" />
                 <element signature="e#1523#1524#0" expanded="true" />
                 <element signature="e#1555#1556#0" expanded="true" />
@@ -100,28 +95,19 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/libalgojv/trees/binarytree/BinaryTree.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="309" column="39" lean-forward="true" selection-start-line="309" selection-start-column="39" selection-end-line="309" selection-end-column="39" />
+            <state relative-caret-position="320">
+              <caret line="315" column="58" selection-start-line="315" selection-start-column="58" selection-end-line="315" selection-end-column="58" />
               <folding>
                 <element signature="e#646#1573#0" />
                 <element signature="e#912#941#0" />
                 <element signature="e#1459#1567#0" />
-                <element signature="e#1816#2283#0" />
                 <element signature="e#2016#2075#1" />
-                <element signature="e#2130#2176#1" />
-                <element signature="e#2231#2277#1" />
-                <element signature="e#2289#2634#0" />
-                <element signature="e#2363#2399#1" />
                 <element signature="e#2454#2503#1" />
                 <element signature="e#2558#2607#1" />
                 <element signature="e#2640#2994#0" />
                 <element signature="e#2717#2753#1" />
                 <element signature="e#2808#2860#1" />
                 <element signature="e#2915#2967#1" />
-                <element signature="e#3081#3179#0" />
-                <element signature="e#3169#3215#1" />
-                <element signature="e#3270#3316#1" />
-                <element signature="e#3378#3476#0" />
                 <element signature="e#3457#3503#1" />
                 <element signature="e#3558#3604#1" />
                 <element signature="e#3615#3878#0" />
@@ -156,22 +142,27 @@
                 <element signature="e#6656#6692#1" />
                 <element signature="e#6785#6853#1" />
                 <element signature="e#6885#6954#1" />
-                <element signature="e#7454#7516#0" />
-                <element signature="e#7548#7610#0" />
+                <element signature="e#9215#9216#0" expanded="true" />
+                <element signature="e#9311#9312#0" expanded="true" />
+                <element signature="e#9409#9410#0" expanded="true" />
+                <element signature="e#9507#9508#0" expanded="true" />
                 <element signature="e#7001#7127#0" />
                 <element signature="e#7754#7804#1" />
+                <element signature="e#9740#9741#0" expanded="true" />
                 <element signature="e#7234#7379#0" />
                 <element signature="e#7385#7968#0" />
                 <element signature="e#7578#7962#1" />
                 <element signature="e#7785#7834#1" />
                 <element signature="e#7903#7952#1" />
                 <element signature="e#8619#8667#1" />
+                <element signature="e#10603#10604#0" expanded="true" />
                 <element signature="e#8097#8458#0" />
                 <element signature="e#8269#8300#1" />
                 <element signature="e#8464#9063#0" />
                 <element signature="e#8787#9057#1" />
                 <element signature="e#8826#8923#1" />
                 <element signature="e#9713#9760#1" />
+                <element signature="e#11696#11697#0" expanded="true" />
                 <element signature="e#9190#9548#0" />
                 <element signature="e#9361#9392#1" />
                 <element signature="e#9554#11002#0" />
@@ -184,10 +175,12 @@
                 <element signature="e#10608#10760#1" />
                 <element signature="e#10817#10953#1" />
                 <element signature="e#11654#11703#1" />
+                <element signature="e#13639#13640#0" expanded="true" />
                 <element signature="e#11133#11497#0" />
                 <element signature="e#11306#11337#1" />
                 <element signature="e#11943#11961#0" />
                 <element signature="e#12168#12226#1" />
+                <element signature="e#14162#14163#0" expanded="true" />
                 <element signature="e#12078#12230#0" />
                 <element signature="e#12179#12224#1" />
               </folding>
@@ -313,8 +306,8 @@
         <option value="$PROJECT_DIR$/src/com/libalgojv/BinaryTreeTests.java" />
         <option value="$PROJECT_DIR$/src/com/libalgoj/tests/unit/trees/binarytree/BinaryTreeTests.java" />
         <option value="$PROJECT_DIR$/src/com/libalgojv/common/interfaces/BinarySearchTree.java" />
-        <option value="$PROJECT_DIR$/src/com/libalgojv/trees/binarytree/BinaryTree.java" />
         <option value="$PROJECT_DIR$/src/com/libalgojv/tests/unit/trees/binarytree/BinaryTreeTests.java" />
+        <option value="$PROJECT_DIR$/src/com/libalgojv/trees/binarytree/BinaryTree.java" />
       </list>
     </option>
   </component>
@@ -442,7 +435,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.AllTests">
+  <component name="RunManager" selected="JUnit.BinaryTreeTests.getMax">
     <configuration name="AllTests" type="JUnit" factoryName="JUnit">
       <option name="PACKAGE_NAME" value="com.libalgojv.tests" />
       <option name="MAIN_CLASS_NAME" value="" />
@@ -472,17 +465,33 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DoubleLinkedListTests.addByKey" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BinaryTreeTests.getMax" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="libalgojv" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.libalgojv.tests.unit.lists.doublelinkedlist.*" />
+          <option name="PATTERN" value="com.libalgojv.tests.unit.trees.binarytree.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.libalgojv.tests.unit.lists.doublelinkedlist" />
-      <option name="MAIN_CLASS_NAME" value="com.libalgojv.tests.unit.lists.doublelinkedlist.DoubleLinkedListTests" />
-      <option name="METHOD_NAME" value="addByKey" />
+      <option name="PACKAGE_NAME" value="com.libalgojv.tests.unit.trees.binarytree" />
+      <option name="MAIN_CLASS_NAME" value="com.libalgojv.tests.unit.trees.binarytree.BinaryTreeTests" />
+      <option name="METHOD_NAME" value="getMax" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BinaryTreeTests.getMin" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="libalgojv" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.libalgojv.tests.unit.trees.binarytree.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.libalgojv.tests.unit.trees.binarytree" />
+      <option name="MAIN_CLASS_NAME" value="com.libalgojv.tests.unit.trees.binarytree.BinaryTreeTests" />
+      <option name="METHOD_NAME" value="getMin" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -522,17 +531,19 @@
     </configuration>
     <list>
       <item itemvalue="JUnit.AllTests" />
-      <item itemvalue="JUnit.DoubleLinkedListTests.addByKey" />
       <item itemvalue="JUnit.DoubleLinkedListTests.removeByKey" />
       <item itemvalue="JUnit.DoubleLinkedListTests.listIterator" />
       <item itemvalue="JUnit.BinaryTreeTests.add" />
+      <item itemvalue="JUnit.BinaryTreeTests.getMin" />
+      <item itemvalue="JUnit.BinaryTreeTests.getMax" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.BinaryTreeTests.getMax" />
+        <item itemvalue="JUnit.BinaryTreeTests.getMin" />
         <item itemvalue="JUnit.BinaryTreeTests.add" />
         <item itemvalue="JUnit.DoubleLinkedListTests.removeByKey" />
         <item itemvalue="JUnit.DoubleLinkedListTests.listIterator" />
-        <item itemvalue="JUnit.DoubleLinkedListTests.addByKey" />
       </list>
     </recent_temporary>
   </component>
@@ -549,30 +560,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="AllTests - 2018.12.29 at 00h 45m 08s.xml">
-      <configuration name="AllTests" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AllTests - 2018.12.29 at 00h 46m 01s.xml">
-      <configuration name="AllTests" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="DoubleLinkedListTests_listIterator - 2018.12.29 at 00h 50m 24s.xml">
-      <configuration name="DoubleLinkedListTests.listIterator" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AllTests - 2018.12.29 at 00h 55m 56s.xml">
-      <configuration name="AllTests" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="DoubleLinkedListTests_removeByKey - 2018.12.29 at 00h 58m 18s.xml">
-      <configuration name="DoubleLinkedListTests.removeByKey" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="DoubleLinkedListTests_removeByKey - 2018.12.29 at 00h 59m 27s.xml">
-      <configuration name="DoubleLinkedListTests.removeByKey" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="DoubleLinkedListTests_removeByKey - 2018.12.29 at 01h 00m 04s.xml">
-      <configuration name="DoubleLinkedListTests.removeByKey" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AllTests - 2018.12.29 at 01h 00m 48s.xml">
-      <configuration name="AllTests" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="AllTests - 2018.12.29 at 01h 01m 38s.xml">
       <configuration name="AllTests" configurationId="JUnit" />
     </history-entry>
@@ -590,6 +577,30 @@
     </history-entry>
     <history-entry file="AllTests - 2019.01.28 at 17h 11m 20s.xml">
       <configuration name="AllTests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BinaryTreeTests_getMin - 2019.01.28 at 17h 19m 36s.xml">
+      <configuration name="BinaryTreeTests.getMin" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BinaryTreeTests_getMin - 2019.01.28 at 17h 20m 26s.xml">
+      <configuration name="BinaryTreeTests.getMin" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BinaryTreeTests_getMin - 2019.01.28 at 17h 21m 00s.xml">
+      <configuration name="BinaryTreeTests.getMin" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BinaryTreeTests_getMin - 2019.01.28 at 17h 21m 26s.xml">
+      <configuration name="BinaryTreeTests.getMin" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BinaryTreeTests_getMin - 2019.01.28 at 17h 21m 58s.xml">
+      <configuration name="BinaryTreeTests.getMin" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BinaryTreeTests_getMax - 2019.01.28 at 17h 24m 11s.xml">
+      <configuration name="BinaryTreeTests.getMax" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BinaryTreeTests_getMin - 2019.01.28 at 17h 25m 16s.xml">
+      <configuration name="BinaryTreeTests.getMin" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BinaryTreeTests_getMax - 2019.01.28 at 17h 25m 56s.xml">
+      <configuration name="BinaryTreeTests.getMax" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
@@ -610,7 +621,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.28111112" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.34200743" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.34111112" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -672,6 +683,18 @@
           <line>34</line>
           <properties />
           <option name="timeStamp" value="34" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/libalgojv/tests/unit/trees/binarytree/BinaryTreeTests.java</url>
+          <line>69</line>
+          <properties />
+          <option name="timeStamp" value="35" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/libalgojv/tests/unit/trees/binarytree/BinaryTreeTests.java</url>
+          <line>84</line>
+          <properties />
+          <option name="timeStamp" value="36" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -1121,18 +1144,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/libalgojv/tests/unit/trees/binarytree/BinaryTreeTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-761">
-          <caret line="45" column="8" selection-start-line="45" selection-start-column="8" selection-end-line="45" selection-end-column="8" />
+        <state relative-caret-position="559">
+          <caret line="81" column="32" lean-forward="true" selection-start-line="81" selection-start-column="32" selection-end-line="81" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#614#615#0" expanded="true" />
             <element signature="e#661#662#0" expanded="true" />
             <element signature="e#699#700#0" expanded="true" />
             <element signature="e#732#733#0" expanded="true" />
-            <element signature="e#1348#1349#0" expanded="true" />
-            <element signature="e#1387#1388#0" expanded="true" />
-            <element signature="e#1415#1416#0" expanded="true" />
-            <element signature="e#1454#1455#0" expanded="true" />
             <element signature="e#1484#1485#0" expanded="true" />
             <element signature="e#1523#1524#0" expanded="true" />
             <element signature="e#1555#1556#0" expanded="true" />
@@ -1147,28 +1166,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/libalgojv/trees/binarytree/BinaryTree.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="309" column="39" lean-forward="true" selection-start-line="309" selection-start-column="39" selection-end-line="309" selection-end-column="39" />
+        <state relative-caret-position="320">
+          <caret line="315" column="58" selection-start-line="315" selection-start-column="58" selection-end-line="315" selection-end-column="58" />
           <folding>
             <element signature="e#646#1573#0" />
             <element signature="e#912#941#0" />
             <element signature="e#1459#1567#0" />
-            <element signature="e#1816#2283#0" />
             <element signature="e#2016#2075#1" />
-            <element signature="e#2130#2176#1" />
-            <element signature="e#2231#2277#1" />
-            <element signature="e#2289#2634#0" />
-            <element signature="e#2363#2399#1" />
             <element signature="e#2454#2503#1" />
             <element signature="e#2558#2607#1" />
             <element signature="e#2640#2994#0" />
             <element signature="e#2717#2753#1" />
             <element signature="e#2808#2860#1" />
             <element signature="e#2915#2967#1" />
-            <element signature="e#3081#3179#0" />
-            <element signature="e#3169#3215#1" />
-            <element signature="e#3270#3316#1" />
-            <element signature="e#3378#3476#0" />
             <element signature="e#3457#3503#1" />
             <element signature="e#3558#3604#1" />
             <element signature="e#3615#3878#0" />
@@ -1203,22 +1213,27 @@
             <element signature="e#6656#6692#1" />
             <element signature="e#6785#6853#1" />
             <element signature="e#6885#6954#1" />
-            <element signature="e#7454#7516#0" />
-            <element signature="e#7548#7610#0" />
+            <element signature="e#9215#9216#0" expanded="true" />
+            <element signature="e#9311#9312#0" expanded="true" />
+            <element signature="e#9409#9410#0" expanded="true" />
+            <element signature="e#9507#9508#0" expanded="true" />
             <element signature="e#7001#7127#0" />
             <element signature="e#7754#7804#1" />
+            <element signature="e#9740#9741#0" expanded="true" />
             <element signature="e#7234#7379#0" />
             <element signature="e#7385#7968#0" />
             <element signature="e#7578#7962#1" />
             <element signature="e#7785#7834#1" />
             <element signature="e#7903#7952#1" />
             <element signature="e#8619#8667#1" />
+            <element signature="e#10603#10604#0" expanded="true" />
             <element signature="e#8097#8458#0" />
             <element signature="e#8269#8300#1" />
             <element signature="e#8464#9063#0" />
             <element signature="e#8787#9057#1" />
             <element signature="e#8826#8923#1" />
             <element signature="e#9713#9760#1" />
+            <element signature="e#11696#11697#0" expanded="true" />
             <element signature="e#9190#9548#0" />
             <element signature="e#9361#9392#1" />
             <element signature="e#9554#11002#0" />
@@ -1231,10 +1246,12 @@
             <element signature="e#10608#10760#1" />
             <element signature="e#10817#10953#1" />
             <element signature="e#11654#11703#1" />
+            <element signature="e#13639#13640#0" expanded="true" />
             <element signature="e#11133#11497#0" />
             <element signature="e#11306#11337#1" />
             <element signature="e#11943#11961#0" />
             <element signature="e#12168#12226#1" />
+            <element signature="e#14162#14163#0" expanded="true" />
             <element signature="e#12078#12230#0" />
             <element signature="e#12179#12224#1" />
           </folding>

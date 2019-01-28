@@ -58,12 +58,32 @@ class BinaryTreeTests {
 
     @Test
     void getMin() {
-        fail("Not Implemented");
+        binaryTree.add(42, -42);
+        binaryTree.add(40, -40);
+        binaryTree.add(41, -41);
+        binaryTree.add(39, -39);
+        binaryTree.add(44, -44);
+        binaryTree.add(43, -43);
+        binaryTree.add(45, -45);
+
+        Integer expected = 39;
+        Integer actual = binaryTree.getMin();
+        assertEquals(expected, actual);
     }
 
     @Test
     void getMax() {
-        fail("Not Implemented");
+        binaryTree.add(42, -42);
+        binaryTree.add(40, -40);
+        binaryTree.add(41, -41);
+        binaryTree.add(39, -39);
+        binaryTree.add(44, -44);
+        binaryTree.add(43, -43);
+        binaryTree.add(45, -45);
+
+        Integer expected = 45;
+        Integer actual = binaryTree.getMax();
+        assertEquals(expected, actual);
     }
 
     @Test

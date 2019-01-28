@@ -122,6 +122,9 @@ public class BinaryTree<Key extends Comparable<Key>, Value> implements BinarySea
 
     @Override
     public Key getMin() {
+        if (root == null) {
+            return null;
+        }
         if (algorithmType == AlgorithmType.ITERATIVE) {
             return getMinIterative();
         }
@@ -133,6 +136,9 @@ public class BinaryTree<Key extends Comparable<Key>, Value> implements BinarySea
 
     @Override
     public Key getMax() {
+        if (root == null) {
+            return null;
+        }
         if (algorithmType == AlgorithmType.ITERATIVE) {
             return getMaxIterative();
         }
@@ -295,19 +301,43 @@ public class BinaryTree<Key extends Comparable<Key>, Value> implements BinarySea
     }
 
     private Key getMinIterative() {
-        throw new UnsupportedOperationException();
+        BinaryTreeNode<Key, Value> current = root;
+        while (current.getLeft() != null) {
+            current = current.getLeft();
+        }
+        return current.getKey();
     }
 
     private Key getMinRecursive() {
-        throw new UnsupportedOperationException();
+        BinaryTreeNode<Key, Value> current = getMinRecursive(root);
+        return current.getKey();
+    }
+
+    private BinaryTreeNode<Key, Value> getMinRecursive(final BinaryTreeNode<Key, Value> current) {
+        if (current.getLeft() != null) {
+            return getMinRecursive(current.getLeft());
+        }
+        return current;
     }
 
     private Key getMaxIterative() {
-        throw new UnsupportedOperationException();
+        BinaryTreeNode<Key, Value> current = root;
+        while (current.getRight() != null) {
+            current = current.getRight();
+        }
+        return current.getKey();
     }
 
     private Key getMaxRecursive() {
-        throw new UnsupportedOperationException();
+        BinaryTreeNode<Key, Value> current = getMaxRecursive(root);
+        return current.getKey();
+    }
+
+    private BinaryTreeNode<Key, Value> getMaxRecursive(final BinaryTreeNode<Key, Value> current) {
+        if (current.getRight() != null) {
+            return getMaxRecursive(current.getRight());
+        }
+        return current;
     }
 
     private Key getFloorIterative() {
