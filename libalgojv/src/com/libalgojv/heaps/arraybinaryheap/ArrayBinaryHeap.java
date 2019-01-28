@@ -15,19 +15,22 @@ import java.util.function.BiPredicate;
 
 public class ArrayBinaryHeap<Key extends Comparable<Key>> implements PriorityQueue<Key> {
     // TODO: dynamic memory management
+    //#region Private Fields
     private final static int DEFAULT_CAPACITY = 64;
     private final int ROOT_INDEX = 1;
-
     private final BiPredicate<Integer, Integer> compare;
-
     private Key[] keys;
     private int size;
+    private int capacity;
+    //#endregion
 
-    public ArrayBinaryHeap(BinaryHeapType binaryHeapType) {
+    //#region Constructors
+    public ArrayBinaryHeap(final BinaryHeapType binaryHeapType) {
         this(binaryHeapType, DEFAULT_CAPACITY);
     }
 
-    public ArrayBinaryHeap(BinaryHeapType binaryHeapType, int capacity) {
+    public ArrayBinaryHeap(final BinaryHeapType binaryHeapType, final int capacity) {
+        this.capacity = capacity;
         keys = (Key[]) new Comparable[capacity + 1]; // starts with index 1
         if (binaryHeapType == BinaryHeapType.MAX) {
             compare = (left, right) -> keys[left].compareTo(keys[right]) < 0;
@@ -35,6 +38,7 @@ public class ArrayBinaryHeap<Key extends Comparable<Key>> implements PriorityQue
             compare = (left, right) -> keys[left].compareTo(keys[right]) > 0;
         }
     }
+    //#endregion
 
     //#region Public Methods
     @Override
@@ -46,6 +50,9 @@ public class ArrayBinaryHeap<Key extends Comparable<Key>> implements PriorityQue
 
     @Override
     public Key delete() {
+        if (isEmpty()) {
+            return null; // no balancing is needed for empty heap
+        }
         Key max = keys[ROOT_INDEX];
         exchange(1, size);
         size--;
@@ -75,6 +82,10 @@ public class ArrayBinaryHeap<Key extends Comparable<Key>> implements PriorityQue
             keys[i] = null;
         }
         size = 0;
+    }
+
+    public int getCapacity() {
+        return capacity;
     }
     //#endregion
 

@@ -54,6 +54,8 @@ class ArrayBinaryHeapTests {
 
     @Test
     void delete() {
+        assertNull(priorityQueue.delete());
+
         String testData = "GIEAOHNRPT";
         for (int i = 0; i < testData.length(); i++) {
             Character current = testData.charAt(i);
@@ -82,6 +84,8 @@ class ArrayBinaryHeapTests {
 
     @Test
     void peek() {
+        assertNull(priorityQueue.peek());
+
         String testData = "GIEAOHNRPT";
         for (int i = 0; i < testData.length(); i++) {
             Character current = testData.charAt(i);
@@ -94,13 +98,16 @@ class ArrayBinaryHeapTests {
 
     @Test
     void getSize() {
+        int actual = priorityQueue.getSize();
+        assertEquals(0, actual);
+
         String testData = "GIEAOHNRPT";
         for (int i = 0; i < testData.length(); i++) {
             Character current = testData.charAt(i);
             priorityQueue.insert(current);
         }
         int expected = 10;
-        int actual = priorityQueue.getSize();
+        actual = priorityQueue.getSize();
         assertEquals(expected, actual);
     }
 
@@ -118,5 +125,15 @@ class ArrayBinaryHeapTests {
         int expected = 0;
         int actual = priorityQueue.getSize();
         assertEquals(expected, actual);
+    }
+
+    @Test
+    void dynamicSizeIncrease() {
+        fail("Not Implemented");
+    }
+
+    @Test
+    void dynamicSizeDecrease() {
+        fail("Not Implemented");
     }
 }
