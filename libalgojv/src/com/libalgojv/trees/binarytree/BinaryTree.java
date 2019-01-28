@@ -25,7 +25,7 @@ public class BinaryTree<Key extends Comparable<Key>, Value> implements BinarySea
     //#region Node Class
     private class BinaryTreeNode<Key extends Comparable<Key>, Value> {
         private final Key key;
-        private final Value value;
+        private Value value;
         private BinaryTreeNode<Key, Value> left;
         private BinaryTreeNode<Key, Value> right;
 
@@ -36,6 +36,10 @@ public class BinaryTree<Key extends Comparable<Key>, Value> implements BinarySea
 
         Value getValue() {
             return value;
+        }
+
+        public void setValue(Value value) {
+            this.value = value;
         }
 
         BinaryTreeNode<Key, Value> getLeft() {
@@ -117,6 +121,55 @@ public class BinaryTree<Key extends Comparable<Key>, Value> implements BinarySea
     }
 
     @Override
+    public Key getMin() {
+        if (algorithmType == AlgorithmType.ITERATIVE) {
+            return getMinIterative();
+        }
+        if (algorithmType == AlgorithmType.RECURSIVE) {
+            return getMinRecursive();
+        }
+        return null;
+    }
+
+    @Override
+    public Key getMax() {
+        if (algorithmType == AlgorithmType.ITERATIVE) {
+            return getMaxIterative();
+        }
+        if (algorithmType == AlgorithmType.RECURSIVE) {
+            return getMaxRecursive();
+        }
+        return null;
+    }
+
+    @Override
+    public Key getFloor() {
+        if (algorithmType == AlgorithmType.ITERATIVE) {
+            return getFloorIterative();
+        }
+        if (algorithmType == AlgorithmType.RECURSIVE) {
+            return getFloorRecursive();
+        }
+        return null;
+    }
+
+    @Override
+    public Key getCeiling() {
+        if (algorithmType == AlgorithmType.ITERATIVE) {
+            return getCeilingIterative();
+        }
+        if (algorithmType == AlgorithmType.RECURSIVE) {
+            return getCeilingRecursive();
+        }
+        return null;
+    }
+
+    @Override
+    public int getRank() {
+        throw new UnsupportedOperationException();
+    }
+
+    @Override
     public void preorder(final Consumer<? super Value> action) {
         if (root == null) {
             return;
@@ -172,20 +225,6 @@ public class BinaryTree<Key extends Comparable<Key>, Value> implements BinarySea
     }
 
     @Override
-    public int getHeight() {
-        if (root == null) {
-            return 0;
-        }
-        if (algorithmType == AlgorithmType.ITERATIVE) {
-            return heightIterative();
-        }
-        if (algorithmType == AlgorithmType.RECURSIVE) {
-            return heightRecursive();
-        }
-        return 0;
-    }
-
-    @Override
     public String toString() {
         throw new UnsupportedOperationException();
     }
@@ -197,34 +236,27 @@ public class BinaryTree<Key extends Comparable<Key>, Value> implements BinarySea
     }
 
     private void addRecursive(final BinaryTreeNode<Key, Value> newNode) {
-        addRecursive(root, newNode);
+        root = addRecursive(root, newNode);
     }
 
-    private void addRecursive(
+    private BinaryTreeNode<Key, Value> addRecursive(
             final BinaryTreeNode<Key, Value> current,
             final BinaryTreeNode<Key, Value> newNode
     ) {
+        if (current == null) {
+            return newNode;
+        }
         int compareResult = newNode.getKey().compareTo(current.getKey());
         if (compareResult < 0) {
-            BinaryTreeNode<Key, Value> left = current.getLeft();
-            if (left == null) {
-                current.setLeft(newNode);
-                return;
-            }
-            addRecursive(left, newNode);
+            current.setLeft(addRecursive(current.getLeft(), newNode));
         }
         if (compareResult == 0) {
-            // the element is already in tree
-            return;
+            current.setValue(newNode.getValue()); // update value
         }
         if (compareResult > 0) {
-            BinaryTreeNode<Key, Value> right = current.getRight();
-            if (right == null) {
-                current.setRight(newNode);
-                return;
-            }
-            addRecursive(right, newNode);
+            current.setRight(addRecursive(current.getRight(), newNode));
         }
+        return current;
     }
 
     private Value getIterative(final Key key) {
@@ -260,6 +292,38 @@ public class BinaryTree<Key extends Comparable<Key>, Value> implements BinarySea
             return getRecursive(current.getRight(), key);
         }
         return current.getValue();
+    }
+
+    private Key getMinIterative() {
+        throw new UnsupportedOperationException();
+    }
+
+    private Key getMinRecursive() {
+        throw new UnsupportedOperationException();
+    }
+
+    private Key getMaxIterative() {
+        throw new UnsupportedOperationException();
+    }
+
+    private Key getMaxRecursive() {
+        throw new UnsupportedOperationException();
+    }
+
+    private Key getFloorIterative() {
+        throw new UnsupportedOperationException();
+    }
+
+    private Key getFloorRecursive() {
+        throw new UnsupportedOperationException();
+    }
+
+    private Key getCeilingIterative() {
+        throw new UnsupportedOperationException();
+    }
+
+    private Key getCeilingRecursive() {
+        throw new UnsupportedOperationException();
     }
 
     private Value removeIterative(final Key key) {
@@ -393,20 +457,6 @@ public class BinaryTree<Key extends Comparable<Key>, Value> implements BinarySea
         action.accept(current.getValue());
     }
 
-    private int heightIterative() {
-        throw new UnsupportedOperationException();
-    }
-
-    private int heightRecursive() {
-        return heightRecursive(root);
-    }
-
-    private int heightRecursive(final BinaryTreeNode<Key, Value> current) {
-        if (current == null) {
-            return 0;
-        }
-        return 1 + Math.max(heightRecursive(current.getLeft()), heightRecursive(current.getRight()));
-    }
     //#endregion
 
     //#region Iterable

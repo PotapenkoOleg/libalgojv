@@ -57,6 +57,31 @@ class BinaryTreeTests {
     }
 
     @Test
+    void getMin() {
+        fail("Not Implemented");
+    }
+
+    @Test
+    void getMax() {
+        fail("Not Implemented");
+    }
+
+    @Test
+    void getFloor() {
+        fail("Not Implemented");
+    }
+
+    @Test
+    void getCeiling() {
+        fail("Not Implemented");
+    }
+
+    @Test
+    void getRank() {
+        fail("Not Implemented");
+    }
+
+    @Test
     void preorder() {
         fail("Not Implemented");
     }
@@ -83,11 +108,6 @@ class BinaryTreeTests {
 
     @Test
     void getSize() {
-        fail("Not Implemented");
-    }
-
-    @Test
-    void getHeight() {
         fail("Not Implemented");
     }
 

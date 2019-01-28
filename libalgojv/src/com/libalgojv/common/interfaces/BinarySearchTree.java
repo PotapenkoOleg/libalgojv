@@ -17,6 +17,16 @@ public interface BinarySearchTree<Key extends Comparable<Key>, Value> extends It
 
     Value remove(final Key key);
 
+    Key getMin();
+
+    Key getMax();
+
+    Key getFloor();
+
+    Key getCeiling();
+
+    int getRank();
+
     void preorder(final Consumer<? super Value> action);
 
     void inorder(final Consumer<? super Value> action);
@@ -28,6 +38,4 @@ public interface BinarySearchTree<Key extends Comparable<Key>, Value> extends It
     boolean isEmpty();
 
     int getSize();
-
-    int getHeight();
 }
