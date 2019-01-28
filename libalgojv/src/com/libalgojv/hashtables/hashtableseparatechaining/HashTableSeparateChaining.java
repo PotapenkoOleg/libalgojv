@@ -59,7 +59,7 @@ public class HashTableSeparateChaining<Key, Value> implements HashTable<Key, Val
         this(DEFAULT_CAPACITY);
     }
 
-    public HashTableSeparateChaining(int capacity) {
+    public HashTableSeparateChaining(final int capacity) {
         this.capacity = capacity;
         hashTable = new Node[capacity];
     }
@@ -134,9 +134,6 @@ public class HashTableSeparateChaining<Key, Value> implements HashTable<Key, Val
         return size;
     }
 
-    public int getCapacity() {
-        return capacity;
-    }
     //#endregion
 
     //#region Private Methods

@@ -9,11 +9,11 @@
 package com.libalgojv.common.interfaces;
 
 public interface HashTable<Key, Value> {
-    void add(Key key, Value value);
+    void add(final Key key, final Value value);
 
-    Value get(Key key);
+    Value get(final Key key);
 
-    Value remove(Key key);
+    Value remove(final Key key);
 
     boolean isEmpty();
 

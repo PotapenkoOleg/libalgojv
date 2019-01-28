@@ -126,11 +126,10 @@ class SingleLinkedListTests {
 
     @Test
     void removeFromBeginning() {
-        Integer expected = 42;
         Integer actual = list.remove(RemovePosition.BEGINNING);
-
         assertNull(actual);
 
+        final Integer expected = 42;
         list.add(expected, -expected, InsertPosition.BEGINNING);
         actual = list.remove(RemovePosition.BEGINNING);
 
@@ -161,11 +160,10 @@ class SingleLinkedListTests {
 
     @Test
     void removeFromEnd() {
-        Integer expected = 42;
         Integer actual = list.remove(RemovePosition.END);
-
         assertNull(actual);
 
+        final Integer expected = 42;
         list.add(expected, -expected, InsertPosition.BEGINNING);
         actual = list.remove(RemovePosition.END);
 
@@ -200,7 +198,6 @@ class SingleLinkedListTests {
 
         // empty list
         Integer actual = list.remove(expected);
-
         assertNull(actual);
 
         list.add(expected, -expected, InsertPosition.BEGINNING);

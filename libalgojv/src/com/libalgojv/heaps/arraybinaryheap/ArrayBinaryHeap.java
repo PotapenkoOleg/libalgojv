@@ -13,44 +13,56 @@ import com.libalgojv.common.interfaces.PriorityQueue;
 
 import java.util.function.BiPredicate;
 
-public class ArrayBinaryHeap<Key extends Comparable<Key>> implements PriorityQueue<Key> {
-    // TODO: dynamic memory management
+public class ArrayBinaryHeap<E extends Comparable<E>> implements PriorityQueue<E> {
+    //#region Private Fields
     private final static int DEFAULT_CAPACITY = 64;
     private final int ROOT_INDEX = 1;
-
     private final BiPredicate<Integer, Integer> compare;
-
-    private Key[] keys;
+    private E[] array;
     private int size;
+    private int capacity;
+    //#endregion
 
-    public ArrayBinaryHeap(BinaryHeapType binaryHeapType) {
+    //#region Constructors
+    public ArrayBinaryHeap(final BinaryHeapType binaryHeapType) {
         this(binaryHeapType, DEFAULT_CAPACITY);
     }
 
-    public ArrayBinaryHeap(BinaryHeapType binaryHeapType, int capacity) {
-        keys = (Key[]) new Comparable[capacity + 1]; // starts with index 1
+    public ArrayBinaryHeap(final BinaryHeapType binaryHeapType, final int capacity) {
+        this.capacity = capacity + 1;// array starts with index 1
+        array = (E[]) new Comparable[capacity + 1];
         if (binaryHeapType == BinaryHeapType.MAX) {
-            compare = (left, right) -> keys[left].compareTo(keys[right]) < 0;
+            compare = (left, right) -> array[left].compareTo(array[right]) < 0;
         } else {
-            compare = (left, right) -> keys[left].compareTo(keys[right]) > 0;
+            compare = (left, right) -> array[left].compareTo(array[right]) > 0;
         }
     }
+    //#endregion
 
     //#region Public Methods
     @Override
-    public void insert(final Key key) {
+    public void insert(final E item) {
+        if (size == getCapacity()) {
+            resize(2 * getCapacity());
+        }
         ++size;
-        keys[size] = key;
+        array[size] = item;
         swim(size);
     }
 
     @Override
-    public Key delete() {
-        Key max = keys[ROOT_INDEX];
+    public E delete() {
+        if ((size > 0) && (size == getCapacity() / 4)) {
+            resize(getCapacity() / 2);
+        }
+        if (isEmpty()) {
+            return null; // no balancing is needed for empty heap
+        }
+        E max = array[ROOT_INDEX];
         exchange(1, size);
         size--;
         sink(1);
-        keys[size + 1] = null;
+        array[size + 1] = null;
         return max;
     }
 
@@ -60,8 +72,8 @@ public class ArrayBinaryHeap<Key extends Comparable<Key>> implements PriorityQue
     }
 
     @Override
-    public Key peek() {
-        return keys[ROOT_INDEX];
+    public E peek() {
+        return array[ROOT_INDEX];
     }
 
     @Override
@@ -72,9 +84,13 @@ public class ArrayBinaryHeap<Key extends Comparable<Key>> implements PriorityQue
     @Override
     public void clear() {
         for (int i = 1; i <= size; i++) {
-            keys[i] = null;
+            array[i] = null;
         }
         size = 0;
+    }
+
+    public int getCapacity() {
+        return capacity - 1;
     }
     //#endregion
 
@@ -101,9 +117,17 @@ public class ArrayBinaryHeap<Key extends Comparable<Key>> implements PriorityQue
     }
 
     private void exchange(final int left, final int right) {
-        Key temp = keys[left];
-        keys[left] = keys[right];
-        keys[right] = temp;
+        E temp = array[left];
+        array[left] = array[right];
+        array[right] = temp;
+    }
+
+    private void resize(int capacity) {
+        capacity++; // we don't use element at 0 position
+        this.capacity = capacity;
+        E[] copy = (E[]) new Comparable[capacity];
+        System.arraycopy(array, 1, copy, 1, size);
+        array = copy;
     }
     //#endregion
 }
