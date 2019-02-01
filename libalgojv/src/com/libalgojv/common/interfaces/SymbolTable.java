@@ -14,4 +14,12 @@ public interface SymbolTable<Value> {
     boolean isEmpty();
 
     int getSize();
+
+    Iterable<String> getAllKeys();
+
+    Iterable<String> getKeysWithPrefix(String prefix);
+
+    String[] wildcardMatch(String key);
+
+    String longestPrefixOf(String prefix);
 }

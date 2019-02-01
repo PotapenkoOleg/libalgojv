@@ -85,6 +85,26 @@ public class Trie<Value> implements SymbolTable<Value> {
     public int getSize() {
         throw new UnsupportedOperationException();
     }
+
+    @Override
+    public Iterable<String> getAllKeys() {
+        throw new UnsupportedOperationException();
+    }
+
+    @Override
+    public Iterable<String> getKeysWithPrefix(String prefix) {
+        throw new UnsupportedOperationException();
+    }
+
+    @Override
+    public String[] wildcardMatch(String key) {
+        throw new UnsupportedOperationException();
+    }
+
+    @Override
+    public String longestPrefixOf(String prefix) {
+        throw new UnsupportedOperationException();
+    }
     //#endregion
 
     //#region Private Methods
