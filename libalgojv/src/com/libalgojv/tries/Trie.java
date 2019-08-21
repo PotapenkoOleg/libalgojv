@@ -4,16 +4,19 @@ import com.libalgojv.common.interfaces.SymbolTable;
 
 public class Trie<Value> implements SymbolTable<Value> {
     //#region Private Fields
-    //private static final int NUMBER_OF_LETTERS_IN_ENGLISH_ALPHABET = 26;
     private static final int NUMBER_OF_LETTERS_IN_EXTENDED_ASCII = 256;
     private final int numberOfLetters;
-    private Node root;// = new Node();
+    private Node root;
     //#endregion
 
     //#region Node Class
     private class Node<Value> {
         private Value value;
-        private Node[] nextLevel = new Node[numberOfLetters];
+        private Node[] nextLevel;
+
+        Node(final int numberOfLetters) {
+            nextLevel = new Node[numberOfLetters];
+        }
 
         Value getValue() {
             return value;
@@ -40,6 +43,7 @@ public class Trie<Value> implements SymbolTable<Value> {
 
     public Trie(int numberOfLetters) {
         this.numberOfLetters = numberOfLetters;
+        root = new Node(numberOfLetters);
     }
     //#endregion
 
@@ -55,15 +59,12 @@ public class Trie<Value> implements SymbolTable<Value> {
 
     @Override
     public void put(final String key, final Value value) {
-        if (root == null) {
-            root = new Node();
-        }
         root = put(root, key, value, 0);
     }
 
     @Override
     public void delete(final String key) {
-        throw new UnsupportedOperationException();
+        delete(root, key, 0);
     }
 
     @Override
@@ -73,12 +74,12 @@ public class Trie<Value> implements SymbolTable<Value> {
 
     @Override
     public void clear() {
-        throw new UnsupportedOperationException();
+        root = new Node(numberOfLetters);
     }
 
     @Override
     public boolean isEmpty() {
-        throw new UnsupportedOperationException();
+        return isLevelEmpty(root);
     }
 
     @Override
@@ -116,21 +117,52 @@ public class Trie<Value> implements SymbolTable<Value> {
             return node;
         }
         char index = key.charAt(levelCounter);
-        return get(node.getNextLevelAt(index), key, levelCounter + 1);
+        Node nextLevel = node.getNextLevelAt(index);
+        return get(nextLevel, key, levelCounter + 1);
     }
 
     private Node put(Node node, String key, Value value, int levelCounter) {
         if (node == null) {
-            node = new Node();
+            node = new Node(numberOfLetters);
         }
         if (levelCounter == key.length()) {
             node.setValue(value);
             return node;
         }
         char index = key.charAt(levelCounter);
-        Node next = put(node.getNextLevelAt(index), key, value, levelCounter + 1);
+        Node nextLevel = node.getNextLevelAt(index);
+        Node next = put(nextLevel, key, value, levelCounter + 1);
         node.setNextLevelAt(index, next);
         return node;
+    }
+
+    private boolean delete(Node node, String key, int levelCounter) {
+        if (node == null) {
+            return false;
+        }
+        if (levelCounter == key.length()) {
+            node.value = null;
+        } else {
+            char index = key.charAt(levelCounter);
+            Node nextLevel = node.getNextLevelAt(index);
+            boolean isNextLevelEmpty = delete(nextLevel, key, levelCounter + 1);
+            if (isNextLevelEmpty) {
+                node.setNextLevelAt(index, null);
+            }
+        }
+        boolean result = isLevelEmpty(node);
+        return result;
+    }
+
+    private boolean isLevelEmpty(Node level) {
+        boolean hasElement = false;
+        for (Node current : level.nextLevel) {
+            if (current != null) {
+                hasElement = true;
+                break;
+            }
+        }
+        return !hasElement;
     }
     //#endregion
 }
