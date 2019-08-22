@@ -7,6 +7,7 @@ public class Trie<Value> implements SymbolTable<Value> {
     private static final int NUMBER_OF_LETTERS_IN_EXTENDED_ASCII = 256;
     private final int numberOfLetters;
     private Node root;
+    private int size;
     //#endregion
 
     //#region Node Class
@@ -75,6 +76,7 @@ public class Trie<Value> implements SymbolTable<Value> {
     @Override
     public void clear() {
         root = new Node(numberOfLetters);
+        size = 0;
     }
 
     @Override
@@ -84,7 +86,7 @@ public class Trie<Value> implements SymbolTable<Value> {
 
     @Override
     public int getSize() {
-        throw new UnsupportedOperationException();
+        return size;
     }
 
     @Override
@@ -126,6 +128,9 @@ public class Trie<Value> implements SymbolTable<Value> {
             node = new Node(numberOfLetters);
         }
         if (levelCounter == key.length()) {
+            if (node.getValue() == null) {
+                size++;
+            }
             node.setValue(value);
             return node;
         }
@@ -142,6 +147,7 @@ public class Trie<Value> implements SymbolTable<Value> {
         }
         if (levelCounter == key.length()) {
             node.value = null;
+            size--;
         } else {
             char index = key.charAt(levelCounter);
             Node nextLevel = node.getNextLevelAt(index);
@@ -150,8 +156,7 @@ public class Trie<Value> implements SymbolTable<Value> {
                 node.setNextLevelAt(index, null);
             }
         }
-        boolean result = isLevelEmpty(node);
-        return result;
+        return isLevelEmpty(node);
     }
 
     private boolean isLevelEmpty(Node level) {

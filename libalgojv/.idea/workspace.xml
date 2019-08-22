@@ -89,7 +89,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.TrieTests.delete">
+  <component name="RunManager" selected="JUnit.TrieTests.getSize">
     <configuration name="AllTests" type="JUnit" factoryName="JUnit">
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="" />
@@ -151,6 +151,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TrieTests.getSize" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="libalgojv" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.libalgojv.tests.unit.tries.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.libalgojv.tests.unit.tries" />
+      <option name="MAIN_CLASS_NAME" value="com.libalgojv.tests.unit.tries.TrieTests" />
+      <option name="METHOD_NAME" value="getSize" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TrieTests.isEmpty" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="libalgojv" />
       <extension name="coverage">
@@ -167,37 +183,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TrieTests.put" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="libalgojv" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.libalgojv.tests.unit.tries.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.libalgojv.tests.unit.tries" />
-      <option name="MAIN_CLASS_NAME" value="com.libalgojv.tests.unit.tries.TrieTests" />
-      <option name="METHOD_NAME" value="put" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
       <item itemvalue="JUnit.AllTests" />
-      <item itemvalue="JUnit.TrieTests.put" />
       <item itemvalue="JUnit.TrieTests.get" />
       <item itemvalue="JUnit.TrieTests.isEmpty" />
       <item itemvalue="JUnit.TrieTests.clear" />
       <item itemvalue="JUnit.TrieTests.delete" />
+      <item itemvalue="JUnit.TrieTests.getSize" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TrieTests.getSize" />
         <item itemvalue="JUnit.TrieTests.delete" />
         <item itemvalue="JUnit.TrieTests.clear" />
         <item itemvalue="JUnit.TrieTests.isEmpty" />
         <item itemvalue="JUnit.TrieTests.get" />
-        <item itemvalue="JUnit.TrieTests.put" />
       </list>
     </recent_temporary>
   </component>
@@ -279,13 +279,18 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/libalgojv/tries/Trie.java</url>
-          <line>66</line>
+          <line>67</line>
           <option name="timeStamp" value="53" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/libalgojv/tests/unit/tries/TrieTests.java</url>
           <line>115</line>
           <option name="timeStamp" value="54" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/libalgojv/tests/unit/tries/TrieTests.java</url>
+          <line>17</line>
+          <option name="timeStamp" value="56" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

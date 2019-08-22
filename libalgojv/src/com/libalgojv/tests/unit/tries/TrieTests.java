@@ -163,6 +163,39 @@ class TrieTests {
 
     @Test
     void getSize() {
-        fail("Not Implemented");
+        int actual, expected;
+        expected = 8;
+        actual = symbolTable.getSize();
+        assertEquals(expected, actual);
+
+        symbolTable.delete("by");
+        expected = 7;
+        actual = symbolTable.getSize();
+        assertEquals(expected, actual);
+
+        symbolTable.clear();
+        expected = 0;
+        actual = symbolTable.getSize();
+        assertEquals(expected, actual);
+    }
+
+    @Test
+    void getAllKeys() {
+        fail();
+    }
+
+    @Test
+    void getKeysWithPrefix() {
+        fail();
+    }
+
+    @Test
+    void wildcardMatch() {
+        fail();
+    }
+
+    @Test
+    void longestPrefixOf() {
+        fail();
     }
 }
