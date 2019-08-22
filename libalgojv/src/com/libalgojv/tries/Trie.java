@@ -27,6 +27,10 @@ public class Trie<Value> implements SymbolTable<Value> {
             this.value = value;
         }
 
+        Node[] getNextLevel() {
+            return nextLevel;
+        }
+
         void setNextLevelAt(int index, Node next) {
             nextLevel[index] = next;
         }
@@ -161,7 +165,7 @@ public class Trie<Value> implements SymbolTable<Value> {
 
     private boolean isLevelEmpty(Node level) {
         boolean hasElement = false;
-        for (Node current : level.nextLevel) {
+        for (Node current : level.getNextLevel()) {
             if (current != null) {
                 hasElement = true;
                 break;
