@@ -15,15 +15,15 @@ class TrieTests {
     void setUp() {
         symbolTable = new Trie<>();
 
-        symbolTable.put("a", 8);
-        symbolTable.put("sea", 2);
-        symbolTable.put("by", 4);
-        symbolTable.put("sea", 6);
-        symbolTable.put("sells", 1);
         symbolTable.put("she", 0);
+        symbolTable.put("sells", 1);
+        symbolTable.put("sea", 2);
         symbolTable.put("shells", 3);
-        symbolTable.put("shore", 7);
+        symbolTable.put("by", 4);
         symbolTable.put("the", 5);
+        symbolTable.put("sea", 6);
+        symbolTable.put("shore", 7);
+        symbolTable.put("a", 8);
     }
 
     @AfterEach

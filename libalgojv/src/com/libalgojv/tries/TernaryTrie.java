@@ -6,7 +6,9 @@ import com.libalgojv.queues.linkedlistqueue.LinkedListQueue;
 
 public class TernaryTrie<Value> implements SymbolTable<Value> {
     //#region Private Fields
+    // TODO: R^2 branching at root
     private Node root;
+    private int size;
     //#endregion
 
     //#region Node Class
@@ -21,6 +23,7 @@ public class TernaryTrie<Value> implements SymbolTable<Value> {
             this.character = character;
         }
 
+        //region Getters and Setters
         char getCharacter() {
             return character;
         }
@@ -56,6 +59,7 @@ public class TernaryTrie<Value> implements SymbolTable<Value> {
         void setRight(Node right) {
             this.right = right;
         }
+        //endregion
     }
     //#endregion
 
@@ -65,7 +69,7 @@ public class TernaryTrie<Value> implements SymbolTable<Value> {
     //#region Public Methods
     @Override
     public void put(String key, Value value) {
-        // TODO: balance trre with rotations
+        // TODO: balance trie with rotations
         root = put(root, key, value, 0);
     }
 
@@ -90,24 +94,25 @@ public class TernaryTrie<Value> implements SymbolTable<Value> {
 
     @Override
     public void clear() {
-        throw new UnsupportedOperationException();
+        root = null;
+        size = 0;
     }
 
     @Override
     public boolean isEmpty() {
-        throw new UnsupportedOperationException();
+        return root == null;
     }
 
     @Override
     public int getSize() {
-        throw new UnsupportedOperationException();
+        return size;
     }
 
     public Iterable<String> getAllKeys() {
-        //throw new UnsupportedOperationException();
-        Queue<String> queue = new LinkedListQueue<>();
-        collect(root, "", queue);
-        return queue;
+        throw new UnsupportedOperationException();
+//        Queue<String> queue = new LinkedListQueue<>();
+//        collect(root, "", queue);
+//        return queue;
     }
 
     public Iterable<String> getKeysWithPrefix(String prefix) {
@@ -140,6 +145,7 @@ public class TernaryTrie<Value> implements SymbolTable<Value> {
             node.setMiddle(put(node.getMiddle(), key, value, levelCounter + 1));
         } else {
             node.setValue(value);
+            size++;
         }
         return node;
     }
@@ -158,17 +164,17 @@ public class TernaryTrie<Value> implements SymbolTable<Value> {
         } else return node;
     }
 
-    private void collect(Node x, String prefix, Queue<String> q) {
-        if (x == null) {
-            return;
-        }
-        if (x.value != null) {
-            q.enqueue(prefix);
-            int R = 26;
-            for (char c = 0; c < R; c++) {
-                //collect(x.next[c], prefix + c, q);
-            }
-        }
-    }
+//    private void collect(Node x, String prefix, Queue<String> q) {
+//        if (x == null) {
+//            return;
+//        }
+//        if (x.getValue() != null) {
+//            q.enqueue(prefix);
+//            int R = 26;
+//            for (char c = 0; c < R; c++) {
+//                //collect(x.next[c], prefix + c, q);
+//            }
+//        }
+//    }
     //#endregion
 }

@@ -19,6 +19,7 @@ public class Trie<Value> implements SymbolTable<Value> {
             nextLevel = new Node[numberOfLetters];
         }
 
+        //region Getters and Setters
         Value getValue() {
             return value;
         }
@@ -38,6 +39,7 @@ public class Trie<Value> implements SymbolTable<Value> {
         Node getNextLevelAt(int index) {
             return nextLevel[index];
         }
+        //endregion
     }
     //#endregion
 
