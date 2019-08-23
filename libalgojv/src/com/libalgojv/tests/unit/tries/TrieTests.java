@@ -124,9 +124,11 @@ class TrieTests {
         symbolTable.delete("shore");
         actual = symbolTable.get("shore");
         assertNull(actual);
+
         expected = 3;
         actual = symbolTable.get("shells");
         assertEquals(expected, actual);
+
         expected = 6;
         actual = symbolTable.get("sea");
         assertEquals(expected, actual);
@@ -135,6 +137,11 @@ class TrieTests {
         expected = 1;
         actual = symbolTable.get("sells");
         assertEquals(expected, actual);
+
+        // invalid entry
+        symbolTable.delete("by");
+        actual = symbolTable.get("by");
+        assertNull(actual);
     }
 
     @Test

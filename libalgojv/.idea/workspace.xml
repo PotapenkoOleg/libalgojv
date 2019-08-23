@@ -6,7 +6,6 @@
       <change beforePath="$PROJECT_DIR$/src/com/libalgojv/tests/unit/tries/TernaryTrieTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/libalgojv/tests/unit/tries/TernaryTrieTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/libalgojv/tests/unit/tries/TrieTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/libalgojv/tests/unit/tries/TrieTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/libalgojv/tries/TernaryTrie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/libalgojv/tries/TernaryTrie.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/libalgojv/tries/Trie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/libalgojv/tries/Trie.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -92,7 +91,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.TernaryTrieTests">
+  <component name="RunManager" selected="JUnit.TernaryTrieTests.delete">
     <configuration name="AllTests" type="JUnit" factoryName="JUnit">
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="" />
@@ -121,6 +120,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TernaryTrieTests.delete" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="libalgojv" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.libalgojv.tests.unit.tries.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.libalgojv.tests.unit.tries" />
+      <option name="MAIN_CLASS_NAME" value="com.libalgojv.tests.unit.tries.TernaryTrieTests" />
+      <option name="METHOD_NAME" value="delete" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TrieTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="libalgojv" />
       <extension name="coverage">
@@ -132,22 +147,6 @@
       <option name="PACKAGE_NAME" value="com.libalgojv.tests.unit.tries" />
       <option name="MAIN_CLASS_NAME" value="com.libalgojv.tests.unit.tries.TrieTests" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TrieTests.clear" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="libalgojv" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.libalgojv.tests.unit.tries.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.libalgojv.tests.unit.tries" />
-      <option name="MAIN_CLASS_NAME" value="com.libalgojv.tests.unit.tries.TrieTests" />
-      <option name="METHOD_NAME" value="clear" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -186,19 +185,19 @@
     </configuration>
     <list>
       <item itemvalue="JUnit.AllTests" />
-      <item itemvalue="JUnit.TrieTests.clear" />
       <item itemvalue="JUnit.TrieTests.delete" />
       <item itemvalue="JUnit.TrieTests.getSize" />
       <item itemvalue="JUnit.TrieTests" />
       <item itemvalue="JUnit.TernaryTrieTests" />
+      <item itemvalue="JUnit.TernaryTrieTests.delete" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TernaryTrieTests.delete" />
+        <item itemvalue="JUnit.TrieTests.delete" />
         <item itemvalue="JUnit.TernaryTrieTests" />
         <item itemvalue="JUnit.TrieTests" />
         <item itemvalue="JUnit.TrieTests.getSize" />
-        <item itemvalue="JUnit.TrieTests.delete" />
-        <item itemvalue="JUnit.TrieTests.clear" />
       </list>
     </recent_temporary>
   </component>
@@ -276,11 +275,6 @@
           <option name="timeStamp" value="31" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/libalgojv/tries/Trie.java</url>
-          <line>73</line>
-          <option name="timeStamp" value="53" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/libalgojv/tests/unit/tries/TrieTests.java</url>
           <line>115</line>
           <option name="timeStamp" value="54" />
@@ -289,6 +283,11 @@
           <url>file://$PROJECT_DIR$/src/com/libalgojv/tests/unit/tries/TrieTests.java</url>
           <line>17</line>
           <option name="timeStamp" value="56" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/libalgojv/tests/unit/tries/TernaryTrieTests.java</url>
+          <line>113</line>
+          <option name="timeStamp" value="57" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

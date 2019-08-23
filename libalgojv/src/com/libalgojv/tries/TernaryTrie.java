@@ -84,7 +84,11 @@ public class TernaryTrie<Value> implements SymbolTable<Value> {
 
     @Override
     public void delete(String key) {
-        throw new UnsupportedOperationException();
+        Node child = delete(root, key, 0);
+        setChildToNull(root, child);
+        if (isNodeEmpty(root)) {
+            root = null;
+        }
     }
 
     @Override
@@ -132,6 +136,7 @@ public class TernaryTrie<Value> implements SymbolTable<Value> {
     //#endregion
 
     //#region Private Methods
+
     private Node put(Node node, String key, Value value, int levelCounter) {
         char character = key.charAt(levelCounter);
         if (node == null) {
@@ -164,6 +169,59 @@ public class TernaryTrie<Value> implements SymbolTable<Value> {
         } else return node;
     }
 
+    private Node delete(Node node, String key, int levelCounter) {
+        if (node == null) {
+            return null;
+        }
+        char character = key.charAt(levelCounter);
+        if (character < node.getCharacter()) {
+            Node childNode = delete(node.getLeft(), key, levelCounter);
+            if ((childNode != null) && isNodeEmpty(childNode)) {
+                //setChildToNull(node, childNode);
+            }
+        } else if (character > node.getCharacter()) {
+            Node childNode = delete(node.getRight(), key, levelCounter);
+            if ((childNode != null) && isNodeEmpty(childNode)) {
+                //setChildToNull(node, childNode);
+            }
+        } else if (levelCounter < key.length() - 1) {
+            Node childNode = delete(node.getMiddle(), key, levelCounter + 1);
+            if ((childNode != null) && isNodeEmpty(childNode)) {
+                //setChildToNull(node, childNode);
+            }
+        } else {
+            // this is node we should delete
+            node.setValue(null);
+            return node;
+        }
+
+        return node;
+    }
+
+    private boolean isNodeEmpty(Node node) {
+        return (node.getValue() == null) && isNodeHaveNoChildren(node);
+    }
+
+    private boolean isNodeHaveNoChildren(Node node) {
+        return (node.getLeft() == null) && (node.getMiddle() == null) && (node.getRight() == null);
+    }
+
+    private void setChildToNull(Node parent, Node child) {
+        if (parent == null) {
+            return;
+        }
+
+        if (parent.getLeft() == child) {
+            parent.setLeft(null);
+        }
+        if (parent.getMiddle() == child) {
+            parent.setMiddle(null);
+        }
+        if (parent.getRight() == child) {
+            parent.setRight(null);
+        }
+    }
+
 //    private void collect(Node x, String prefix, Queue<String> q) {
 //        if (x == null) {
 //            return;
@@ -176,5 +234,7 @@ public class TernaryTrie<Value> implements SymbolTable<Value> {
 //            }
 //        }
 //    }
+
     //#endregion
+
 }

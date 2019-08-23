@@ -111,6 +111,9 @@ class TernaryTrieTests {
 
     @Test
     void delete() {
+        symbolTable.clear();
+        symbolTable.put("a", 0);
+        symbolTable.delete("a");
         Integer expected, actual;
 
         symbolTable.delete("a");
@@ -135,6 +138,11 @@ class TernaryTrieTests {
         expected = 1;
         actual = symbolTable.get("sells");
         assertEquals(expected, actual);
+
+        // invalid entry
+        symbolTable.delete("by");
+        actual = symbolTable.get("by");
+        assertNull(actual);
     }
 
     @Test
