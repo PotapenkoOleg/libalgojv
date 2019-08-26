@@ -149,8 +149,10 @@ public class TernaryTrie<Value> implements SymbolTable<Value> {
         } else if (levelCounter < key.length() - 1) {
             node.setMiddle(put(node.getMiddle(), key, value, levelCounter + 1));
         } else {
+            if (node.getValue() == null) {
+                size++;
+            }
             node.setValue(value);
-            size++;
         }
         return node;
     }
@@ -176,26 +178,27 @@ public class TernaryTrie<Value> implements SymbolTable<Value> {
         char character = key.charAt(levelCounter);
         if (character < node.getCharacter()) {
             Node childNode = delete(node.getLeft(), key, levelCounter);
-            if ((childNode != null) && isNodeEmpty(childNode)) {
-                //setChildToNull(node, childNode);
+            if ((childNode != null) && (isNodeEmpty(childNode))) {
+                setChildToNull(node, childNode);
             }
+            return node;
         } else if (character > node.getCharacter()) {
             Node childNode = delete(node.getRight(), key, levelCounter);
-            if ((childNode != null) && isNodeEmpty(childNode)) {
-                //setChildToNull(node, childNode);
+            if ((childNode != null) && (isNodeEmpty(childNode))) {
+                setChildToNull(node, childNode);
             }
+            return node;
         } else if (levelCounter < key.length() - 1) {
             Node childNode = delete(node.getMiddle(), key, levelCounter + 1);
-            if ((childNode != null) && isNodeEmpty(childNode)) {
-                //setChildToNull(node, childNode);
+            if ((childNode != null) && (isNodeEmpty(childNode))) {
+                setChildToNull(node, childNode);
             }
+            return node;
         } else {
-            // this is node we should delete
             node.setValue(null);
+            size--;
             return node;
         }
-
-        return node;
     }
 
     private boolean isNodeEmpty(Node node) {

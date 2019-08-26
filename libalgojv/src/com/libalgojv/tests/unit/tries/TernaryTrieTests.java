@@ -11,10 +11,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class TernaryTrieTests {
     private SymbolTable<Integer> symbolTable;
 
-    @BeforeEach
-    void setUp() {
-        symbolTable = new TernaryTrie<>();
-
+    private void initSymbolTable() {
         symbolTable.put("she", 0);
         symbolTable.put("sells", 1);
         symbolTable.put("sea", 2);
@@ -24,6 +21,12 @@ class TernaryTrieTests {
         symbolTable.put("sea", 6);
         symbolTable.put("shore", 7);
         symbolTable.put("a", 8);
+    }
+
+    @BeforeEach
+    void setUp() {
+        symbolTable = new TernaryTrie<>();
+        initSymbolTable();
     }
 
     @AfterEach
@@ -111,14 +114,24 @@ class TernaryTrieTests {
 
     @Test
     void delete() {
-        symbolTable.clear();
-        symbolTable.put("a", 0);
-        symbolTable.delete("a");
         Integer expected, actual;
 
+        // clear all entries
+        symbolTable.delete("she");
+        symbolTable.delete("sells");
+        symbolTable.delete("sea");
+        symbolTable.delete("shells");
+        symbolTable.delete("by");
+        symbolTable.delete("the");
+        symbolTable.delete("sea");
+        symbolTable.delete("shore");
         symbolTable.delete("a");
-        actual = symbolTable.get("a");
-        assertNull(actual);
+
+        expected = 0;
+        actual = symbolTable.getSize();
+        assertEquals(expected, actual);
+
+        initSymbolTable();
 
         symbolTable.delete("by");
         actual = symbolTable.get("by");
@@ -143,6 +156,16 @@ class TernaryTrieTests {
         symbolTable.delete("by");
         actual = symbolTable.get("by");
         assertNull(actual);
+
+        // delete root
+        symbolTable.clear();
+        symbolTable.put("a", 0);
+        symbolTable.delete("a");
+        actual = symbolTable.get("a");
+        assertNull(actual);
+        expected = 0;
+        actual = symbolTable.getSize();
+        assertEquals(expected, actual);
     }
 
     @Test
