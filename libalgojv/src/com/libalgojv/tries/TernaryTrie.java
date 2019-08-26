@@ -12,6 +12,9 @@ import com.libalgojv.common.interfaces.Queue;
 import com.libalgojv.common.interfaces.SymbolTable;
 import com.libalgojv.queues.linkedlistqueue.LinkedListQueue;
 
+/**
+ * Implements TernaryTrie symbol table data structure
+ */
 public class TernaryTrie<Value> implements SymbolTable<Value> {
     //#region Private Fields
     // TODO: R^2 branching at root
@@ -75,12 +78,23 @@ public class TernaryTrie<Value> implements SymbolTable<Value> {
     // #endregion
 
     //#region Public Methods
+
+    /**
+     * Inserts new key in symbol table
+     *
+     * @param key   string key for data retrieval
+     * @param value value associated with the key
+     */
     @Override
     public void put(String key, Value value) {
         // TODO: balance trie with rotations
         root = put(root, key, value, 0);
     }
 
+    /**
+     * @param key
+     * @return
+     */
     @Override
     public Value get(String key) {
         Node node = get(root, key, 0);
@@ -90,6 +104,9 @@ public class TernaryTrie<Value> implements SymbolTable<Value> {
         return node.getValue();
     }
 
+    /**
+     * @param key
+     */
     @Override
     public void delete(String key) {
         Node child = delete(root, key, 0);
@@ -99,22 +116,35 @@ public class TernaryTrie<Value> implements SymbolTable<Value> {
         }
     }
 
+    /**
+     * @param key
+     * @return
+     */
     @Override
     public boolean contains(String key) {
         return get(key) != null;
     }
 
+    /**
+     *
+     */
     @Override
     public void clear() {
         root = null;
         size = 0;
     }
 
+    /**
+     * @return
+     */
     @Override
     public boolean isEmpty() {
         return root == null;
     }
 
+    /**
+     * @return
+     */
     @Override
     public int getSize() {
         return size;
