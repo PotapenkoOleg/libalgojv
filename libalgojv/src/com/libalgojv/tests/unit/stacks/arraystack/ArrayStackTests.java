@@ -35,13 +35,19 @@ class ArrayStackTests {
     void pop() {
         assertNull(stack.pop());
 
-        final int actual = 42;
-        stack.push(actual);
-        stack.push(actual);
-        stack.push(actual);
+        final int expected = 42;
+        stack.push(expected + 2);
+        stack.push(expected + 1);
+        stack.push(expected);
 
-        final int expected = stack.pop();
+        int actual = stack.pop();
         assertEquals(expected, actual);
+
+        actual = stack.pop();
+        assertEquals(expected + 1, actual);
+
+        actual = stack.pop();
+        assertEquals(expected + 2, actual);
     }
 
     @Test
