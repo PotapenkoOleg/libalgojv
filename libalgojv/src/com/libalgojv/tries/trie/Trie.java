@@ -6,7 +6,7 @@
  * Copyright © 2018-2019 Oleg Potapenko. All rights reserved.
  */
 
-package com.libalgojv.tries;
+package com.libalgojv.tries.trie;
 
 import com.libalgojv.common.interfaces.SymbolTable;
 

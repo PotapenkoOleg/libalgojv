@@ -3,7 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="9f56ce26-7942-4300-be10-00f249394c3e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/libalgojv/tries/TernaryTrie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/libalgojv/tries/TernaryTrie.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/libalgojv/tests/unit/tries/TernaryTrieTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/libalgojv/tests/unit/tries/ternarytrie/TernaryTrieTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/libalgojv/tests/unit/tries/TrieTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/libalgojv/tests/unit/tries/trie/TrieTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/libalgojv/tries/TernaryTrie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/libalgojv/tries/ternatytrie/TernaryTrie.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/libalgojv/tries/Trie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/libalgojv/tries/trie/Trie.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -89,7 +92,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.TernaryTrieTests">
+  <component name="RunManager" selected="JUnit.TrieTests">
     <configuration name="AllTests" type="JUnit" factoryName="JUnit">
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="" />
@@ -107,12 +110,12 @@
       <module name="libalgojv" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.libalgojv.tests.unit.tries.*" />
+          <option name="PATTERN" value="com.libalgojv.tests.unit.tries.ternarytrie.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.libalgojv.tests.unit.tries" />
-      <option name="MAIN_CLASS_NAME" value="com.libalgojv.tests.unit.tries.TernaryTrieTests" />
+      <option name="PACKAGE_NAME" value="com.libalgojv.tests.unit.tries.ternarytrie" />
+      <option name="MAIN_CLASS_NAME" value="com.libalgojv.tests.unit.tries.ternarytrie.TernaryTrieTests" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -122,12 +125,12 @@
       <module name="libalgojv" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.libalgojv.tests.unit.tries.*" />
+          <option name="PATTERN" value="com.libalgojv.tests.unit.tries.ternarytrie.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.libalgojv.tests.unit.tries" />
-      <option name="MAIN_CLASS_NAME" value="com.libalgojv.tests.unit.tries.TernaryTrieTests" />
+      <option name="PACKAGE_NAME" value="com.libalgojv.tests.unit.tries.ternarytrie" />
+      <option name="MAIN_CLASS_NAME" value="com.libalgojv.tests.unit.tries.ternarytrie.TernaryTrieTests" />
       <option name="METHOD_NAME" value="delete" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -138,12 +141,12 @@
       <module name="libalgojv" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.libalgojv.tests.unit.tries.*" />
+          <option name="PATTERN" value="com.libalgojv.tests.unit.tries.ternarytrie.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.libalgojv.tests.unit.tries" />
-      <option name="MAIN_CLASS_NAME" value="com.libalgojv.tests.unit.tries.TernaryTrieTests" />
+      <option name="PACKAGE_NAME" value="com.libalgojv.tests.unit.tries.ternarytrie" />
+      <option name="MAIN_CLASS_NAME" value="com.libalgojv.tests.unit.tries.ternarytrie.TernaryTrieTests" />
       <option name="METHOD_NAME" value="put" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -154,12 +157,12 @@
       <module name="libalgojv" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.libalgojv.tests.unit.tries.*" />
+          <option name="PATTERN" value="com.libalgojv.tests.unit.tries.ternarytrie.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.libalgojv.tests.unit.tries" />
-      <option name="MAIN_CLASS_NAME" value="com.libalgojv.tests.unit.tries.TrieTests" />
+      <option name="PACKAGE_NAME" value="com.libalgojv.tests.unit.tries.trie" />
+      <option name="MAIN_CLASS_NAME" value="com.libalgojv.tests.unit.tries.trie.TrieTests" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -169,12 +172,12 @@
       <module name="libalgojv" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.libalgojv.tests.unit.tries.*" />
+          <option name="PATTERN" value="com.libalgojv.tests.unit.tries.ternarytrie.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.libalgojv.tests.unit.tries" />
-      <option name="MAIN_CLASS_NAME" value="com.libalgojv.tests.unit.tries.TrieTests" />
+      <option name="PACKAGE_NAME" value="com.libalgojv.tests.unit.tries.trie" />
+      <option name="MAIN_CLASS_NAME" value="com.libalgojv.tests.unit.tries.trie.TrieTests" />
       <option name="METHOD_NAME" value="delete" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -191,11 +194,11 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TrieTests" />
         <item itemvalue="JUnit.TernaryTrieTests" />
         <item itemvalue="JUnit.TernaryTrieTests.delete" />
         <item itemvalue="JUnit.TernaryTrieTests.put" />
         <item itemvalue="JUnit.TrieTests.delete" />
-        <item itemvalue="JUnit.TrieTests" />
       </list>
     </recent_temporary>
   </component>
@@ -273,24 +276,24 @@
           <option name="timeStamp" value="31" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/libalgojv/tests/unit/tries/TrieTests.java</url>
+          <url>file://$PROJECT_DIR$/src/com/libalgojv/tests/unit/tries/trie/TrieTests.java</url>
           <line>123</line>
           <option name="timeStamp" value="54" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/libalgojv/tests/unit/tries/TrieTests.java</url>
+          <url>file://$PROJECT_DIR$/src/com/libalgojv/tests/unit/tries/trie/TrieTests.java</url>
           <line>25</line>
           <option name="timeStamp" value="56" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/libalgojv/tests/unit/tries/TernaryTrieTests.java</url>
-          <line>168</line>
-          <option name="timeStamp" value="60" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/libalgojv/tests/unit/tries/TernaryTrieTests.java</url>
+          <url>file://$PROJECT_DIR$/src/com/libalgojv/tests/unit/tries/ternarytrie/TernaryTrieTests.java</url>
           <line>136</line>
           <option name="timeStamp" value="61" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/libalgojv/tries/ternatytrie/TernaryTrie.java</url>
+          <line>147</line>
+          <option name="timeStamp" value="62" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

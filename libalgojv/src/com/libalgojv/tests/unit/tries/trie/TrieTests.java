@@ -1,25 +1,28 @@
 /*
- * TernaryTrieTests.java
+ * TrieTests.java
  * Project libalgojv
  *
  * Created by Oleg Potapenko on 12/25/18 12:00 PM.
  * Copyright © 2018-2019 Oleg Potapenko. All rights reserved.
  */
 
-package com.libalgojv.tests.unit.tries;
+package com.libalgojv.tests.unit.tries.trie;
 
 import com.libalgojv.common.interfaces.SymbolTable;
-import com.libalgojv.tries.TernaryTrie;
+import com.libalgojv.tries.trie.Trie;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class TernaryTrieTests {
+class TrieTests {
     private SymbolTable<Integer> symbolTable;
 
-    private void initSymbolTable() {
+    @BeforeEach
+    void setUp() {
+        symbolTable = new Trie<>();
+
         symbolTable.put("she", 0);
         symbolTable.put("sells", 1);
         symbolTable.put("sea", 2);
@@ -29,12 +32,6 @@ class TernaryTrieTests {
         symbolTable.put("sea", 6);
         symbolTable.put("shore", 7);
         symbolTable.put("a", 8);
-    }
-
-    @BeforeEach
-    void setUp() {
-        symbolTable = new TernaryTrie<>();
-        initSymbolTable();
     }
 
     @AfterEach
@@ -124,22 +121,9 @@ class TernaryTrieTests {
     void delete() {
         Integer expected, actual;
 
-        // clear all entries
-        symbolTable.delete("she");
-        symbolTable.delete("sells");
-        symbolTable.delete("sea");
-        symbolTable.delete("shells");
-        symbolTable.delete("by");
-        symbolTable.delete("the");
-        symbolTable.delete("sea");
-        symbolTable.delete("shore");
         symbolTable.delete("a");
-
-        expected = 0;
-        actual = symbolTable.getSize();
-        assertEquals(expected, actual);
-
-        initSymbolTable();
+        actual = symbolTable.get("a");
+        assertNull(actual);
 
         symbolTable.delete("by");
         actual = symbolTable.get("by");
@@ -148,9 +132,11 @@ class TernaryTrieTests {
         symbolTable.delete("shore");
         actual = symbolTable.get("shore");
         assertNull(actual);
+
         expected = 3;
         actual = symbolTable.get("shells");
         assertEquals(expected, actual);
+
         expected = 6;
         actual = symbolTable.get("sea");
         assertEquals(expected, actual);
@@ -164,16 +150,6 @@ class TernaryTrieTests {
         symbolTable.delete("by");
         actual = symbolTable.get("by");
         assertNull(actual);
-
-        // delete root
-        symbolTable.clear();
-        symbolTable.put("a", 0);
-        symbolTable.delete("a");
-        actual = symbolTable.get("a");
-        assertNull(actual);
-        expected = 0;
-        actual = symbolTable.getSize();
-        assertEquals(expected, actual);
     }
 
     @Test
