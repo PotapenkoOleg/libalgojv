@@ -9,7 +9,7 @@
 package com.libalgojv.tests.unit.tries.ternarytrie;
 
 import com.libalgojv.common.interfaces.SymbolTable;
-import com.libalgojv.tries.ternatytrie.TernaryTrie;
+import com.libalgojv.tries.ternarytrie.TernaryTrie;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
