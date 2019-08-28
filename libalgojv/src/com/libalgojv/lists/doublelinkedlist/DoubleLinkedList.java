@@ -38,39 +38,39 @@ public class DoubleLinkedList<Key, Value> implements List<Key, Value>, BagKeyVal
     //#endregion
 
     //region Node Class
-    private class DoubleLinkedListNode<Key, Value> {
-        private Key key;
-        private Value value;
-        private DoubleLinkedListNode<Key, Value> next;
-        private DoubleLinkedListNode<Key, Value> previous;
+    private static class DoubleLinkedListNode<EKey, EValue> {
+        private EKey key;
+        private EValue value;
+        private DoubleLinkedListNode<EKey, EValue> next;
+        private DoubleLinkedListNode<EKey, EValue> previous;
 
-        DoubleLinkedListNode(final Key key, final Value value) {
+        DoubleLinkedListNode(final EKey key, final EValue value) {
             this.key = key;
             this.value = value;
         }
 
         //#region Getters And Setters
-        Key getKey() {
+        EKey getKey() {
             return key;
         }
 
-        Value getValue() {
+        EValue getValue() {
             return value;
         }
 
-        DoubleLinkedListNode<Key, Value> getNext() {
+        DoubleLinkedListNode<EKey, EValue> getNext() {
             return next;
         }
 
-        void setNext(DoubleLinkedListNode<Key, Value> next) {
+        void setNext(DoubleLinkedListNode<EKey, EValue> next) {
             this.next = next;
         }
 
-        DoubleLinkedListNode<Key, Value> getPrevious() {
+        DoubleLinkedListNode<EKey, EValue> getPrevious() {
             return previous;
         }
 
-        void setPrevious(DoubleLinkedListNode<Key, Value> previous) {
+        void setPrevious(DoubleLinkedListNode<EKey, EValue> previous) {
             this.previous = previous;
         }
         //#endregion

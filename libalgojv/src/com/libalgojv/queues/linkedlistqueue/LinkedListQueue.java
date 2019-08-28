@@ -18,29 +18,29 @@ import java.util.function.Consumer;
 
 public class LinkedListQueue<E> implements Queue<E>, Bag<E> {
     //#region Private Fields
-    private LinkedListNode<E> first;
+    private LinkedListQueueNode<E> first;
     private int size = 0;
     //#endregion
 
     //#region Node Class
-    private class LinkedListNode<E> {
-        private final E item;
-        private LinkedListNode<E> next;
+    private static class LinkedListQueueNode<Item> {
+        private final Item item;
+        private LinkedListQueueNode<Item> next;
 
-        LinkedListNode(final E item) {
+        LinkedListQueueNode(final Item item) {
             this.item = item;
         }
 
         //#region Package Private Methods
-        E getItem() {
+        Item getItem() {
             return item;
         }
 
-        LinkedListNode<E> getNext() {
+        LinkedListQueueNode<Item> getNext() {
             return next;
         }
 
-        void setNext(final LinkedListNode<E> next) {
+        void setNext(final LinkedListQueueNode<Item> next) {
             this.next = next;
         }
         //#endregion
@@ -50,8 +50,8 @@ public class LinkedListQueue<E> implements Queue<E>, Bag<E> {
     //#region Public Methods
     @Override
     public void enqueue(E item) {
-        LinkedListNode<E> oldFirst = first;
-        first = new LinkedListNode<>(item);
+        LinkedListQueueNode<E> oldFirst = first;
+        first = new LinkedListQueueNode<>(item);
         first.setNext(oldFirst);
         ++size;
     }
@@ -68,8 +68,8 @@ public class LinkedListQueue<E> implements Queue<E>, Bag<E> {
             --size;
             return result;
         }
-        LinkedListNode<E> previous = first;
-        LinkedListNode<E> current = first.getNext();
+        LinkedListQueueNode<E> previous = first;
+        LinkedListQueueNode<E> current = first.getNext();
         while (current.getNext() != null) {
             previous = current;
             current = current.getNext();
@@ -88,7 +88,7 @@ public class LinkedListQueue<E> implements Queue<E>, Bag<E> {
         if (first.getNext() == null) {
             return first.getItem();
         }
-        LinkedListNode<E> current = first;
+        LinkedListQueueNode<E> current = first;
         while (current.getNext() != null) {
             current = current.getNext();
         }
@@ -134,7 +134,7 @@ public class LinkedListQueue<E> implements Queue<E>, Bag<E> {
             private Stack<E> stack = new Stack<>();
 
             {
-                LinkedListNode<E> current = first;
+                LinkedListQueueNode<E> current = first;
                 while (current != null) {
                     stack.push(current.getItem());
                     current = current.getNext();

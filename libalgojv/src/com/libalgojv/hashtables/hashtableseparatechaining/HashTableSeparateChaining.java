@@ -15,39 +15,39 @@ public class HashTableSeparateChaining<Key, Value> implements HashTable<Key, Val
     private final static int DEFAULT_CAPACITY = 16; // should be power of two
     private int size = 0;
     private final int capacity;
-    private final Node[] hashTable;
+    private final HashTableSeparateChainingNode[] hashTable;
     //#endregion
 
     //#region Node Class
-    private static class Node {
-        private final Object key;
-        private Object value;
-        private Node next;
+    private static class HashTableSeparateChainingNode<EKey, EValue> {
+        private final EKey key;
+        private EValue value;
+        private HashTableSeparateChainingNode next;
 
-        Node(final Object key, final Object value, Node next) {
+        HashTableSeparateChainingNode(final EKey key, final EValue value, HashTableSeparateChainingNode next) {
             this.key = key;
             this.value = value;
             this.next = next;
         }
 
         //region Getters and Setters
-        Object getKey() {
+        EKey getKey() {
             return key;
         }
 
-        Object getValue() {
+        EValue getValue() {
             return value;
         }
 
-        Node getNext() {
+        HashTableSeparateChainingNode getNext() {
             return next;
         }
 
-        void setNext(Node next) {
+        void setNext(HashTableSeparateChainingNode next) {
             this.next = next;
         }
 
-        public void setValue(Object value) {
+        void setValue(EValue value) {
             this.value = value;
         }
         //endregion
@@ -61,7 +61,7 @@ public class HashTableSeparateChaining<Key, Value> implements HashTable<Key, Val
 
     public HashTableSeparateChaining(final int capacity) {
         this.capacity = capacity;
-        hashTable = new Node[capacity];
+        hashTable = new HashTableSeparateChainingNode[capacity];
     }
     //#endregion
 
@@ -69,21 +69,21 @@ public class HashTableSeparateChaining<Key, Value> implements HashTable<Key, Val
     @Override
     public void add(final Key key, final Value value) {
         int hashCode = getHashCode(key);
-        Node current = hashTable[hashCode];
+        HashTableSeparateChainingNode current = hashTable[hashCode];
         for (; current != null; current = current.getNext()) {
             if (key.equals(current.getKey())) {
                 current.setValue(value);
                 return;
             }
         }
-        hashTable[hashCode] = new Node(key, value, hashTable[hashCode]);
+        hashTable[hashCode] = new HashTableSeparateChainingNode(key, value, hashTable[hashCode]);
         size++;
     }
 
     @Override
     public Value get(final Key key) {
         int hashCode = getHashCode(key);
-        for (Node current = hashTable[hashCode]; current != null; current = current.getNext()) {
+        for (HashTableSeparateChainingNode current = hashTable[hashCode]; current != null; current = current.getNext()) {
             if (key.equals(current.getKey())) {
                 return (Value) current.getValue();
             }
@@ -94,7 +94,7 @@ public class HashTableSeparateChaining<Key, Value> implements HashTable<Key, Val
     @Override
     public Value remove(final Key key) {
         int hashCode = getHashCode(key);
-        Node current = hashTable[hashCode];
+        HashTableSeparateChainingNode current = hashTable[hashCode];
         if (current == null) {
             return null;
         }

@@ -2,8 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9f56ce26-7942-4300-be10-00f249394c3e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/com/libalgojv/tests/unit/tries/ternarytrie/TernaryTrieTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/libalgojv/tests/unit/tries/ternarytrie/TernaryTrieTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/libalgojv/tries/ternatytrie/TernaryTrie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/libalgojv/tries/ternarytrie/TernaryTrie.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/libalgojv/common/interfaces/SymbolTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/libalgojv/common/interfaces/SymbolTable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/libalgojv/hashtables/hashtableseparatechaining/HashTableSeparateChaining.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/libalgojv/hashtables/hashtableseparatechaining/HashTableSeparateChaining.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/libalgojv/lists/doublelinkedlist/DoubleLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/libalgojv/lists/doublelinkedlist/DoubleLinkedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/libalgojv/lists/singlelinkedlist/SingleLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/libalgojv/lists/singlelinkedlist/SingleLinkedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/libalgojv/queues/linkedlistqueue/LinkedListQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/libalgojv/queues/linkedlistqueue/LinkedListQueue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/libalgojv/stacks/linkedliststack/LinkedListStack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/libalgojv/stacks/linkedliststack/LinkedListStack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/libalgojv/tries/ternarytrie/TernaryTrie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/libalgojv/tries/ternarytrie/TernaryTrie.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/libalgojv/tries/trie/Trie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/libalgojv/tries/trie/Trie.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -89,7 +96,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.TrieTests">
+  <component name="RunManager" selected="JUnit.com.libalgojv.tests.unit in libalgojv">
     <configuration name="AllTests" type="JUnit" factoryName="JUnit">
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="" />
@@ -107,45 +114,15 @@
       <module name="libalgojv" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.libalgojv.tests.unit.tries.ternarytrie.*" />
+          <option name="PATTERN" value="com.libalgojv.tests.unit.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.libalgojv.tests.unit.tries.ternarytrie" />
-      <option name="MAIN_CLASS_NAME" value="com.libalgojv.tests.unit.tries.ternarytrie.TernaryTrieTests" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TernaryTrieTests.delete" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="libalgojv" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.libalgojv.tests.unit.tries.ternarytrie.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.libalgojv.tests.unit.tries.ternarytrie" />
-      <option name="MAIN_CLASS_NAME" value="com.libalgojv.tests.unit.tries.ternarytrie.TernaryTrieTests" />
-      <option name="METHOD_NAME" value="delete" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TernaryTrieTests.put" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="libalgojv" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.libalgojv.tests.unit.tries.ternarytrie.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.libalgojv.tests.unit.tries.ternarytrie" />
-      <option name="MAIN_CLASS_NAME" value="com.libalgojv.tests.unit.tries.ternarytrie.TernaryTrieTests" />
-      <option name="METHOD_NAME" value="put" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="com.libalgojv.tests.unit" />
+      <option name="TEST_OBJECT" value="uniqueId" />
+      <uniqueIds>
+        <uniqueId value="[engine:junit-jupiter]/[class:com.libalgojv.tests.unit.tries.ternarytrie.TernaryTrieTests]" />
+      </uniqueIds>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -154,7 +131,7 @@
       <module name="libalgojv" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.libalgojv.tests.unit.tries.ternarytrie.*" />
+          <option name="PATTERN" value="com.libalgojv.tests.unit.tries.trie.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -165,37 +142,63 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TrieTests.delete" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="com.libalgojv.tests.unit in libalgojv" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="libalgojv" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.libalgojv.tests.unit.tries.ternarytrie.*" />
+          <option name="PATTERN" value="com.libalgojv.tests.unit.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.libalgojv.tests.unit.tries.trie" />
-      <option name="MAIN_CLASS_NAME" value="com.libalgojv.tests.unit.tries.trie.TrieTests" />
-      <option name="METHOD_NAME" value="delete" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="com.libalgojv.tests.unit" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="com.libalgojv.tests.unit.queues in libalgojv" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="libalgojv" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.libalgojv.tests.unit.queues.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.libalgojv.tests.unit.queues" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="com.libalgojv.tests.unit.stacks in libalgojv" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="libalgojv" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.libalgojv.tests.unit.stacks.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.libalgojv.tests.unit.stacks" />
+      <option name="TEST_OBJECT" value="package" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
       <item itemvalue="JUnit.AllTests" />
-      <item itemvalue="JUnit.TrieTests.delete" />
-      <item itemvalue="JUnit.TrieTests" />
+      <item itemvalue="JUnit.com.libalgojv.tests.unit.queues in libalgojv" />
+      <item itemvalue="JUnit.com.libalgojv.tests.unit.stacks in libalgojv" />
+      <item itemvalue="JUnit.com.libalgojv.tests.unit in libalgojv" />
       <item itemvalue="JUnit.TernaryTrieTests" />
-      <item itemvalue="JUnit.TernaryTrieTests.delete" />
-      <item itemvalue="JUnit.TernaryTrieTests.put" />
+      <item itemvalue="JUnit.TrieTests" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.com.libalgojv.tests.unit in libalgojv" />
         <item itemvalue="JUnit.TrieTests" />
         <item itemvalue="JUnit.TernaryTrieTests" />
-        <item itemvalue="JUnit.TernaryTrieTests.delete" />
-        <item itemvalue="JUnit.TernaryTrieTests.put" />
-        <item itemvalue="JUnit.TrieTests.delete" />
+        <item itemvalue="JUnit.com.libalgojv.tests.unit.stacks in libalgojv" />
+        <item itemvalue="JUnit.com.libalgojv.tests.unit.queues in libalgojv" />
       </list>
     </recent_temporary>
   </component>
