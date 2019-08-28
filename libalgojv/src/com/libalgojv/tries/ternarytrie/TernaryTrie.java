@@ -6,28 +6,29 @@
  * Copyright © 2018-2019 Oleg Potapenko. All rights reserved.
  */
 
-package com.libalgojv.tries;
+package com.libalgojv.tries.ternarytrie;
 
-import com.libalgojv.common.interfaces.Queue;
 import com.libalgojv.common.interfaces.SymbolTable;
-import com.libalgojv.queues.linkedlistqueue.LinkedListQueue;
 
-public class TernaryTrie<Value> implements SymbolTable<Value> {
+/**
+ * Implements TernaryTrie symbol table data structure
+ */
+public class TernaryTrie<E> implements SymbolTable<E> {
     //#region Private Fields
     // TODO: R^2 branching at root
-    private Node root;
+    private TernaryTrieNode root;
     private int size;
     //#endregion
 
     //#region Node Class
-    private class Node {
+    private static class TernaryTrieNode<Item> {
         private final char character;
-        private Value value;
-        private Node left;
-        private Node middle;
-        private Node right;
+        private Item value;
+        private TernaryTrieNode left;
+        private TernaryTrieNode middle;
+        private TernaryTrieNode right;
 
-        Node(char character) {
+        TernaryTrieNode(char character) {
             this.character = character;
         }
 
@@ -36,85 +37,109 @@ public class TernaryTrie<Value> implements SymbolTable<Value> {
             return character;
         }
 
-        Value getValue() {
+        Item getValue() {
             return value;
         }
 
-        void setValue(Value value) {
+        void setValue(Item value) {
             this.value = value;
         }
 
-        Node getLeft() {
+        TernaryTrieNode getLeft() {
             return left;
         }
 
-        void setLeft(Node left) {
+        void setLeft(TernaryTrieNode left) {
             this.left = left;
         }
 
-        Node getMiddle() {
+        TernaryTrieNode getMiddle() {
             return middle;
         }
 
-        void setMiddle(Node middle) {
+        void setMiddle(TernaryTrieNode middle) {
             this.middle = middle;
         }
 
-        Node getRight() {
+        TernaryTrieNode getRight() {
             return right;
         }
 
-        void setRight(Node right) {
+        void setRight(TernaryTrieNode right) {
             this.right = right;
         }
         //endregion
     }
     //#endregion
 
-    //#region Constructors
-    // #endregion
-
     //#region Public Methods
+
+    /**
+     * Inserts new key in symbol table
+     *
+     * @param key   string key for data retrieval
+     * @param value value associated with the key
+     */
     @Override
-    public void put(String key, Value value) {
+    public void put(String key, E value) {
         // TODO: balance trie with rotations
         root = put(root, key, value, 0);
     }
 
+    /**
+     * @param key
+     * @return
+     */
     @Override
-    public Value get(String key) {
-        Node node = get(root, key, 0);
+    public E get(String key) {
+        TernaryTrieNode node = get(root, key, 0);
         if (node == null) {
             return null;
         }
-        return node.getValue();
+        return (E)node.getValue();
     }
 
+    /**
+     * @param key
+     */
     @Override
     public void delete(String key) {
-        Node child = delete(root, key, 0);
+        TernaryTrieNode child = delete(root, key, 0);
         setChildToNull(root, child);
         if (isNodeEmpty(root)) {
             root = null;
         }
     }
 
+    /**
+     * @param key
+     * @return
+     */
     @Override
     public boolean contains(String key) {
         return get(key) != null;
     }
 
+    /**
+     *
+     */
     @Override
     public void clear() {
         root = null;
         size = 0;
     }
 
+    /**
+     * @return
+     */
     @Override
     public boolean isEmpty() {
         return root == null;
     }
 
+    /**
+     * @return
+     */
     @Override
     public int getSize() {
         return size;
@@ -145,10 +170,10 @@ public class TernaryTrie<Value> implements SymbolTable<Value> {
 
     //#region Private Methods
 
-    private Node put(Node node, String key, Value value, int levelCounter) {
+    private TernaryTrieNode put(TernaryTrieNode node, String key, E value, int levelCounter) {
         char character = key.charAt(levelCounter);
         if (node == null) {
-            node = new Node(character);
+            node = new TernaryTrieNode(character);
         }
         if (character < node.getCharacter()) {
             node.setLeft(put(node.getLeft(), key, value, levelCounter));
@@ -165,7 +190,7 @@ public class TernaryTrie<Value> implements SymbolTable<Value> {
         return node;
     }
 
-    private Node get(Node node, String key, int levelCounter) {
+    private TernaryTrieNode get(TernaryTrieNode node, String key, int levelCounter) {
         if (node == null) {
             return null;
         }
@@ -179,25 +204,25 @@ public class TernaryTrie<Value> implements SymbolTable<Value> {
         } else return node;
     }
 
-    private Node delete(Node node, String key, int levelCounter) {
+    private TernaryTrieNode delete(TernaryTrieNode node, String key, int levelCounter) {
         if (node == null) {
             return null;
         }
         char character = key.charAt(levelCounter);
         if (character < node.getCharacter()) {
-            Node childNode = delete(node.getLeft(), key, levelCounter);
+            TernaryTrieNode childNode = delete(node.getLeft(), key, levelCounter);
             if ((childNode != null) && (isNodeEmpty(childNode))) {
                 setChildToNull(node, childNode);
             }
             return node;
         } else if (character > node.getCharacter()) {
-            Node childNode = delete(node.getRight(), key, levelCounter);
+            TernaryTrieNode childNode = delete(node.getRight(), key, levelCounter);
             if ((childNode != null) && (isNodeEmpty(childNode))) {
                 setChildToNull(node, childNode);
             }
             return node;
         } else if (levelCounter < key.length() - 1) {
-            Node childNode = delete(node.getMiddle(), key, levelCounter + 1);
+            TernaryTrieNode childNode = delete(node.getMiddle(), key, levelCounter + 1);
             if ((childNode != null) && (isNodeEmpty(childNode))) {
                 setChildToNull(node, childNode);
             }
@@ -209,15 +234,15 @@ public class TernaryTrie<Value> implements SymbolTable<Value> {
         }
     }
 
-    private boolean isNodeEmpty(Node node) {
+    private boolean isNodeEmpty(TernaryTrieNode node) {
         return (node.getValue() == null) && isNodeHaveNoChildren(node);
     }
 
-    private boolean isNodeHaveNoChildren(Node node) {
+    private boolean isNodeHaveNoChildren(TernaryTrieNode node) {
         return (node.getLeft() == null) && (node.getMiddle() == null) && (node.getRight() == null);
     }
 
-    private void setChildToNull(Node parent, Node child) {
+    private void setChildToNull(TernaryTrieNode parent, TernaryTrieNode child) {
         if (parent == null) {
             return;
         }
@@ -233,19 +258,5 @@ public class TernaryTrie<Value> implements SymbolTable<Value> {
         }
     }
 
-//    private void collect(Node x, String prefix, Queue<String> q) {
-//        if (x == null) {
-//            return;
-//        }
-//        if (x.getValue() != null) {
-//            q.enqueue(prefix);
-//            int R = 26;
-//            for (char c = 0; c < R; c++) {
-//                //collect(x.next[c], prefix + c, q);
-//            }
-//        }
-//    }
-
     //#endregion
-
 }

@@ -6,45 +6,45 @@
  * Copyright © 2018-2019 Oleg Potapenko. All rights reserved.
  */
 
-package com.libalgojv.tries;
+package com.libalgojv.tries.trie;
 
 import com.libalgojv.common.interfaces.SymbolTable;
 
-public class Trie<Value> implements SymbolTable<Value> {
+public class Trie<E> implements SymbolTable<E> {
     //#region Private Fields
     private static final int NUMBER_OF_LETTERS_IN_EXTENDED_ASCII = 256;
     private final int numberOfLetters;
-    private Node root;
+    private TrieNode root;
     private int size;
     //#endregion
 
     //#region Node Class
-    private class Node<Value> {
-        private Value value;
-        private Node[] nextLevel;
+    private static class TrieNode<Item> {
+        private Item value;
+        private TrieNode[] nextLevel;
 
-        Node(final int numberOfLetters) {
-            nextLevel = new Node[numberOfLetters];
+        TrieNode(final int numberOfLetters) {
+            nextLevel = new TrieNode[numberOfLetters];
         }
 
         //region Getters and Setters
-        Value getValue() {
+        Item getValue() {
             return value;
         }
 
-        void setValue(Value value) {
+        void setValue(Item value) {
             this.value = value;
         }
 
-        Node[] getNextLevel() {
+        TrieNode[] getNextLevel() {
             return nextLevel;
         }
 
-        void setNextLevelAt(int index, Node next) {
+        void setNextLevelAt(int index, TrieNode next) {
             nextLevel[index] = next;
         }
 
-        Node getNextLevelAt(int index) {
+        TrieNode getNextLevelAt(int index) {
             return nextLevel[index];
         }
         //endregion
@@ -58,22 +58,22 @@ public class Trie<Value> implements SymbolTable<Value> {
 
     public Trie(int numberOfLetters) {
         this.numberOfLetters = numberOfLetters;
-        root = new Node(numberOfLetters);
+        root = new TrieNode(numberOfLetters);
     }
     //#endregion
 
     //#region Public Methods
     @Override
-    public Value get(final String key) {
-        Node node = get(root, key, 0);
+    public E get(final String key) {
+        TrieNode node = get(root, key, 0);
         if (node == null) {
             return null;
         }
-        return (Value) node.getValue();
+        return (E) node.getValue();
     }
 
     @Override
-    public void put(final String key, final Value value) {
+    public void put(final String key, final E value) {
         root = put(root, key, value, 0);
     }
 
@@ -89,7 +89,7 @@ public class Trie<Value> implements SymbolTable<Value> {
 
     @Override
     public void clear() {
-        root = new Node(numberOfLetters);
+        root = new TrieNode(numberOfLetters);
         size = 0;
     }
 
@@ -125,7 +125,7 @@ public class Trie<Value> implements SymbolTable<Value> {
     //#endregion
 
     //#region Private Methods
-    private Node get(Node node, String key, int levelCounter) {
+    private TrieNode get(TrieNode node, String key, int levelCounter) {
         if (node == null) {
             return null;
         }
@@ -133,13 +133,13 @@ public class Trie<Value> implements SymbolTable<Value> {
             return node;
         }
         char index = key.charAt(levelCounter);
-        Node nextLevel = node.getNextLevelAt(index);
+        TrieNode nextLevel = node.getNextLevelAt(index);
         return get(nextLevel, key, levelCounter + 1);
     }
 
-    private Node put(Node node, String key, Value value, int levelCounter) {
+    private TrieNode put(TrieNode node, String key, E value, int levelCounter) {
         if (node == null) {
-            node = new Node(numberOfLetters);
+            node = new TrieNode(numberOfLetters);
         }
         if (levelCounter == key.length()) {
             if (node.getValue() == null) {
@@ -149,13 +149,13 @@ public class Trie<Value> implements SymbolTable<Value> {
             return node;
         }
         char index = key.charAt(levelCounter);
-        Node nextLevel = node.getNextLevelAt(index);
-        Node next = put(nextLevel, key, value, levelCounter + 1);
+        TrieNode nextLevel = node.getNextLevelAt(index);
+        TrieNode next = put(nextLevel, key, value, levelCounter + 1);
         node.setNextLevelAt(index, next);
         return node;
     }
 
-    private boolean delete(Node node, String key, int levelCounter) {
+    private boolean delete(TrieNode node, String key, int levelCounter) {
         if (node == null) {
             return false;
         }
@@ -164,7 +164,7 @@ public class Trie<Value> implements SymbolTable<Value> {
             size--;
         } else {
             char index = key.charAt(levelCounter);
-            Node nextLevel = node.getNextLevelAt(index);
+            TrieNode nextLevel = node.getNextLevelAt(index);
             boolean isNextLevelEmpty = delete(nextLevel, key, levelCounter + 1);
             if (isNextLevelEmpty) {
                 node.setNextLevelAt(index, null);
@@ -173,9 +173,9 @@ public class Trie<Value> implements SymbolTable<Value> {
         return isLevelEmpty(node);
     }
 
-    private boolean isLevelEmpty(Node level) {
+    private boolean isLevelEmpty(TrieNode level) {
         boolean hasElement = false;
-        for (Node current : level.getNextLevel()) {
+        for (TrieNode current : level.getNextLevel()) {
             if (current != null) {
                 hasElement = true;
                 break;

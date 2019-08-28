@@ -36,30 +36,30 @@ public class SingleLinkedList<Key, Value> implements List<Key, Value>, BagKeyVal
 
     //#region Node Class
     // Make Node class protected to use it with test accessors, should be private
-    class SingleLinkedListNode<Key, Value> {
-        private final Key key;
-        private final Value value;
-        private SingleLinkedListNode<Key, Value> next;
+    private static class SingleLinkedListNode<EKey, EValue> {
+        private final EKey key;
+        private final EValue value;
+        private SingleLinkedListNode<EKey, EValue> next;
 
-        SingleLinkedListNode(final Key key, final Value value) {
+        SingleLinkedListNode(final EKey key, final EValue value) {
             this.key = key;
             this.value = value;
         }
 
         //region Getters and Setters
-        Key getKey() {
+        EKey getKey() {
             return key;
         }
 
-        Value getValue() {
+        EValue getValue() {
             return value;
         }
 
-        SingleLinkedListNode<Key, Value> getNext() {
+        SingleLinkedListNode<EKey, EValue> getNext() {
             return next;
         }
 
-        void setNext(SingleLinkedListNode<Key, Value> next) {
+        void setNext(SingleLinkedListNode<EKey, EValue> next) {
             this.next = next;
         }
         //endregion

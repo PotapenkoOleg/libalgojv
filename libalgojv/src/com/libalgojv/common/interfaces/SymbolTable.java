@@ -1,9 +1,9 @@
 package com.libalgojv.common.interfaces;
 
-public interface SymbolTable<Value> {
-    void put(final String key, final Value value);
+public interface SymbolTable<E> {
+    void put(final String key, final E value);
 
-    Value get(final String key);
+    E get(final String key);
 
     void delete(final String key);
 
