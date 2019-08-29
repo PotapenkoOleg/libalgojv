@@ -13,7 +13,7 @@ import com.libalgojv.common.interfaces.SymbolTable;
 import com.libalgojv.queues.linkedlistqueue.LinkedListQueue;
 
 /**
- * Implements TernaryTrie symbol table data structure
+ * Implements ternary trie symbol table data structure
  */
 public class TernaryTrie<E> implements SymbolTable<E> {
     //#region Private Fields
@@ -163,15 +163,15 @@ public class TernaryTrie<E> implements SymbolTable<E> {
         return queue;
     }
 
-    public String[] wildcardMatch(String key) {
-        // ".he" -> ["she", "the"]
-        throw new UnsupportedOperationException();
+    public String longestPrefixOf(String query) {
+        int prefixLength = search(root, query, 0, Integer.MIN_VALUE);
+        if (prefixLength == Integer.MIN_VALUE) {
+            // prefix not found
+            return null;
+        }
+        return query.substring(0, prefixLength + 1);
     }
 
-    public String longestPrefixOf(String prefix) {
-        // shellsort -> "shells"
-        throw new UnsupportedOperationException();
-    }
     //#endregion
 
     //#region Private Methods
@@ -277,5 +277,21 @@ public class TernaryTrie<E> implements SymbolTable<E> {
         collect(node.getRight(), prefix, queue);
     }
 
+    private int search(TernaryTrieNode node, String query, int levelCounter, int prefixLength) {
+        if (node == null) {
+            return prefixLength;
+        }
+        char character = query.charAt(levelCounter);
+        if (character < node.getCharacter()) {
+            return search(node.getLeft(), query, levelCounter, prefixLength);
+        } else if (character > node.getCharacter()) {
+            return search(node.getRight(), query, levelCounter, prefixLength);
+        } else {
+            if (node.getValue() != null) {
+                prefixLength = levelCounter;
+            }
+            return search(node.getMiddle(), query, levelCounter + 1, prefixLength);
+        }
+    }
     //#endregion
 }

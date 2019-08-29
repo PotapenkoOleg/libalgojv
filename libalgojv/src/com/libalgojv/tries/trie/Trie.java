@@ -12,6 +12,9 @@ import com.libalgojv.common.interfaces.Queue;
 import com.libalgojv.common.interfaces.SymbolTable;
 import com.libalgojv.queues.linkedlistqueue.LinkedListQueue;
 
+/**
+ * Implements R-way trie symbol table data structure
+ */
 public class Trie<E> implements SymbolTable<E> {
     //#region Private Fields
     private static final int NUMBER_OF_LETTERS_IN_EXTENDED_ASCII = 256;
@@ -124,13 +127,9 @@ public class Trie<E> implements SymbolTable<E> {
     }
 
     @Override
-    public String[] wildcardMatch(String key) {
-        throw new UnsupportedOperationException();
-    }
-
-    @Override
-    public String longestPrefixOf(String prefix) {
-        throw new UnsupportedOperationException();
+    public String longestPrefixOf(String query) {
+        int prefixLength = search(root, query, 0, 0);
+        return query.substring(0, prefixLength);
     }
 
     //#endregion
@@ -208,5 +207,21 @@ public class Trie<E> implements SymbolTable<E> {
             collect(nextLevel[character], prefix + character, queue);
         }
     }
+
+    private int search(TrieNode node, String query, int levelCounter, int prefixLength) {
+        if (node == null) {
+            return prefixLength;
+        }
+        if (node.getValue() != null) {
+            prefixLength = levelCounter;
+        }
+        if (levelCounter == query.length()) {
+            return prefixLength;
+        }
+        char character = query.charAt(levelCounter);
+        var nextLevel = node.getNextLevel();
+        return search(nextLevel[character], query, levelCounter + 1, prefixLength);
+    }
+
     //#endregion
 }

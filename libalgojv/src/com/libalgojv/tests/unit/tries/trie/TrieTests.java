@@ -255,15 +255,50 @@ class TrieTests {
         assertNull(allKeys);
     }
 
-//    @Test
-//    void wildcardMatch() {
-//        fail();
-//    }
-//
-//    @Test
-//    void longestPrefixOf() {
-//        fail();
-//    }
+    @Test
+    void longestPrefixOf() {
+        String expected = "shells";
+        String actual = symbolTable.longestPrefixOf("shellsort");
+        assertEquals(expected, actual);
+
+        expected = "a";
+        actual = symbolTable.longestPrefixOf("a");
+        assertEquals(expected, actual);
+
+        expected = "";
+        actual = symbolTable.longestPrefixOf("Invalid");
+        assertEquals(expected, actual);
+
+        symbolTable.clear();
+
+        symbolTable.put("128", 0);
+        symbolTable.put("128.112.055", 0);
+        symbolTable.put("128.112.055.015", 0);
+        symbolTable.put("128.112.136", 0);
+        symbolTable.put("128.112.155.011", 0);
+        symbolTable.put("128.112.155.013", 0);
+        symbolTable.put("128.112", 0);
+        symbolTable.put("128.222", 0);
+        symbolTable.put("128.222.136", 0);
+
+        expected = "128.112.136";
+        actual = symbolTable.longestPrefixOf("128.112.136.011");
+        assertEquals(expected, actual);
+
+        expected = "128.112";
+        actual = symbolTable.longestPrefixOf("128.112.100.016");
+        assertEquals(expected, actual);
+
+        expected = "128";
+        actual = symbolTable.longestPrefixOf("128.166.123.045");
+        assertEquals(expected, actual);
+
+        symbolTable.clear();
+        symbolTable.put("a", 0);
+        expected = "a";
+        actual = symbolTable.longestPrefixOf("a");
+        assertEquals(expected, actual);
+    }
 
     private int checkKeys(Iterable<String> allKeys, Map map) {
         int numberOfItems = 0;
