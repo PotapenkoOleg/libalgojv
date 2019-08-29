@@ -19,7 +19,5 @@ public interface SymbolTable<E> {
 
     Iterable<String> getKeysWithPrefix(String prefix);
 
-    String[] wildcardMatch(String key);
-
     String longestPrefixOf(String prefix);
 }
