@@ -8,7 +8,9 @@
 
 package com.libalgojv.tries.ternarytrie;
 
+import com.libalgojv.common.interfaces.Queue;
 import com.libalgojv.common.interfaces.SymbolTable;
+import com.libalgojv.queues.linkedlistqueue.LinkedListQueue;
 
 /**
  * Implements TernaryTrie symbol table data structure
@@ -96,7 +98,7 @@ public class TernaryTrie<E> implements SymbolTable<E> {
         if (node == null) {
             return null;
         }
-        return (E)node.getValue();
+        return (E) node.getValue();
     }
 
     /**
@@ -146,15 +148,19 @@ public class TernaryTrie<E> implements SymbolTable<E> {
     }
 
     public Iterable<String> getAllKeys() {
-        throw new UnsupportedOperationException();
-//        Queue<String> queue = new LinkedListQueue<>();
-//        collect(root, "", queue);
-//        return queue;
+        Queue<String> queue = new LinkedListQueue<>();
+        collect(root, "", queue);
+        return queue;
     }
 
     public Iterable<String> getKeysWithPrefix(String prefix) {
-        // sh -> ["she", "shells", "shore"]
-        throw new UnsupportedOperationException();
+        TernaryTrieNode subTree = get(root, prefix, 0);
+        if (subTree == null) {
+            return null;
+        }
+        Queue<String> queue = new LinkedListQueue<>();
+        collect(subTree.getMiddle(), prefix, queue);
+        return queue;
     }
 
     public String[] wildcardMatch(String key) {
@@ -256,6 +262,19 @@ public class TernaryTrie<E> implements SymbolTable<E> {
         if (parent.getRight() == child) {
             parent.setRight(null);
         }
+    }
+
+    private void collect(TernaryTrieNode node, String prefix, Queue<String> queue) {
+        if (node == null) {
+            return;
+        }
+        collect(node.getLeft(), prefix, queue);
+        char character = node.getCharacter();
+        if (node.getValue() != null) {
+            queue.enqueue(prefix + character);
+        }
+        collect(node.getMiddle(), prefix + character, queue);
+        collect(node.getRight(), prefix, queue);
     }
 
     //#endregion

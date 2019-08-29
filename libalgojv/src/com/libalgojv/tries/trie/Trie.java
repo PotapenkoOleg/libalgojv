@@ -8,7 +8,9 @@
 
 package com.libalgojv.tries.trie;
 
+import com.libalgojv.common.interfaces.Queue;
 import com.libalgojv.common.interfaces.SymbolTable;
+import com.libalgojv.queues.linkedlistqueue.LinkedListQueue;
 
 public class Trie<E> implements SymbolTable<E> {
     //#region Private Fields
@@ -105,12 +107,20 @@ public class Trie<E> implements SymbolTable<E> {
 
     @Override
     public Iterable<String> getAllKeys() {
-        throw new UnsupportedOperationException();
+        Queue<String> queue = new LinkedListQueue<>();
+        collect(root, "", queue);
+        return queue;
     }
 
     @Override
     public Iterable<String> getKeysWithPrefix(String prefix) {
-        throw new UnsupportedOperationException();
+        TrieNode subTree = get(root, prefix, 0);
+        if (subTree == null) {
+            return null;
+        }
+        Queue<String> queue = new LinkedListQueue<>();
+        collect(subTree, prefix, queue);
+        return queue;
     }
 
     @Override
@@ -122,9 +132,11 @@ public class Trie<E> implements SymbolTable<E> {
     public String longestPrefixOf(String prefix) {
         throw new UnsupportedOperationException();
     }
+
     //#endregion
 
     //#region Private Methods
+
     private TrieNode get(TrieNode node, String key, int levelCounter) {
         if (node == null) {
             return null;
@@ -182,6 +194,19 @@ public class Trie<E> implements SymbolTable<E> {
             }
         }
         return !hasElement;
+    }
+
+    private void collect(TrieNode node, String prefix, Queue<String> queue) {
+        if (node == null) {
+            return;
+        }
+        if (node.getValue() != null) {
+            queue.enqueue(prefix);
+        }
+        for (char character = 0; character < numberOfLetters; character++) {
+            var nextLevel = node.getNextLevel();
+            collect(nextLevel[character], prefix + character, queue);
+        }
     }
     //#endregion
 }
