@@ -14,6 +14,9 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import java.util.HashMap;
+import java.util.Map;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class TrieTests {
@@ -194,23 +197,118 @@ class TrieTests {
         assertEquals(expected, actual);
     }
 
-//    @Test
-//    void getAllKeys() {
-//        fail();
-//    }
-//
-//    @Test
-//    void getKeysWithPrefix() {
-//        fail();
-//    }
-//
-//    @Test
-//    void wildcardMatch() {
-//        fail();
-//    }
-//
-//    @Test
-//    void longestPrefixOf() {
-//        fail();
-//    }
+    @Test
+    void getAllKeys() {
+        Map map = new HashMap();
+
+        map.put("she", 0);
+        map.put("sells", 0);
+        map.put("shells", 0);
+        map.put("by", 0);
+        map.put("the", 0);
+        map.put("sea", 0);
+        map.put("shore", 0);
+        map.put("a", 0);
+
+        Iterable<String> allKeys = symbolTable.getAllKeys();
+
+        int expected = 8;
+        int actual = checkKeys(allKeys, map);
+        assertEquals(expected, actual);
+    }
+
+    @Test
+    void getKeysWithPrefix() {
+        Map map = new HashMap();
+
+        map.put("she", 0);
+        map.put("sells", 0);
+        map.put("shells", 0);
+        map.put("sea", 0);
+        map.put("shore", 0);
+
+        String prefix = "s";
+
+        Iterable<String> allKeys = symbolTable.getKeysWithPrefix(prefix);
+
+        int expected = 5;
+        int actual = checkKeys(allKeys, map);
+        assertEquals(expected, actual);
+
+        map.clear();
+
+        map.put("she", 0);
+        map.put("shells", 0);
+        map.put("shore", 0);
+
+        prefix = "sh";
+
+        allKeys = symbolTable.getKeysWithPrefix(prefix);
+
+        expected = 3;
+        actual = checkKeys(allKeys, map);
+        assertEquals(expected, actual);
+
+        prefix = "Invalid";
+
+        allKeys = symbolTable.getKeysWithPrefix(prefix);
+        assertNull(allKeys);
+    }
+
+    @Test
+    void longestPrefixOf() {
+        String expected = "shells";
+        String actual = symbolTable.longestPrefixOf("shellsort");
+        assertEquals(expected, actual);
+
+        expected = "a";
+        actual = symbolTable.longestPrefixOf("a");
+        assertEquals(expected, actual);
+
+        expected = "";
+        actual = symbolTable.longestPrefixOf("Invalid");
+        assertEquals(expected, actual);
+
+        symbolTable.clear();
+
+        symbolTable.put("128", 0);
+        symbolTable.put("128.112.055", 0);
+        symbolTable.put("128.112.055.015", 0);
+        symbolTable.put("128.112.136", 0);
+        symbolTable.put("128.112.155.011", 0);
+        symbolTable.put("128.112.155.013", 0);
+        symbolTable.put("128.112", 0);
+        symbolTable.put("128.222", 0);
+        symbolTable.put("128.222.136", 0);
+
+        expected = "128.112.136";
+        actual = symbolTable.longestPrefixOf("128.112.136.011");
+        assertEquals(expected, actual);
+
+        expected = "128.112";
+        actual = symbolTable.longestPrefixOf("128.112.100.016");
+        assertEquals(expected, actual);
+
+        expected = "128";
+        actual = symbolTable.longestPrefixOf("128.166.123.045");
+        assertEquals(expected, actual);
+
+        symbolTable.clear();
+        symbolTable.put("a", 0);
+        expected = "a";
+        actual = symbolTable.longestPrefixOf("a");
+        assertEquals(expected, actual);
+    }
+
+    private int checkKeys(Iterable<String> allKeys, Map map) {
+        int numberOfItems = 0;
+        for (String key : allKeys) {
+            numberOfItems++;
+            Integer value = (Integer) map.getOrDefault(key, null);
+            if (value == null) {
+                fail("Invalid key");
+            }
+        }
+        return numberOfItems;
+    }
 }

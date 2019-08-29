@@ -8,8 +8,13 @@
 
 package com.libalgojv.tries.trie;
 
+import com.libalgojv.common.interfaces.Queue;
 import com.libalgojv.common.interfaces.SymbolTable;
+import com.libalgojv.queues.linkedlistqueue.LinkedListQueue;
 
+/**
+ * Implements R-way trie symbol table data structure
+ */
 public class Trie<E> implements SymbolTable<E> {
     //#region Private Fields
     private static final int NUMBER_OF_LETTERS_IN_EXTENDED_ASCII = 256;
@@ -105,26 +110,32 @@ public class Trie<E> implements SymbolTable<E> {
 
     @Override
     public Iterable<String> getAllKeys() {
-        throw new UnsupportedOperationException();
+        Queue<String> queue = new LinkedListQueue<>();
+        collect(root, "", queue);
+        return queue;
     }
 
     @Override
     public Iterable<String> getKeysWithPrefix(String prefix) {
-        throw new UnsupportedOperationException();
+        TrieNode subTree = get(root, prefix, 0);
+        if (subTree == null) {
+            return null;
+        }
+        Queue<String> queue = new LinkedListQueue<>();
+        collect(subTree, prefix, queue);
+        return queue;
     }
 
     @Override
-    public String[] wildcardMatch(String key) {
-        throw new UnsupportedOperationException();
+    public String longestPrefixOf(String query) {
+        int prefixLength = search(root, query, 0, 0);
+        return query.substring(0, prefixLength);
     }
 
-    @Override
-    public String longestPrefixOf(String prefix) {
-        throw new UnsupportedOperationException();
-    }
     //#endregion
 
     //#region Private Methods
+
     private TrieNode get(TrieNode node, String key, int levelCounter) {
         if (node == null) {
             return null;
@@ -183,5 +194,34 @@ public class Trie<E> implements SymbolTable<E> {
         }
         return !hasElement;
     }
+
+    private void collect(TrieNode node, String prefix, Queue<String> queue) {
+        if (node == null) {
+            return;
+        }
+        if (node.getValue() != null) {
+            queue.enqueue(prefix);
+        }
+        for (char character = 0; character < numberOfLetters; character++) {
+            var nextLevel = node.getNextLevel();
+            collect(nextLevel[character], prefix + character, queue);
+        }
+    }
+
+    private int search(TrieNode node, String query, int levelCounter, int prefixLength) {
+        if (node == null) {
+            return prefixLength;
+        }
+        if (node.getValue() != null) {
+            prefixLength = levelCounter;
+        }
+        if (levelCounter == query.length()) {
+            return prefixLength;
+        }
+        char character = query.charAt(levelCounter);
+        var nextLevel = node.getNextLevel();
+        return search(nextLevel[character], query, levelCounter + 1, prefixLength);
+    }
+
     //#endregion
 }
