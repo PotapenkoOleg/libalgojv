@@ -14,8 +14,11 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import java.util.HashMap;
-import java.util.Map;
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.util.*;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -321,6 +324,38 @@ class TernaryTrieTests {
         expected = "a";
         actual = symbolTable.longestPrefixOf("a");
         assertEquals(expected, actual);
+    }
+
+    @Test
+    void loadTest() {
+        List<AbstractMap.SimpleEntry<String, String>> input = new ArrayList<>();
+        SymbolTable<String> symbolTable = new TernaryTrie<>();
+        try {
+            // Loading 29872 entries
+            Path path = Paths.get("src\\com\\libalgojv\\tests\\unit\\tries\\ternarytrie\\USZipCodes.csv").toAbsolutePath();
+            List<String> allLines = Files.readAllLines(path);
+            for (String line : allLines) {
+                String[] parts = line.split(",");
+                AbstractMap.SimpleEntry<String, String> keyValuePair =
+                        new AbstractMap.SimpleEntry<>(parts[0], parts[1]);
+                input.add(keyValuePair);
+                symbolTable.put(keyValuePair.getKey(), keyValuePair.getValue());
+            }
+            for (AbstractMap.SimpleEntry<String, String> entry : input) {
+                String key = entry.getKey();
+                String expected = entry.getValue();
+                String actual = symbolTable.get(key);
+                if (!expected.equals(actual)) {
+                    fail();
+                }
+                assertEquals(expected, actual);
+            }
+            int expected = 29872;
+            int actual = symbolTable.getSize();
+            assertEquals(expected, actual);
+        } catch (IOException e) {
+            fail("File not found.");
+        }
     }
 
     private int checkKeys(Iterable<String> allKeys, Map map) {

@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9f56ce26-7942-4300-be10-00f249394c3e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/com/libalgojv/tests/unit/tries/ternarytrie/USZipCodes.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/libalgojv/common/interfaces/SymbolTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/libalgojv/common/interfaces/SymbolTable.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/libalgojv/tests/unit/tries/ternarytrie/TernaryTrieTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/libalgojv/tests/unit/tries/ternarytrie/TernaryTrieTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/libalgojv/tests/unit/tries/trie/TrieTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/libalgojv/tests/unit/tries/trie/TrieTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/libalgojv/tries/ternarytrie/TernaryTrie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/libalgojv/tries/ternarytrie/TernaryTrie.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/libalgojv/tries/trie/Trie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/libalgojv/tries/trie/Trie.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -48,6 +45,7 @@
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
@@ -93,7 +91,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.com.libalgojv in libalgojv">
+  <component name="RunManager" selected="JUnit.TernaryTrieTests.loadTest">
     <configuration name="AllTests" type="JUnit" factoryName="JUnit">
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="" />
@@ -122,7 +120,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TernaryTrieTests.getKeysWithPrefix" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TernaryTrieTests.loadTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="libalgojv" />
       <extension name="coverage">
         <pattern>
@@ -132,7 +130,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.libalgojv.tests.unit.tries.ternarytrie" />
       <option name="MAIN_CLASS_NAME" value="com.libalgojv.tests.unit.tries.ternarytrie.TernaryTrieTests" />
-      <option name="METHOD_NAME" value="getKeysWithPrefix" />
+      <option name="METHOD_NAME" value="loadTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -154,22 +152,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TrieTests.longestPrefixOf" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="libalgojv" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.libalgojv.tests.unit.tries.trie.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.libalgojv.tests.unit.tries.trie" />
-      <option name="MAIN_CLASS_NAME" value="com.libalgojv.tests.unit.tries.trie.TrieTests" />
-      <option name="METHOD_NAME" value="longestPrefixOf" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="com.libalgojv in libalgojv" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="libalgojv" />
       <extension name="coverage">
@@ -184,21 +166,35 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="com.libalgojv.tests.unit in libalgojv" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="libalgojv" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.libalgojv.tests.unit.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.libalgojv.tests.unit" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="JUnit.AllTests" />
-      <item itemvalue="JUnit.TernaryTrieTests.getKeysWithPrefix" />
-      <item itemvalue="JUnit.TrieTests.longestPrefixOf" />
       <item itemvalue="JUnit.TernaryTrieTests.longestPrefixOf" />
       <item itemvalue="JUnit.TernaryTrieTests" />
       <item itemvalue="JUnit.com.libalgojv in libalgojv" />
+      <item itemvalue="JUnit.com.libalgojv.tests.unit in libalgojv" />
+      <item itemvalue="JUnit.TernaryTrieTests.loadTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TernaryTrieTests.loadTest" />
+        <item itemvalue="JUnit.com.libalgojv.tests.unit in libalgojv" />
         <item itemvalue="JUnit.com.libalgojv in libalgojv" />
         <item itemvalue="JUnit.TernaryTrieTests.longestPrefixOf" />
         <item itemvalue="JUnit.TernaryTrieTests" />
-        <item itemvalue="JUnit.TrieTests.longestPrefixOf" />
-        <item itemvalue="JUnit.TernaryTrieTests.getKeysWithPrefix" />
       </list>
     </recent_temporary>
   </component>
@@ -242,6 +238,9 @@
       </map>
     </option>
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
@@ -282,7 +281,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/libalgojv/tests/unit/tries/ternarytrie/TernaryTrieTests.java</url>
-          <line>139</line>
+          <line>142</line>
           <option name="timeStamp" value="61" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -297,17 +296,17 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/libalgojv/tests/unit/tries/ternarytrie/TernaryTrieTests.java</url>
-          <line>255</line>
+          <line>258</line>
           <option name="timeStamp" value="70" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/libalgojv/tests/unit/tries/ternarytrie/TernaryTrieTests.java</url>
-          <line>288</line>
+          <line>291</line>
           <option name="timeStamp" value="74" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/libalgojv/tests/unit/tries/ternarytrie/TernaryTrieTests.java</url>
-          <line>284</line>
+          <line>287</line>
           <option name="timeStamp" value="76" />
         </line-breakpoint>
       </breakpoints>
