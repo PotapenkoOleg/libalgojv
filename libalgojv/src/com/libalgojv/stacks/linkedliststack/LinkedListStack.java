@@ -17,29 +17,29 @@ import java.util.function.Consumer;
 
 public final class LinkedListStack<E> implements Stack<E>, Bag<E> {
     //#region Private Fields
-    private LinkedListNode<E> first;
+    private LinkedListStackNode<E> first;
     private int size = 0;
     //#endregion
 
     //#region Node Class
-    private class LinkedListNode<E> {
-        private final E item;
-        private LinkedListNode<E> next;
+    private static class LinkedListStackNode<Item> {
+        private final Item item;
+        private LinkedListStackNode<Item> next;
 
-        LinkedListNode(final E item) {
+        LinkedListStackNode(final Item item) {
             this.item = item;
         }
 
         //#region Package Private Methods
-        E getItem() {
+        Item getItem() {
             return item;
         }
 
-        LinkedListNode<E> getNext() {
+        LinkedListStackNode<Item> getNext() {
             return next;
         }
 
-        void setNext(final LinkedListNode<E> next) {
+        void setNext(final LinkedListStackNode<Item> next) {
             this.next = next;
         }
         //#endregion
@@ -60,8 +60,8 @@ public final class LinkedListStack<E> implements Stack<E>, Bag<E> {
 
     @Override
     public void push(final E item) {
-        LinkedListNode<E> oldFirst = first;
-        first = new LinkedListNode<>(item);
+        LinkedListStackNode<E> oldFirst = first;
+        first = new LinkedListStackNode<>(item);
         first.setNext(oldFirst);
         ++size;
     }
@@ -110,10 +110,10 @@ public final class LinkedListStack<E> implements Stack<E>, Bag<E> {
     @Override
     public Iterator<E> iterator() {
         return new Iterator<E>() {
-            private LinkedListNode<E> current = null;
+            private LinkedListStackNode<E> current = null;
 
             {
-                current = new LinkedListNode<E>(null);
+                current = new LinkedListStackNode<E>(null);
                 current.setNext(first);
             }
 
