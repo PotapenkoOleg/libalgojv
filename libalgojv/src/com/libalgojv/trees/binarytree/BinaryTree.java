@@ -23,43 +23,43 @@ public class BinaryTree<Key extends Comparable<Key>, Value> implements BinarySea
     //#endregion
 
     //#region Node Class
-    private class BinaryTreeNode<Key extends Comparable<Key>, Value> {
-        private final Key key;
-        private Value value;
-        private BinaryTreeNode<Key, Value> left;
-        private BinaryTreeNode<Key, Value> right;
+    private static class BinaryTreeNode<EKey extends Comparable<EKey>, EValue> {
+        private final EKey key;
+        private EValue value;
+        private BinaryTreeNode<EKey, EValue> left;
+        private BinaryTreeNode<EKey, EValue> right;
 
         //#region Getters and Setters
-        Key getKey() {
+        EKey getKey() {
             return key;
         }
 
-        Value getValue() {
+        EValue getValue() {
             return value;
         }
 
-        public void setValue(Value value) {
+        public void setValue(EValue value) {
             this.value = value;
         }
 
-        BinaryTreeNode<Key, Value> getLeft() {
+        BinaryTreeNode<EKey, EValue> getLeft() {
             return left;
         }
 
-        void setLeft(BinaryTreeNode<Key, Value> left) {
+        void setLeft(BinaryTreeNode<EKey, EValue> left) {
             this.left = left;
         }
 
-        BinaryTreeNode<Key, Value> getRight() {
+        BinaryTreeNode<EKey, EValue> getRight() {
             return right;
         }
 
-        void setRight(BinaryTreeNode<Key, Value> right) {
+        void setRight(BinaryTreeNode<EKey, EValue> right) {
             this.right = right;
         }
         //#endregion
 
-        BinaryTreeNode(Key key, Value value) {
+        BinaryTreeNode(EKey key, EValue value) {
             this.key = key;
             this.value = value;
         }
@@ -271,12 +271,10 @@ public class BinaryTree<Key extends Comparable<Key>, Value> implements BinarySea
             int result = key.compareTo(current.getKey());
             if (result < 0) {
                 current = current.getLeft();
-            }
-            if (result == 0) {
-                return current.getValue();
-            }
-            if (result > 0) {
+            } else if (result > 0) {
                 current = current.getRight();
+            } else {
+                return current.getValue();
             }
         }
         return null;
