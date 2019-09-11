@@ -203,7 +203,7 @@ public class Trie<E> implements SymbolTable<E> {
             queue.enqueue(prefix);
         }
         for (char character = 0; character < numberOfLetters; character++) {
-            var nextLevel = node.getNextLevel();
+            TrieNode[] nextLevel = node.getNextLevel();
             collect(nextLevel[character], prefix + character, queue);
         }
     }
@@ -219,7 +219,7 @@ public class Trie<E> implements SymbolTable<E> {
             return prefixLength;
         }
         char character = query.charAt(levelCounter);
-        var nextLevel = node.getNextLevel();
+        TrieNode[] nextLevel = node.getNextLevel();
         return search(nextLevel[character], query, levelCounter + 1, prefixLength);
     }
 
