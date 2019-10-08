@@ -65,7 +65,7 @@ class LinkedListQueueTests {
     }
 
     @Test
-    void size() {
+    void getSize() {
         int expected = 0;
         int actual = queue.getSize();
         assertEquals(expected, actual);
@@ -78,6 +78,45 @@ class LinkedListQueueTests {
         expected = 2;
         actual = queue.getSize();
         assertEquals(expected, actual);
+    }
+
+    @Test
+    void peek() {
+        assertNull(queue.peek());
+
+        Integer expected = 42;
+        queue.enqueue(expected);
+        Integer actual = queue.peek();
+        assertEquals(expected, actual);
+
+        queue.clear();
+
+        queue.enqueue(expected);
+        queue.enqueue(expected - 1);
+        actual = queue.peek();
+        assertEquals(expected, actual);
+    }
+
+    @Test
+    void clear() {
+        int actual = queue.getSize();
+        assertEquals(0, actual);
+        assertTrue(queue.isEmpty());
+
+        Integer expected = 42;
+        queue.enqueue(expected);
+        queue.enqueue(expected - 1);
+        queue.enqueue(expected - 2);
+
+        actual = queue.getSize();
+        assertEquals(3, actual);
+        assertFalse(queue.isEmpty());
+
+        queue.clear();
+
+        actual = queue.getSize();
+        assertEquals(0, actual);
+        assertTrue(queue.isEmpty());
     }
 
     @Test
@@ -120,44 +159,5 @@ class LinkedListQueueTests {
         String actual = stringBuilder.toString();
         String expected = "424344";
         assertEquals(expected, actual);
-    }
-
-    @Test
-    void peek() {
-        assertNull(queue.peek());
-
-        Integer expected = 42;
-        queue.enqueue(expected);
-        Integer actual = queue.peek();
-        assertEquals(expected, actual);
-
-        queue.clear();
-
-        queue.enqueue(expected);
-        queue.enqueue(expected - 1);
-        actual = queue.peek();
-        assertEquals(expected, actual);
-    }
-
-    @Test
-    void clear() {
-        int actual = queue.getSize();
-        assertEquals(0, actual);
-        assertTrue(queue.isEmpty());
-
-        Integer expected = 42;
-        queue.enqueue(expected);
-        queue.enqueue(expected - 1);
-        queue.enqueue(expected - 2);
-
-        actual = queue.getSize();
-        assertEquals(3, actual);
-        assertFalse(queue.isEmpty());
-
-        queue.clear();
-
-        actual = queue.getSize();
-        assertEquals(0, actual);
-        assertTrue(queue.isEmpty());
     }
 }
