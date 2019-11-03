@@ -22,7 +22,7 @@ class ArrayBinaryHeapTests {
 
     @BeforeEach
     void setUp() {
-        priorityQueue = new ArrayBinaryHeap<>(BinaryHeapType.MAX);
+        priorityQueue = new ArrayBinaryHeap<>(BinaryHeapType.MAX, 2);
     }
 
     @AfterEach
@@ -54,6 +54,8 @@ class ArrayBinaryHeapTests {
 
     @Test
     void delete() {
+        assertNull(priorityQueue.delete());
+
         String testData = "GIEAOHNRPT";
         for (int i = 0; i < testData.length(); i++) {
             Character current = testData.charAt(i);
@@ -82,6 +84,8 @@ class ArrayBinaryHeapTests {
 
     @Test
     void peek() {
+        assertNull(priorityQueue.peek());
+
         String testData = "GIEAOHNRPT";
         for (int i = 0; i < testData.length(); i++) {
             Character current = testData.charAt(i);
@@ -94,13 +98,16 @@ class ArrayBinaryHeapTests {
 
     @Test
     void getSize() {
+        int actual = priorityQueue.getSize();
+        assertEquals(0, actual);
+
         String testData = "GIEAOHNRPT";
         for (int i = 0; i < testData.length(); i++) {
             Character current = testData.charAt(i);
             priorityQueue.insert(current);
         }
         int expected = 10;
-        int actual = priorityQueue.getSize();
+        actual = priorityQueue.getSize();
         assertEquals(expected, actual);
     }
 
@@ -117,6 +124,57 @@ class ArrayBinaryHeapTests {
         assertTrue(priorityQueue.isEmpty());
         int expected = 0;
         int actual = priorityQueue.getSize();
+        assertEquals(expected, actual);
+    }
+
+    @Test
+    void dynamicSizeIncrease() {
+        if (!(priorityQueue instanceof ArrayBinaryHeap)) {
+            fail("Invalid queue type");
+        }
+
+        ArrayBinaryHeap arrayBinaryHeap = (ArrayBinaryHeap) priorityQueue;
+        int expected = 2;
+        int actual = arrayBinaryHeap.getCapacity();
+        assertEquals(expected, actual);
+        arrayBinaryHeap.insert('A');
+        arrayBinaryHeap.insert('A');
+        arrayBinaryHeap.insert('A');
+        expected = 4;
+        actual = arrayBinaryHeap.getCapacity();
+        assertEquals(expected, actual);
+        arrayBinaryHeap.insert('A');
+        arrayBinaryHeap.insert('A');
+        expected = 8;
+        actual = arrayBinaryHeap.getCapacity();
+        assertEquals(expected, actual);
+    }
+
+    @Test
+    void dynamicSizeDecrease() {
+        if (!(priorityQueue instanceof ArrayBinaryHeap)) {
+            fail("Invalid queue type");
+        }
+
+        ArrayBinaryHeap arrayBinaryHeap = (ArrayBinaryHeap) priorityQueue;
+        int expected = 2;
+        int actual = arrayBinaryHeap.getCapacity();
+        assertEquals(expected, actual);
+        for (int i = 0; i < 8; i++) {
+            arrayBinaryHeap.insert('A');
+        }
+        expected = 8;
+        actual = arrayBinaryHeap.getCapacity();
+        assertEquals(expected, actual);
+        for (int i = 0; i <= 6; i++) {
+            arrayBinaryHeap.delete();
+        }
+        expected = 4;
+        actual = arrayBinaryHeap.getCapacity();
+        assertEquals(expected, actual);
+        arrayBinaryHeap.delete();
+        expected = 2;
+        actual = arrayBinaryHeap.getCapacity();
         assertEquals(expected, actual);
     }
 }

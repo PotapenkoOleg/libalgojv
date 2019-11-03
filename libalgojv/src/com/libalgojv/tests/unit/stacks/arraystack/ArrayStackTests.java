@@ -33,13 +33,21 @@ class ArrayStackTests {
 
     @Test
     void pop() {
-        final int actual = 42;
-        stack.push(actual);
-        stack.push(actual);
-        stack.push(actual);
+        assertNull(stack.pop());
 
-        final int expected = stack.pop();
+        final int expected = 42;
+        stack.push(expected + 2);
+        stack.push(expected + 1);
+        stack.push(expected);
+
+        int actual = stack.pop();
         assertEquals(expected, actual);
+
+        actual = stack.pop();
+        assertEquals(expected + 1, actual);
+
+        actual = stack.pop();
+        assertEquals(expected + 2, actual);
     }
 
     @Test
@@ -49,6 +57,45 @@ class ArrayStackTests {
 
         final int expected = stack.pop();
         assertEquals(expected, actual);
+    }
+
+    @Test
+    void peek() {
+        assertNull(stack.peek());
+
+        final int expected = 42;
+        stack.push(expected + 2);
+        stack.push(expected + 1);
+        stack.push(expected);
+
+        assertEquals(3, stack.getSize());
+
+        int actual = stack.peek();
+        assertEquals(expected, actual);
+
+        assertEquals(3, stack.getSize());
+
+        actual = stack.pop();
+        assertEquals(expected, actual);
+    }
+
+    @Test
+    void clear() {
+        assertTrue(stack.isEmpty());
+
+        final int expected = 42;
+        stack.push(expected + 2);
+        stack.push(expected + 1);
+        stack.push(expected);
+
+        assertFalse(stack.isEmpty());
+        assertEquals(3, stack.getSize());
+
+        stack.clear();
+
+        assertTrue(stack.isEmpty());
+        assertEquals(0, stack.getSize());
+        assertNull(stack.pop());
     }
 
     @Test
@@ -62,15 +109,18 @@ class ArrayStackTests {
     }
 
     @Test
-    void size() {
+    void getSize() {
+        int expected = 0;
+        int actual = stack.getSize();
+        assertEquals(expected, actual);
+
         stack.push(42);
         stack.push(42);
         stack.push(42);
         stack.pop();
 
-        final int expected = 2;
-        int actual = stack.getSize();
-
+        expected = 2;
+        actual = stack.getSize();
         assertEquals(expected, actual);
     }
 
