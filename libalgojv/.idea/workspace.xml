@@ -5,6 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9f56ce26-7942-4300-be10-00f249394c3e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/com/libalgojv/tests/unit/unionfind/QuickFindTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/libalgojv/tests/unit/unionfind/QuickUnionTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/libalgojv/tests/unit/unionfind/QuickUnionWithPathCompressionTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/libalgojv/tests/unit/unionfind/WeightedQuickUnionTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/libalgojv/unionfind/QuickFind.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/libalgojv/unionfind/QuickUnion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/libalgojv/unionfind/QuickUnionWithPathCompression.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/libalgojv/unionfind/WeightedQuickUnion.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -35,8 +43,8 @@
         <option value="Arquillian JUnit Test Class" />
         <option value="Enum" />
         <option value="Interface" />
-        <option value="JUnit5 Test Class" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -95,18 +103,18 @@
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateTestDialog.RecentsKey">
-      <recent name="com.libalgojv.tests.unit.tries" />
-      <recent name="com.libalgojv.tests.unit.hashtables.hashtablelinearprobing" />
-      <recent name="com.libalgojv.tests.unit.heaps.arraybinaryheap" />
-      <recent name="com.libalgojv.tests.unit.queues.linkedlistqueue" />
-      <recent name="com.libalgojv.tests.unit.queues.arrayqueue" />
-    </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.libalgojv.tests.unit.unionfind" />
+      <recent name="com.libalgojv.tests.unit" />
+      <recent name="com.libalgojv.tests.unit.tries" />
+      <recent name="com.libalgojv.tests.unit.hashtables.hashtablelinearprobing" />
+      <recent name="com.libalgojv.tests.unit.heaps.arraybinaryheap" />
+    </key>
   </component>
-  <component name="RunManager" selected="JUnit.TernaryTrieTests.loadTest">
+  <component name="RunManager" selected="JUnit.AllTests">
     <configuration name="AllTests" type="JUnit" factoryName="JUnit">
       <module name="libalgojv" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
