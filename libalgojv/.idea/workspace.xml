@@ -1,19 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="9f56ce26-7942-4300-be10-00f249394c3e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libalgojv.iml" beforeDir="false" afterPath="$PROJECT_DIR$/libalgojv.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/libalgojv/com/libalgojv/tests/unit/tries/ternarytrie/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/libalgojv/common/interfaces/Sortable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/libalgojv/common/interfaces/Sortable.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/libalgojv/sortalgorithms/SelectionSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/libalgojv/sortalgorithms/SelectionSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/libalgojv/tests/unit/sortalgorithms/BottomUpMergeSortTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/libalgojv/tests/unit/sortalgorithms/BottomUpMergeSortTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/libalgojv/tests/unit/sortalgorithms/HeapSortTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/libalgojv/tests/unit/sortalgorithms/HeapSortTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/libalgojv/tests/unit/sortalgorithms/InsertionSortTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/libalgojv/tests/unit/sortalgorithms/InsertionSortTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/libalgojv/tests/unit/sortalgorithms/MergeSortTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/libalgojv/tests/unit/sortalgorithms/MergeSortTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/libalgojv/tests/unit/sortalgorithms/QuickSortTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/libalgojv/tests/unit/sortalgorithms/QuickSortTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/libalgojv/tests/unit/sortalgorithms/RadixSortTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/libalgojv/tests/unit/sortalgorithms/RadixSortTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/libalgojv/tests/unit/sortalgorithms/SelectionSortTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/libalgojv/tests/unit/sortalgorithms/SelectionSortTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/libalgojv/tests/unit/sortalgorithms/ShellSortTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/libalgojv/tests/unit/sortalgorithms/ShellSortTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/libalgojv/tests/unit/sortalgorithms/SortChecker.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/libalgojv/tests/unit/sortalgorithms/SortCheckerTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/libalgojv/tests/unit/sortalgorithms/SortCheckerTests.java" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="FavoritesManager">
-    <favorites_list name="libalgojv" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -27,8 +38,13 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectId" id="1T5WMhi7WhhSoy25mu0Z0RhFcJp" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="PropertiesComponent">
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.Annotations" value="false" />
@@ -64,19 +80,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
-  <component name="RunManager" selected="JUnit.AllTests">
+  <component name="RunManager" selected="JUnit.SelectionSortTests">
     <configuration name="AllTests" type="JUnit" factoryName="JUnit">
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="" />
@@ -90,22 +94,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="InsertionSortTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="libalgojv" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.libalgojv.tests.unit.sortalgorithms.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.libalgojv.tests.unit.sortalgorithms" />
-      <option name="MAIN_CLASS_NAME" value="com.libalgojv.tests.unit.sortalgorithms.InsertionSortTests" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SelectionSortTests.sortExample" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SelectionSortTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="libalgojv" />
       <extension name="coverage">
         <pattern>
@@ -115,7 +104,22 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.libalgojv.tests.unit.sortalgorithms" />
       <option name="MAIN_CLASS_NAME" value="com.libalgojv.tests.unit.sortalgorithms.SelectionSortTests" />
-      <option name="METHOD_NAME" value="sortExample" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SelectionSortTests.sortArray" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="libalgojv" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.libalgojv.tests.unit.sortalgorithms.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.libalgojv.tests.unit.sortalgorithms" />
+      <option name="MAIN_CLASS_NAME" value="com.libalgojv.tests.unit.sortalgorithms.SelectionSortTests" />
+      <option name="METHOD_NAME" value="sortArray" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -168,19 +172,19 @@
     </configuration>
     <list>
       <item itemvalue="JUnit.AllTests" />
-      <item itemvalue="JUnit.SelectionSortTests.sortExample" />
-      <item itemvalue="JUnit.InsertionSortTests" />
       <item itemvalue="JUnit.ShellSortTests" />
       <item itemvalue="JUnit.ShellSortTests.sortExample" />
       <item itemvalue="JUnit.com.libalgojv.tests.unit.sortalgorithms in libalgojv" />
+      <item itemvalue="JUnit.SelectionSortTests" />
+      <item itemvalue="JUnit.SelectionSortTests.sortArray" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.SelectionSortTests" />
+        <item itemvalue="JUnit.SelectionSortTests.sortArray" />
         <item itemvalue="JUnit.com.libalgojv.tests.unit.sortalgorithms in libalgojv" />
         <item itemvalue="JUnit.ShellSortTests" />
         <item itemvalue="JUnit.ShellSortTests.sortExample" />
-        <item itemvalue="JUnit.InsertionSortTests" />
-        <item itemvalue="JUnit.SelectionSortTests.sortExample" />
       </list>
     </recent_temporary>
   </component>
@@ -234,17 +238,12 @@
       <configuration name="com.libalgojv.tests.unit.sortalgorithms in libalgojv" configurationId="JUnit" />
     </history-entry>
   </component>
-  <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
-  </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
+            <State />
           </value>
         </entry>
       </map>
@@ -257,6 +256,11 @@
           <url>file://$PROJECT_DIR$/src/com/libalgojv/tests/unit/sortalgorithms/ShellSortTests.java</url>
           <line>60</line>
           <option name="timeStamp" value="24" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/libalgojv/tests/unit/sortalgorithms/SelectionSortTests.java</url>
+          <line>49</line>
+          <option name="timeStamp" value="25" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -9,13 +9,26 @@
 package com.libalgojv.common.interfaces;
 
 public interface Sortable {
-    static boolean less(Comparable left, Comparable right) {
-        return left.compareTo(right) < 0;
+
+    static <T> boolean less(Comparable<T> left, Comparable<T> right) {
+        return left.compareTo((T) right) < 0;
     }
 
-    static void exchange(Comparable[] array, int i, int j) {
-        Comparable temp = array[i];
-        array[i] = array[j];
-        array[j] = temp;
+    static <T> void exchange(Comparable<T>[] a, int i, int j) {
+        Comparable<T> swap = a[i];
+        a[i] = a[j];
+        a[j] = swap;
+    }
+
+    static <T> boolean isSorted(final Comparable<T>[] array) {
+        if ((array == null) || (array.length < 2)) {
+            return false;
+        }
+        for (int i = 1; i < array.length; i++) {
+            if (less(array[i], array[i - 1])) {
+                return false;
+            }
+        }
+        return true;
     }
 }

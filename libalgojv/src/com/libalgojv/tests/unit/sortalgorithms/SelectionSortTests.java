@@ -8,6 +8,7 @@
 
 package com.libalgojv.tests.unit.sortalgorithms;
 
+import com.libalgojv.common.interfaces.Sortable;
 import com.libalgojv.sortalgorithms.SelectionSort;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
@@ -15,7 +16,8 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class SelectionSortTests {private Integer[] sortedArray;
+class SelectionSortTests {
+    private Integer[] sortedArray;
     private Integer[] unsortedArray;
     private Integer[] reverseSortedArray;
 
@@ -45,13 +47,13 @@ class SelectionSortTests {private Integer[] sortedArray;
     @Test
     void sortArray() {
         SelectionSort.sort(sortedArray);
-        assertTrue(SortChecker.isSorted(sortedArray));
+        assertTrue(Sortable.isSorted(sortedArray));
 
         SelectionSort.sort(unsortedArray);
-        assertTrue(SortChecker.isSorted(unsortedArray));
+        assertTrue(Sortable.isSorted(unsortedArray));
 
         SelectionSort.sort(reverseSortedArray);
-        assertTrue(SortChecker.isSorted(reverseSortedArray));
+        assertTrue(Sortable.isSorted(reverseSortedArray));
     }
 
     @Test
