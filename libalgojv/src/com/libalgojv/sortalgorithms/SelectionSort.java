@@ -21,6 +21,9 @@ public final class SelectionSort {
     }
 
     public static <T> void sort(Comparable<T>[] array) {
+        if (array == null || array.length < 2) {
+            return;
+        }
         for (int i = 0; i < array.length; i++) {
             int min = i;
             for (int j = i + 1; j < array.length; j++) {

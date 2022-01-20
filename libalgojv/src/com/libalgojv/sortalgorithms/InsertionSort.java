@@ -10,12 +10,12 @@ package com.libalgojv.sortalgorithms;
 
 import com.libalgojv.common.interfaces.Sortable;
 
-public final class InsertionSort implements Sortable {
+public final class InsertionSort {
     private InsertionSort() {
     }
 
     public static void sort(Comparable[] array) {
-        if (array == null) {
+        if (array == null || array.length < 2) {
             return;
         }
         for (int i = 0; i < array.length; i++) {
