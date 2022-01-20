@@ -10,6 +10,8 @@ package com.libalgojv.tests.unit.sortalgorithms;
 
 import com.libalgojv.common.interfaces.Sortable;
 import com.libalgojv.sortalgorithms.SelectionSort;
+import com.libalgojv.sortalgorithms.StableSortKeyWrapper;
+import com.libalgojv.sortalgorithms.StableSortWrapperArray;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -59,6 +61,14 @@ class SelectionSortTests {
     @Test
     void sortExample() {
         SelectionSort.sort(sortExampleActual);
+        assertArrayEquals(sortExampleExpected, sortExampleActual);
+    }
+
+    @Test
+    void stableSortExample() {
+        StableSortKeyWrapper<Character>[] sortExampleStableActual = StableSortWrapperArray.toStableSortWrapperArray(sortExampleActual);
+        SelectionSort.sort(sortExampleStableActual);
+        Object[] sortExampleActual = StableSortWrapperArray.toObjectTypeArray(sortExampleStableActual);
         assertArrayEquals(sortExampleExpected, sortExampleActual);
     }
 }

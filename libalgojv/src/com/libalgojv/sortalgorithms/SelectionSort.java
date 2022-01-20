@@ -17,7 +17,6 @@ import java.util.function.ToIntFunction;
 import java.util.function.ToLongFunction;
 
 public final class SelectionSort {
-    // Hide constructor
     private SelectionSort() {
     }
 
