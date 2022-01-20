@@ -12,6 +12,7 @@ import com.libalgojv.common.interfaces.SymbolTable;
 import com.libalgojv.tries.ternarytrie.TernaryTrie;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
 import java.io.IOException;
@@ -20,6 +21,7 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.*;
 
+import static com.libalgojv.tests.unit.utils.OSValidator.*;
 import static org.junit.jupiter.api.Assertions.*;
 
 class TernaryTrieTests {
@@ -332,7 +334,16 @@ class TernaryTrieTests {
         SymbolTable<String> symbolTable = new TernaryTrie<>();
         try {
             // Loading 29872 entries
-            Path path = Paths.get("src\\com\\libalgojv\\tests\\unit\\tries\\ternarytrie\\USZipCodes.csv").toAbsolutePath();
+            Path path = null;
+            if (isWindows()) {
+                path = Paths.get("src\\com\\libalgojv\\tests\\unit\\tries\\ternarytrie\\USZipCodes.csv").toAbsolutePath();
+            }
+            if (isMac() || isUnix()) {
+                path = Paths.get("src/com/libalgojv/tests/unit/tries/ternarytrie/USZipCodes.csv").toAbsolutePath();
+            }
+            if (path == null) {
+                fail("Unsupported OS or path Format");
+            }
             List<String> allLines = Files.readAllLines(path);
             for (String line : allLines) {
                 String[] parts = line.split(",");
