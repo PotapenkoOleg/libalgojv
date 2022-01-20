@@ -10,12 +10,12 @@ package com.libalgojv.sortalgorithms;
 
 import com.libalgojv.common.interfaces.Sortable;
 
-public final class ShellSort implements Sortable {
+public final class ShellSort {
     private ShellSort() {
     }
 
-    public static void sort(Comparable[] array) {
-        if (array == null) {
+    public static <T> void sort(Comparable<T>[] array) {
+        if (array == null || array.length < 2) {
             return;
         }
         int h = 1;

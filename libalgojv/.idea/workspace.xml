@@ -6,9 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="9f56ce26-7942-4300-be10-00f249394c3e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/libalgojv/sortalgorithms/InsertionSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/libalgojv/sortalgorithms/InsertionSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/libalgojv/sortalgorithms/SelectionSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/libalgojv/sortalgorithms/SelectionSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/libalgojv/sortalgorithms/ShellSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/libalgojv/sortalgorithms/ShellSort.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/libalgojv/tests/unit/sortalgorithms/InsertionSortTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/libalgojv/tests/unit/sortalgorithms/InsertionSortTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/libalgojv/tests/unit/sortalgorithms/ShellSortTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/libalgojv/tests/unit/sortalgorithms/ShellSortTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +69,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.InsertionSortTests">
+  <component name="RunManager" selected="JUnit.ShellSortTests">
     <configuration name="AllTests" type="JUnit" factoryName="JUnit">
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="" />
@@ -145,7 +145,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="com.libalgojv.tests.unit.sortalgorithms in libalgojv" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ShellSortTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="libalgojv" />
       <extension name="coverage">
         <pattern>
@@ -154,26 +154,27 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.libalgojv.tests.unit.sortalgorithms" />
-      <option name="TEST_OBJECT" value="package" />
+      <option name="MAIN_CLASS_NAME" value="com.libalgojv.tests.unit.sortalgorithms.ShellSortTests" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
       <item itemvalue="JUnit.AllTests" />
-      <item itemvalue="JUnit.com.libalgojv.tests.unit.sortalgorithms in libalgojv" />
       <item itemvalue="JUnit.SelectionSortTests" />
       <item itemvalue="JUnit.SelectionSortTests.sortArray" />
       <item itemvalue="JUnit.SelectionSortTests.stableSortExample" />
       <item itemvalue="JUnit.InsertionSortTests" />
+      <item itemvalue="JUnit.ShellSortTests" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ShellSortTests" />
         <item itemvalue="JUnit.InsertionSortTests" />
         <item itemvalue="JUnit.SelectionSortTests.stableSortExample" />
         <item itemvalue="JUnit.SelectionSortTests" />
         <item itemvalue="JUnit.SelectionSortTests.sortArray" />
-        <item itemvalue="JUnit.com.libalgojv.tests.unit.sortalgorithms in libalgojv" />
       </list>
     </recent_temporary>
   </component>
@@ -241,11 +242,6 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/libalgojv/tests/unit/sortalgorithms/ShellSortTests.java</url>
-          <line>60</line>
-          <option name="timeStamp" value="24" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/libalgojv/tests/unit/sortalgorithms/SelectionSortTests.java</url>
           <line>51</line>
