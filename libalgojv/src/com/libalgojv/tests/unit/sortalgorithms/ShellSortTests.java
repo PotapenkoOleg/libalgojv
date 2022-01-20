@@ -9,10 +9,7 @@
 package com.libalgojv.tests.unit.sortalgorithms;
 
 import com.libalgojv.common.interfaces.Sortable;
-import com.libalgojv.sortalgorithms.InsertionSort;
-import com.libalgojv.sortalgorithms.ShellSort;
-import com.libalgojv.sortalgorithms.StableSortKeyWrapper;
-import com.libalgojv.sortalgorithms.StableSortWrapperArray;
+import com.libalgojv.sortalgorithms.*;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -61,6 +58,7 @@ class ShellSortTests {
 
     @Test
     void sortExample() {
+        KnuthShuffle.shuffle(sortExampleActual);
         ShellSort.sort(sortExampleActual);
         assertArrayEquals(sortExampleExpected, sortExampleActual);
     }

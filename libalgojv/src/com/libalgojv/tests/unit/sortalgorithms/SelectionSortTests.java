@@ -9,6 +9,7 @@
 package com.libalgojv.tests.unit.sortalgorithms;
 
 import com.libalgojv.common.interfaces.Sortable;
+import com.libalgojv.sortalgorithms.KnuthShuffle;
 import com.libalgojv.sortalgorithms.SelectionSort;
 import com.libalgojv.sortalgorithms.StableSortKeyWrapper;
 import com.libalgojv.sortalgorithms.StableSortWrapperArray;
@@ -60,6 +61,7 @@ class SelectionSortTests {
 
     @Test
     void sortExample() {
+        KnuthShuffle.shuffle(sortExampleActual);
         SelectionSort.sort(sortExampleActual);
         assertArrayEquals(sortExampleExpected, sortExampleActual);
     }

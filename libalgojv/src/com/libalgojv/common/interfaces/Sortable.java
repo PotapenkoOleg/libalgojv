@@ -14,10 +14,10 @@ public interface Sortable {
         return left.compareTo((T) right) < 0;
     }
 
-    static <T> void exchange(Comparable<T>[] a, int i, int j) {
-        Comparable<T> swap = a[i];
-        a[i] = a[j];
-        a[j] = swap;
+    static <T> void exchange(T[] array, int i, int j) {
+        T temp = array[i];
+        array[i] = array[j];
+        array[j] = temp;
     }
 
     static <T> boolean isSorted(final Comparable<T>[] array) {

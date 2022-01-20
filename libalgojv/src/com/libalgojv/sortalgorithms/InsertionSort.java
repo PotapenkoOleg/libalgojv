@@ -14,7 +14,7 @@ public final class InsertionSort {
     private InsertionSort() {
     }
 
-    public static void sort(Comparable[] array) {
+    public static <T> void sort(Comparable<T>[] array) {
         if (array == null || array.length < 2) {
             return;
         }
