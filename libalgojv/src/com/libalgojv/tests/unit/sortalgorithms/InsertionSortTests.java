@@ -65,7 +65,8 @@ class InsertionSortTests {
 
     @Test
     void stableSortExample() {
-        StableSortKeyWrapper<Character>[] sortExampleStableActual = StableSortWrapperArray.toStableSortWrapperArray(sortExampleActual);
+        StableSortKeyWrapper<Character>[] sortExampleStableActual =
+                StableSortWrapperArray.toStableSortWrapperArray(sortExampleActual);
         InsertionSort.sort(sortExampleStableActual);
         Object[] sortExampleActual = StableSortWrapperArray.toObjectTypeArray(sortExampleStableActual);
         assertArrayEquals(sortExampleExpected, sortExampleActual);

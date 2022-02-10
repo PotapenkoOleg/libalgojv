@@ -28,4 +28,16 @@ public final class InsertionSort {
             }
         }
     }
+
+    public static <T> void sort(Comparable<T>[] array, int start, int finish) {
+        for (int i = start; i <= finish; i++) {
+            for (int j = i; j > start; j--) {
+                if (Sortable.less(array[j], array[j - 1])) {
+                    Sortable.exchange(array, j, j - 1);
+                } else {
+                    break;
+                }
+            }
+        }
+    }
 }

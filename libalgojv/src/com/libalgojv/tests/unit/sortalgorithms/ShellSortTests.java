@@ -65,7 +65,8 @@ class ShellSortTests {
 
     @Test
     void stableSortExample() {
-        StableSortKeyWrapper<Character>[] sortExampleStableActual = StableSortWrapperArray.toStableSortWrapperArray(sortExampleActual);
+        StableSortKeyWrapper<Character>[] sortExampleStableActual =
+                StableSortWrapperArray.toStableSortWrapperArray(sortExampleActual);
         ShellSort.sort(sortExampleStableActual);
         Object[] sortExampleActual = StableSortWrapperArray.toObjectTypeArray(sortExampleStableActual);
         assertArrayEquals(sortExampleExpected, sortExampleActual);

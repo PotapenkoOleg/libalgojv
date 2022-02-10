@@ -1,5 +1,5 @@
 /*
- * BottomUpMergeSortTests.java
+ * ImprovedMergeSortTests.java
  * Project libalgojv
  *
  * Created by Oleg Potapenko on 12/25/18 12:00 PM.
@@ -9,17 +9,18 @@
 package com.libalgojv.tests.unit.sortalgorithms;
 
 import com.libalgojv.common.interfaces.Sortable;
+import com.libalgojv.sortalgorithms.ImprovedMergeSort;
 import com.libalgojv.sortalgorithms.KnuthShuffle;
-import com.libalgojv.sortalgorithms.SelectionSort;
 import com.libalgojv.sortalgorithms.StableSortKeyWrapper;
 import com.libalgojv.sortalgorithms.StableSortWrapperArray;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertArrayEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
-class SelectionSortTests {
+class ImprovedMergeSortTest {
     private Integer[] sortedArray;
     private Integer[] unsortedArray;
     private Integer[] reverseSortedArray;
@@ -49,20 +50,20 @@ class SelectionSortTests {
 
     @Test
     void sortArray() {
-        SelectionSort.sort(sortedArray);
+        ImprovedMergeSort.sort(sortedArray);
         assertTrue(Sortable.isSorted(sortedArray));
 
-        SelectionSort.sort(unsortedArray);
+        ImprovedMergeSort.sort(unsortedArray);
         assertTrue(Sortable.isSorted(unsortedArray));
 
-        SelectionSort.sort(reverseSortedArray);
+        ImprovedMergeSort.sort(reverseSortedArray);
         assertTrue(Sortable.isSorted(reverseSortedArray));
     }
 
     @Test
     void sortExample() {
         KnuthShuffle.shuffle(sortExampleActual);
-        SelectionSort.sort(sortExampleActual);
+        ImprovedMergeSort.sort(sortExampleActual);
         assertArrayEquals(sortExampleExpected, sortExampleActual);
     }
 
@@ -70,7 +71,7 @@ class SelectionSortTests {
     void stableSortExample() {
         StableSortKeyWrapper<Character>[] sortExampleStableActual =
                 StableSortWrapperArray.toStableSortWrapperArray(sortExampleActual);
-        SelectionSort.sort(sortExampleStableActual);
+        ImprovedMergeSort.sort(sortExampleStableActual);
         Object[] sortExampleActual = StableSortWrapperArray.toObjectTypeArray(sortExampleStableActual);
         assertArrayEquals(sortExampleExpected, sortExampleActual);
     }

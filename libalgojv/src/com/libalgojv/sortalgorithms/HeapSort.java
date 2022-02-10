@@ -8,16 +8,14 @@
 
 package com.libalgojv.sortalgorithms;
 
-import com.libalgojv.common.interfaces.Sortable;
-
-public final class HeapSort implements Sortable {
+public final class HeapSort {
     private HeapSort() {
     }
 
-    public static Comparable[] sort(Comparable[] array) {
-        if (array == null) {
-            return null;
-        }
+    public static <T> void sort(Comparable<T>[] array) {
+//        if (array == null || array.length < 2) {
+//            return;
+//        }
         throw new UnsupportedOperationException();
     }
 }

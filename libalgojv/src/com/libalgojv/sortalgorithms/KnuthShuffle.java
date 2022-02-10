@@ -9,6 +9,7 @@
 package com.libalgojv.sortalgorithms;
 
 import com.libalgojv.common.interfaces.Sortable;
+import org.jetbrains.annotations.NotNull;
 
 import java.util.Random;
 
@@ -16,7 +17,7 @@ public class KnuthShuffle {
     private KnuthShuffle() {
     }
 
-    public static <T> void shuffle(T[] array) {
+    public static <T> void shuffle(T @NotNull [] array) {
         for (int i = 0; i < array.length; i++) {
             Random rand = new Random();
             int r = rand.nextInt(i + 1);
