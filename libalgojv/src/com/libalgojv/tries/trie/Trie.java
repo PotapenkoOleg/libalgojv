@@ -8,6 +8,7 @@
 
 package com.libalgojv.tries.trie;
 
+import com.libalgojv.common.dto.KeyValuePair;
 import com.libalgojv.common.interfaces.Queue;
 import com.libalgojv.common.interfaces.SymbolTable;
 import com.libalgojv.queues.linkedlistqueue.LinkedListQueue;
@@ -124,6 +125,11 @@ public class Trie<E> implements SymbolTable<E> {
         Queue<String> queue = new LinkedListQueue<>();
         collect(subTree, prefix, queue);
         return queue;
+    }
+
+    @Override
+    public Iterable<KeyValuePair<String, E>> getKeyValuePairsWithPrefix(String prefix) {
+        throw new UnsupportedOperationException();
     }
 
     @Override

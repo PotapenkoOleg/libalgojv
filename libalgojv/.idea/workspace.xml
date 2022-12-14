@@ -5,7 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9f56ce26-7942-4300-be10-00f249394c3e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/com/libalgojv/common/dto/KeyValuePair.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/libalgojv/common/interfaces/SymbolTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/libalgojv/common/interfaces/SymbolTable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/libalgojv/tests/unit/tries/ternarytrie/TernaryTrieTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/libalgojv/tests/unit/tries/ternarytrie/TernaryTrieTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/libalgojv/tries/ternarytrie/TernaryTrie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/libalgojv/tries/ternarytrie/TernaryTrie.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/libalgojv/tries/trie/Trie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/libalgojv/tries/trie/Trie.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,34 +71,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="Downloaded.Files.Path.Enabled" value="false" />
-    <property name="Repository.Attach.Annotations" value="false" />
-    <property name="Repository.Attach.JavaDocs" value="false" />
-    <property name="Repository.Attach.Sources" value="false" />
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
-    <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546064271156" />
-    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
-    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Arquillian JUnit4" value="" />
-    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
-    <property name="create.test.in.the.same.root" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="node.js.detected.package.eslint" value="true" />
-    <property name="node.js.detected.package.tslint" value="true" />
-    <property name="node.js.selected.package.eslint" value="(autodetect)" />
-    <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
-    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Problems" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
-  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
       <recent name="com.libalgojv.tests.unit.tries" />
@@ -106,7 +93,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.TernaryTrieTests.loadTest">
+  <component name="RunManager" selected="JUnit.TernaryTrieTests.getKeysWithPrefix">
     <configuration name="AllTests" type="JUnit" factoryName="JUnit">
       <module name="libalgojv" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -123,60 +110,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TernaryTrieTests (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SingleLinkedListTests.removeByKey" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="libalgojv" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.libalgojv.tests.unit.tries.ternarytrie.*" />
+          <option name="PATTERN" value="com.libalgojv.tests.unit.lists.singlelinkedlist.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="ALTERNATIVE_JRE_PATH" value="corretto-17" />
-      <option name="PACKAGE_NAME" value="com.libalgojv.tests.unit.tries.ternarytrie" />
-      <option name="MAIN_CLASS_NAME" value="com.libalgojv.tests.unit.tries.ternarytrie.TernaryTrieTests" />
-      <option name="METHOD_NAME" value="" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="PARAMETERS" value="" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="wholeProject" />
-      </option>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TernaryTrieTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="libalgojv" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.libalgojv.tests.unit.tries.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.libalgojv.tests.unit.tries" />
-      <option name="MAIN_CLASS_NAME" value="com.libalgojv.tests.unit.tries.TernaryTrieTests" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TernaryTrieTests.delete" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="libalgojv" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.libalgojv.tests.unit.tries.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.libalgojv.tests.unit.tries" />
-      <option name="MAIN_CLASS_NAME" value="com.libalgojv.tests.unit.tries.TernaryTrieTests" />
-      <option name="METHOD_NAME" value="delete" />
+      <option name="PACKAGE_NAME" value="com.libalgojv.tests.unit.lists.singlelinkedlist" />
+      <option name="MAIN_CLASS_NAME" value="com.libalgojv.tests.unit.lists.singlelinkedlist.SingleLinkedListTests" />
+      <option name="METHOD_NAME" value="removeByKey" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TernaryTrieTests.loadTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TernaryTrieTests.getAllKeys" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="libalgojv" />
       <extension name="coverage">
         <pattern>
@@ -186,7 +136,23 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.libalgojv.tests.unit.tries.ternarytrie" />
       <option name="MAIN_CLASS_NAME" value="com.libalgojv.tests.unit.tries.ternarytrie.TernaryTrieTests" />
-      <option name="METHOD_NAME" value="loadTest" />
+      <option name="METHOD_NAME" value="getAllKeys" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TernaryTrieTests.getKeysWithPrefix" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="libalgojv" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.libalgojv.tests.unit.tries.ternarytrie.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.libalgojv.tests.unit.tries.ternarytrie" />
+      <option name="MAIN_CLASS_NAME" value="com.libalgojv.tests.unit.tries.ternarytrie.TernaryTrieTests" />
+      <option name="METHOD_NAME" value="getKeysWithPrefix" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -196,12 +162,28 @@
       <module name="libalgojv" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.libalgojv.tests.unit.tries.*" />
+          <option name="PATTERN" value="com.libalgojv.tests.unit.tries.ternarytrie.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.libalgojv.tests.unit.tries" />
-      <option name="MAIN_CLASS_NAME" value="com.libalgojv.tests.unit.tries.TernaryTrieTests" />
+      <option name="PACKAGE_NAME" value="com.libalgojv.tests.unit.tries.ternarytrie" />
+      <option name="MAIN_CLASS_NAME" value="com.libalgojv.tests.unit.tries.ternarytrie.TernaryTrieTests" />
+      <option name="METHOD_NAME" value="put" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TrieTests.put" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="libalgojv" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.libalgojv.tests.unit.tries.trie.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.libalgojv.tests.unit.tries.trie" />
+      <option name="MAIN_CLASS_NAME" value="com.libalgojv.tests.unit.tries.trie.TrieTests" />
       <option name="METHOD_NAME" value="put" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -210,19 +192,19 @@
     </configuration>
     <list>
       <item itemvalue="JUnit.AllTests" />
-      <item itemvalue="JUnit.TernaryTrieTests" />
-      <item itemvalue="JUnit.TernaryTrieTests.delete" />
+      <item itemvalue="JUnit.TernaryTrieTests.getAllKeys" />
       <item itemvalue="JUnit.TernaryTrieTests.put" />
-      <item itemvalue="JUnit.TernaryTrieTests (1)" />
-      <item itemvalue="JUnit.TernaryTrieTests.loadTest" />
+      <item itemvalue="JUnit.TrieTests.put" />
+      <item itemvalue="JUnit.TernaryTrieTests.getKeysWithPrefix" />
+      <item itemvalue="JUnit.SingleLinkedListTests.removeByKey" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.TernaryTrieTests.loadTest" />
-        <item itemvalue="JUnit.TernaryTrieTests (1)" />
-        <item itemvalue="JUnit.TernaryTrieTests" />
-        <item itemvalue="JUnit.TernaryTrieTests.delete" />
+        <item itemvalue="JUnit.TernaryTrieTests.getKeysWithPrefix" />
         <item itemvalue="JUnit.TernaryTrieTests.put" />
+        <item itemvalue="JUnit.TrieTests.put" />
+        <item itemvalue="JUnit.TernaryTrieTests.getAllKeys" />
+        <item itemvalue="JUnit.SingleLinkedListTests.removeByKey" />
       </list>
     </recent_temporary>
   </component>
@@ -251,6 +233,10 @@
       <workItem from="1642480767609" duration="11000" />
       <workItem from="1642480787568" duration="4000" />
       <workItem from="1642480826618" duration="1907000" />
+      <workItem from="1666391448315" duration="708000" />
+      <workItem from="1666393224931" duration="837000" />
+      <workItem from="1670442976135" duration="1016000" />
+      <workItem from="1670985553201" duration="8360000" />
     </task>
     <servers />
   </component>
@@ -270,6 +256,37 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/libalgojv/tests/unit/lists/singlelinkedlist/SingleLinkedListTests.java</url>
+          <line>199</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/libalgojv/tests/unit/tries/ternarytrie/TernaryTrieTests.java</url>
+          <line>57</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/libalgojv/tests/unit/tries/ternarytrie/TernaryTrieTests.java</url>
+          <line>231</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/libalgojv/tests/unit/tries/trie/TrieTests.java</url>
+          <line>49</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/libalgojv/tests/unit/tries/ternarytrie/TernaryTrieTests.java</url>
+          <line>264</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />

@@ -1,5 +1,7 @@
 package com.libalgojv.common.interfaces;
 
+import com.libalgojv.common.dto.KeyValuePair;
+
 public interface SymbolTable<E> {
     void put(final String key, final E value);
 
@@ -18,6 +20,8 @@ public interface SymbolTable<E> {
     Iterable<String> getAllKeys();
 
     Iterable<String> getKeysWithPrefix(String prefix);
+
+    Iterable<KeyValuePair<String, E>> getKeyValuePairsWithPrefix(String prefix);
 
     String longestPrefixOf(String prefix);
 }

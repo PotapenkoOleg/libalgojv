@@ -8,6 +8,7 @@
 
 package com.libalgojv.tests.unit.tries.ternarytrie;
 
+import com.libalgojv.common.dto.KeyValuePair;
 import com.libalgojv.common.interfaces.SymbolTable;
 import com.libalgojv.tries.ternarytrie.TernaryTrie;
 import org.junit.jupiter.api.AfterEach;
@@ -259,6 +260,13 @@ class TernaryTrieTests {
         String prefix = "s";
 
         Iterable<String> allKeys = symbolTable.getKeysWithPrefix(prefix);
+
+        //#region
+        Iterable<KeyValuePair<String, Integer>> allKeys2 = symbolTable.getKeyValuePairsWithPrefix(prefix);
+        List<KeyValuePair<String, Integer>> allKeys2List = new ArrayList<>();
+        allKeys2.forEach(allKeys2List::add);
+        allKeys2List.sort(Map.Entry.comparingByValue());
+        //#endregion
 
         int expected = 5;
         int actual = checkKeys(allKeys, map);

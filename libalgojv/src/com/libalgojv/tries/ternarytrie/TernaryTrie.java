@@ -8,9 +8,13 @@
 
 package com.libalgojv.tries.ternarytrie;
 
+import com.libalgojv.common.dto.KeyValuePair;
 import com.libalgojv.common.interfaces.Queue;
 import com.libalgojv.common.interfaces.SymbolTable;
 import com.libalgojv.queues.linkedlistqueue.LinkedListQueue;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Implements ternary trie symbol table data structure
@@ -163,6 +167,17 @@ public class TernaryTrie<E> implements SymbolTable<E> {
         return queue;
     }
 
+    @Override
+    public Iterable<KeyValuePair<String, E>> getKeyValuePairsWithPrefix(String prefix) {
+        TernaryTrieNode subTree = get(root, prefix, 0);
+        if (subTree == null) {
+            return null;
+        }
+        Queue<KeyValuePair<String, E>> list = new LinkedListQueue<>();
+        collectKeyValuePairs(subTree.getMiddle(), prefix, list);
+        return list;
+    }
+
     public String longestPrefixOf(String query) {
         int prefixLength = search(root, query, 0, Integer.MIN_VALUE);
         if (prefixLength == Integer.MIN_VALUE) {
@@ -275,6 +290,21 @@ public class TernaryTrie<E> implements SymbolTable<E> {
         }
         collect(node.getMiddle(), prefix + character, queue);
         collect(node.getRight(), prefix, queue);
+    }
+
+    private void collectKeyValuePairs(TernaryTrieNode node, String prefix, Queue<KeyValuePair<String, E>> queue) {
+        if (node == null) {
+            return;
+        }
+        collectKeyValuePairs(node.getLeft(), prefix, queue);
+        char character = node.getCharacter();
+        E value = (E) node.getValue();
+        if (value != null) {
+            String key = prefix + character;
+            queue.enqueue(new KeyValuePair<>(key, value));
+        }
+        collectKeyValuePairs(node.getMiddle(), prefix + character, queue);
+        collectKeyValuePairs(node.getRight(), prefix, queue);
     }
 
     private int search(TernaryTrieNode node, String query, int levelCounter, int prefixLength) {
